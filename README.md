@@ -2,8 +2,8 @@
 
 This repo provides online catalogs of PadoGrid bundles that are readily available for installation.
 
-- [Geode/GemFire Bundle Catalog](catalog-geode.md)
-- [Hazelcast/Jet Bundle Catalog](catalog.hazelcast.md)
+- [Geode/GemFire Bundle Catalog](geode-catalog.md)
+- [Hazelcast/Jet Bundle Catalog](hazelcast-catalog.md)
 
 ## About Bundles
 
