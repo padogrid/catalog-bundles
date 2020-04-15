@@ -10,7 +10,7 @@ The online bundles can be installed by executing the `install_bundle` commands a
 install_bundle -download bundle-geode-1-app-perf_test_mysql-cluster-mysql
 ```
 
-[![DB Sync Diagram](images/db-sync.png)](https://github.com/padogrid/bundle-geode-1-app-perf_test_mysql-cluster-mysql)
+[![DB Sync Diagram](geode/images/db-sync.png)](https://github.com/padogrid/bundle-geode-1-app-perf_test_mysql-cluster-mysql)
 
 ---
 
@@ -20,7 +20,7 @@ install_bundle -download bundle-geode-1-app-perf_test_mysql-cluster-mysql
 install_bundle -download bundle-geode-1-docker-debezium_kafka
 ```
 
-[![Debezium-Kafka Diagram](images/debezium-kafka.png)](https://github.com/padogrid/bundle-geode-1-docker-debezium_kafka)
+[![Debezium-Kafka Diagram](geode/images/debezium-kafka.png)](https://github.com/padogrid/bundle-geode-1-docker-debezium_kafka)
 
 ---
 
@@ -30,7 +30,7 @@ install_bundle -download bundle-geode-1-docker-debezium_kafka
 install_bundle -download bundle-geode-1-app-perf_test_powerbi-cluster-powerbi
 ```
 
-[![Power BI Diagram](images/powerbi.png)](https://github.com/padogrid/bundle-geode-1-app-perf_test_powerbi-cluster-powerbi)
+[![Power BI Diagram](geode/images/powerbi.png)](https://github.com/padogrid/bundle-geode-1-app-perf_test_powerbi-cluster-powerbi)
 
 ---
 
@@ -40,4 +40,4 @@ install_bundle -download bundle-geode-1-app-perf_test_powerbi-cluster-powerbi
 install_bundle -download bundle-geode-1-app-perf_test_wan-cluster-ln-ny
 ```
 
-[![WAN Diagram](images/wan-ny-ln.png)](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny)
+[![WAN Diagram](geode/images/wan-ny-ln.png)](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny)
