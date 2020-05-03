@@ -121,3 +121,17 @@ install_bundle -download bundle-jet-3-cluster-trade
 ```
 
 [![Jet Trade Diagram](hazelcast/images/jet-trade.png)](https://github.com/padogrid/bundle-jet-3-cluster-trade)
+
+## Debezium-Kafka SnappyData/ComputeDB Connector - SnappyData 1.x
+
+```console
+install_bundle -download bundle-snappydata-1-docker-debezium_kafka
+```
+
+---
+
+# SnappyData/ComputeDB Bundles
+
+---
+
+[![Debezium-Kafka Diagram](geode/images/debezium-kafka.jpg)](https://github.com/padogrid/bundle-snappydata-1-docker-debezium_kafka)
