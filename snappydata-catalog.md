@@ -10,4 +10,4 @@ The online bundles can be installed by executing the `install_bundle` commands a
 install_bundle -download bundle-snappydata-1-docker-debezium_kafka
 ```
 
-[![Debezium-Kafka Diagram](geode/images/debezium-kafka.jpg)](https://github.com/padogrid/bundle-snappydata-1-docker-debezium_kafka)
+[![Debezium-Kafka Diagram](snappydata/images/debezium-kafka.jpg)](https://github.com/padogrid/bundle-snappydata-1-docker-debezium_kafka)
