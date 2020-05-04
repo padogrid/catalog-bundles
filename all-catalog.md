@@ -1,6 +1,6 @@
 # :books: Combined Bundle Catalog - Use Cases :books:
 
-This catalog combines all the online bundles. 
+This catalog combines all the online PadoGrid bundles. 
 
 The online bundles can be installed by executing the `install_bundle` commands as shown below. To view use case details for each bundle, click on their image.
 
