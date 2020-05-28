@@ -84,10 +84,10 @@ install_bundle -download bundle-hazelcast-training-3-app-perf_test_openssl-clust
 
 ---
 
-## Training: Hazelcast Cluster - IMDG 3.11.1
+## Training: Rolling Upgrade - IMDG 3.11.x
 
 ```console
-install_bundle -download bundle-hazelcast-training-3.11.1-cluster-v3.11.1
+install_bundle -download bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11
 ```
 
 [![Jet Trade Diagram](https://github.com/padogrid/bundle-hazelcast-training-3.11.1-cluster-v3.11.1/raw/master/images/rolling-upgrade.jpg)](https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11)
