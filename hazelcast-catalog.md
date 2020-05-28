@@ -74,9 +74,7 @@ install_bundle -download bundle-jet-3-cluster-trade
 
 ---
 
-# Training Bundles
-
-## OpenSSL/BoringSSL - IMDG 3
+## Training: OpenSSL/BoringSSL - IMDG 3
 
 ```console
 install_bundle -download bundle-hazelcast-training-3-app-perf_test_openssl-cluster-openssl
@@ -86,7 +84,7 @@ install_bundle -download bundle-hazelcast-training-3-app-perf_test_openssl-clust
 
 ---
 
-## Hazelcast Cluster - IMDG 3.11.1
+## Training: Hazelcast Cluster - IMDG 3.11.1
 
 ```console
 install_bundle -download bundle-hazelcast-training-3.11.1-cluster-v3.11.1
