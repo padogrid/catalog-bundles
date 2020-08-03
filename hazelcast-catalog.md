@@ -60,7 +60,7 @@ install_bundle -download bundle-hazelcast-3-app-perf_test_db-cluster-db
 install_bundle -download bundle-hazelcast-3n4-docker-debezium_hive_kafka
 ```
 
-[![Debezium-Hive-Kafka Diagram](https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_hive_kafka/images/debezium-hive-kafka.jpg)](https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_hive_kafka)
+[![Debezium-Hive-Kafka Diagram](https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_hive_kafka/blob/master/images/debezium-hive-kafka.jpg)](https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_hive_kafka)
 
 ---
 
