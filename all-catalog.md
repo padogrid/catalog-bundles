@@ -104,6 +104,16 @@ install_bundle -download bundle-hazelcast-3-app-perf_test_db-cluster-db
 
 ---
 
+## Debezium-Hive-Kafka Hazelcast Connector - IMDG 3 and 4
+
+```console
+install_bundle -download bundle-hazelcast-3n4-docker-debezium_hive_kafka
+```
+
+[![Debezium-Hive-Kafka Diagram](https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_hive_kafka/images/debezium-hive-kafka.jpg)](https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_hive_kafka)
+
+---
+
 ## Debezium-Kafka Hazelcast Connector - IMDG 3 and 4
 
 ```console
