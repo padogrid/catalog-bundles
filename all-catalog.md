@@ -114,6 +114,16 @@ install_bundle -download bundle-hazelcast-3n4-docker-debezium_hive_kafka
 
 ---
 
+## Debezium-KSQL-Kafka Hazelcast Connector - IMDG 3 and 4
+
+```console
+install_bundle -download bundle-hazelcast-3n4-docker-debezium_ksql_kafka
+```
+
+[![Debezium-KSQL-Kafka Diagram](https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_ksql_kafka/blob/master/images/debezium-ksql-kafka.jpg)](https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_ksql_kafka)
+
+---
+
 ## Debezium-Kafka Hazelcast Connector - IMDG 3 and 4
 
 ```console
