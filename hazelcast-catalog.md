@@ -82,6 +82,17 @@ install_bundle -download bundle-hazelcast-3n4-docker-debezium_kafka
 
 [![Debezium-Kafka Diagram](hazelcast/images/debezium-kafka.png)](https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_kafka)
 
+
+---
+
+## Hazelcast OpenShift Operator and PadoGrid - IMDG 4
+
+```console
+install_bundle -download bundle-hazelcast-4-k8s-oc_operator
+```
+
+[![OC Operator Diagram](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_operator/blob/master/images/oc-operator.jpg)](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_operator)
+
 ---
 
 ## Real-Time Trade Monitor - Jet 3
