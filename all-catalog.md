@@ -152,11 +152,6 @@ install_bundle -download bundle-jet-3-cluster-trade
 
 [![Jet Trade Diagram](hazelcast/images/jet-trade.png)](https://github.com/padogrid/bundle-jet-3-cluster-trade)
 
-## Debezium-Kafka SnappyData/ComputeDB Connector - SnappyData 1.x
-
-```console
-install_bundle -download bundle-snappydata-1-docker-debezium_kafka
-```
 
 ## Training: OpenSSL/BoringSSL - IMDG 3
 
@@ -181,6 +176,8 @@ install_bundle -download bundle-hazelcast-training-3.11-app-perf_test_v3.11-clus
 # SnappyData/ComputeDB Bundles
 
 ---
+
+## Debezium-Kafka SnappyData/ComputeDB Connector - SnappyData 1.x
 
 ```console
 install_bundle -download bundle-snappydata-1-docker-debezium_kafka
