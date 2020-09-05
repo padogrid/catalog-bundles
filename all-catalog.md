@@ -144,6 +144,16 @@ install_bundle -download bundle-hazelcast-4-k8s-oc_operator
 
 ---
 
+## Hazelcast WAN Replication on OpenShift - IMDG 4
+
+```console
+install_bundle -download bundle-hazelcast-4-k8s-oc_wan
+```
+
+[![OC WAN Diagram](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_wan/blob/master/images/oc-wan.jpg)](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_wan)
+
+---
+
 ## Real-Time Trade Monitor - Jet 3
 
 ```console
