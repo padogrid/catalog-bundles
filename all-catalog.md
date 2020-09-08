@@ -162,6 +162,17 @@ install_bundle -download bundle-jet-3-cluster-trade
 
 [![Jet Trade Diagram](hazelcast/images/jet-trade.png)](https://github.com/padogrid/bundle-jet-3-cluster-trade)
 
+---
+
+## Training: SSL/TLS - IMDG 3
+
+```console
+install_bundle -download bundle-hazelcast-training-3-app-perf_test_ssl-cluster-ssl
+```
+
+[![SSL/TLS Diagram](https://github.com/padogrid/bundle-hazelcast-training-3-app-perf_test_ssl-cluster-ssl/raw/master/images/ssl-cluster.jpg)](https://github.com/padogrid/bundle-hazelcast-training-3-app-perf_test_ssl-cluster-ssl)
+
+---
 
 ## Training: OpenSSL/BoringSSL - IMDG 3
 
@@ -169,7 +180,7 @@ install_bundle -download bundle-jet-3-cluster-trade
 install_bundle -download bundle-hazelcast-training-3-app-perf_test_openssl-cluster-openssl
 ```
 
-[![Jet Trade Diagram](https://github.com/padogrid/bundle-hazelcast-training-3-app-perf_test_openssl-cluster-openssl/raw/master/images/openssl-cluster.jpg)](https://github.com/padogrid/bundle-hazelcast-training-3-app-perf_test_openssl-cluster-openssl)
+[![OpenSSL Diagram](https://github.com/padogrid/bundle-hazelcast-training-3-app-perf_test_openssl-cluster-openssl/raw/master/images/openssl-cluster.jpg)](https://github.com/padogrid/bundle-hazelcast-training-3-app-perf_test_openssl-cluster-openssl)
 
 ---
 
@@ -179,7 +190,7 @@ install_bundle -download bundle-hazelcast-training-3-app-perf_test_openssl-clust
 install_bundle -download bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11
 ```
 
-[![Jet Trade Diagram](https://github.com/padogrid/bundle-hazelcast-training-3.11.1-cluster-v3.11.1/raw/master/images/rolling-upgrade.jpg)](https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11)
+[![Rolling Upgrade Diagram](https://github.com/padogrid/bundle-hazelcast-training-3.11.1-cluster-v3.11.1/raw/master/images/rolling-upgrade.jpg)](https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11)
 
 ---
 
