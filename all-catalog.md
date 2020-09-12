@@ -54,16 +54,6 @@ install_bundle -download bundle-geode-1-app-perf_test_wan-cluster-ln-ny
 
 ---
 
-## CDC Tutorial - Jet 4
-
-```console
-install_bundle -download bundle-jet-4-docker-cdc_tutorial
-```
-
-[![CDC Tutorial Data Flow Diagram](hazelcast/images/jet-cdc-tutorial.png "Jet CDT Tutorial")](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial)
-
----
-
 ## Cluster Split-Brain - IMDG 3
 
 ```console
@@ -161,6 +151,16 @@ install_bundle -download bundle-jet-3-cluster-trade
 ```
 
 [![Jet Trade Diagram](hazelcast/images/jet-trade.png)](https://github.com/padogrid/bundle-jet-3-cluster-trade)
+
+---
+
+## CDC Tutorial - Jet 4
+
+```console
+install_bundle -download bundle-jet-4-docker-cdc_tutorial
+```
+
+[![CDC Tutorial Data Flow Diagram](hazelcast/images/jet-cdc-tutorial.png "Jet CDT Tutorial")](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial)
 
 ---
 
