@@ -24,10 +24,10 @@ install_bundle -download bundle-hazelcast-3-app-perf_test_sb-cluster-sb
 
 ---
 
-## CVS File Importer (VersionedPortable) - IMDG 3
+## CVS File Importer (VersionedPortable) - IMDG 3 and 4
 
 ```console
-install_bundle -download bundle-hazelcast-3np-app-pado
+install_bundle -download bundle-hazelcast-3n4-app-pado
 ```
 
 [![Pado CVS Import Flow Diagram](hazelcast/images/app-pado-import.png)](https://github.com/padogrid/bundle-hazelcast-3n4-app-pado)
