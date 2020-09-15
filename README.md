@@ -27,7 +27,7 @@ For bundle details, see the [Understanding Bundles](https://github.com/padogrid/
 
 ### Creating New Online Bundles
 
-You can use the following bundle templates to quickly create bundle repos. Please see the [Using Bundle Templates](https://github.com/padogrid/padogrid/wiki/Using-Bundle-Templates) section in the PadoGrid manual for details.
+You can use the following bundle templates to quickly create bundle repos. Please see the [Using Bundle Templates](https://github.com/padogrid/padogrid/wiki/Using-Bundle-Templates) section in the [PadoGrid Manual](https://github.com/padogrid/padogrid/wiki) for details.
 
 - [Geode Bundle Template](https://github.com/padogrid/bundle-geode-template)
 - [Hazelcast Bundle Template](https://github.com/padogrid/bundle-hazelcast-template)
