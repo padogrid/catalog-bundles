@@ -160,7 +160,7 @@ install_bundle -download bundle-hazelcast-4-k8s-oc_operator
 install_bundle -download bundle-hazelcast-4-k8s-oc_operator_wan
 ```
 
-[![OC WAN Diagram](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_operator_wan/blob/master/images/oc-wan.jpg)](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_operator_wan)
+[![OC WAN Diagram](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_operator_wan/blob/master/images/oc-operator-wan.jpg)](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_operator_wan)
 
 ---
 
