@@ -134,16 +134,6 @@ install_bundle -download bundle-hazelcast-4-k8s-oc_helm
 
 ---
 
-## Hazelcast OpenShift Operator and PadoGrid - IMDG 4
-
-```console
-install_bundle -download bundle-hazelcast-4-k8s-oc_operator
-```
-
-[![OC Operator Diagram](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_operator/blob/master/images/oc-operator.jpg)](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_operator)
-
----
-
 ## Hazelcast WAN Replication on OpenShift using Helm Charts - IMDG 4
 
 ```console
@@ -151,6 +141,16 @@ install_bundle -download bundle-hazelcast-4-k8s-oc_helm_wan
 ```
 
 [![OC WAN Diagram](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_helm_wan/blob/master/images/oc-helm-wan.jpg)](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_helm_wan)
+
+---
+
+## Hazelcast OpenShift Operator and PadoGrid - IMDG 4
+
+```console
+install_bundle -download bundle-hazelcast-4-k8s-oc_operator
+```
+
+[![OC Operator Diagram](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_operator/blob/master/images/oc-operator.jpg)](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_operator)
 
 ---
 
