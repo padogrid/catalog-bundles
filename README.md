@@ -24,3 +24,12 @@ For bundle details, see the [Understanding Bundles](https://github.com/padogrid/
 - [First, build and install PadoGrid.](https://github.com/padogrid/padogrid/wiki/Building-padogrid)
 - Run the `install_bundle` command shown in the catalogs.
 - Run the `show_bundle` command to view the instructions.
+
+### Creating New Online Bundles
+
+You can use the following bundle templates to quickly create bundle repos. Please see the [Using Bundle Templates](https://github.com/padogrid/padogrid/wiki/Using-Bundle-Templates) section in the PadoGrid manual for details.
+
+- [Geode Bundle Template](https://github.com/padogrid/bundle-geode-template)
+- [Hazelcast Bundle Template](https://github.com/padogrid/bundle-hazelcast-template)
+- [SnappyData Bundle Template](https://github.com/padogrid/bundle-snappydata-template)
+- [Coherence Bundle Template](https://github.com/padogrid/bundle-coherence-template)
