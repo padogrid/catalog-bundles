@@ -14,6 +14,16 @@ install_bundle -download bundle-hazelcast-3-app-perf_test_sb-cluster-sb
 
 ---
 
+## Cluster Split-Brain - IMDG 4
+
+```console
+install_bundle -download bundle-hazelcast-4-app-perf_test_sb-cluster-sb
+```
+
+[![Cluster Split-Brain Diagram](hazelcast/images/split-brain.png)](https://github.com/padogrid/bundle-hazelcast-4-app-perf_test_sb-cluster-sb)
+
+---
+
 ## CVS File Importer (VersionedPortable) - IMDG 3 and 4
 
 ```console
