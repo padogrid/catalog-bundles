@@ -29,6 +29,26 @@ install_bundle -download bundle-geode-1-docker-debezium_kafka
 
 ---
 
+## Debezium-Hive-Kafka Geode Connector - Geode 1.x, GemFire 9.x
+
+```console
+install_bundle -download bundle-geode-1-docker-debezium_hive_kafka
+```
+
+[![Debezium-Hive-Kafka Diagram](https://github.com/padogrid/bundle-geode-1-docker-debezium_hive_kafka/blob/master/images/geode-debezium-hive-kafka.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_hive_kafka)
+
+---
+
+## Debezium-KSQL-Kafka Geode/GemFire Connector - Geode 1.x, GemFire 9.x
+
+```console
+install_bundle -download bundle-geode-1-docker-debezium_ksql_kafka
+```
+
+[![Debezium-KSQL-Kafka Diagram](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksql_kafka/blob/master/images/geode-debezium-ksql-kafka.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksql_kafka)
+
+---
+
 ## Power BI - Geode 1.x, GemFire 9.x
 
 ```console
