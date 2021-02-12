@@ -20,7 +20,7 @@ install_bundle -download bundle-geode-1-app-perf_test_mysql-cluster-mysql
 install_bundle -download bundle-geode-1-docker-debezium_kafka
 ```
 
-[![Debezium-Kafka Diagram](geode/images/debezium-kafka.png)](https://github.com/padogrid/bundle-geode-1-docker-debezium_kafka)
+[![Debezium-Kafka Diagram](https://github.com/padogrid/bundle-geode-1-docker-debezium_kafka/blob/master/images/debezium-kafka.png?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_kafka)
 
 ---
 
