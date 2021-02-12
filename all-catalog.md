@@ -65,7 +65,7 @@ install_bundle -download bundle-geode-1-app-perf_test_powerbi-cluster-powerbi
 install_bundle -download bundle-geode-1-app-perf_test_wan-cluster-ln-ny
 ```
 
-[![WAN Diagram](geode/images/wan-ny-ln.png)](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny)
+[![WAN Diagram](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny/blob/master/images/wan-ny-ln.png?raw=true)](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny)
 
 ---
 
