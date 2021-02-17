@@ -4,8 +4,17 @@ This catalog combines all the online PadoGrid bundles.
 
 The online bundles can be installed by executing the `install_bundle` commands as shown below. To view use case details for each bundle, click on their image.
 
-
 # Geode/GemFire Bundles
+
+---
+
+## Kryo/Avro Code Generator - Geode 1.x, GemFire 9.x
+
+```console
+install_bundle -download bundle-geode-1-app-kryo_codegen
+```
+
+[![Kryo Code Generator Diagram](https://github.com/padogrid/bundle-geode-1-app-kryo_codegen/blob/master/images/geode-app-kryo-codegen.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-app-kryo_codegen)
 
 ---
 
@@ -71,6 +80,16 @@ install_bundle -download bundle-geode-1-app-perf_test_wan-cluster-ln-ny
 
 
 # Hazelcast/Jet Bundles
+
+---
+
+## Kryo/Avro Code Generator - IMDG 4
+
+```console
+install_bundle -download bundle-hazelcast-4-app-kryo_codegen
+```
+
+[![Kryo Code Generator Diagram](https://github.com/padogrid/bundle-hazelcast-4-app-kryo_codegen/blob/master/images/app-kryo-codegen.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-4-app-kryo_codege)
 
 ---
 

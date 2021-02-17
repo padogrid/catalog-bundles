@@ -4,6 +4,16 @@ The online bundles can be installed by executing the `install_bundle` commands a
 
 ---
 
+## Kryo/Avro Code Generator - Geode 1.x, GemFire 9.x
+
+```console
+install_bundle -download bundle-geode-1-app-kryo_codegen
+```
+
+[![Kryo Code Generator Diagram](https://github.com/padogrid/bundle-geode-1-app-kryo_codegen/blob/master/images/geode-app-kryo-codegen.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-app-kryo_codegen)
+
+---
+
 ## DB Sync - Geode 1.x, GemFire 9.x
 
 ```console

@@ -4,6 +4,16 @@ The online bundles can be installed by executing the `install_bundle` commands a
 
 ---
 
+## Kryo/Avro Code Generator - IMDG 4
+
+```console
+install_bundle -download bundle-hazelcast-4-app-kryo_codegen
+```
+
+[![Kryo Code Generator Diagram](https://github.com/padogrid/bundle-hazelcast-4-app-kryo_codegen/blob/master/images/app-kryo-codegen.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-4-app-kryo_codegen)
+
+---
+
 ## Cluster Split-Brain - IMDG 3
 
 ```console
