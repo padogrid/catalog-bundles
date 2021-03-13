@@ -42,7 +42,7 @@ EOF
 fi
 
 PRODUCT_LIST="geode hazelcast snappydata coherence"
-ALL_MD="build/all-catalog.md"
+ALL_MD="all-catalog.md"
 
 for PRODUCT in $PRODUCT_LIST; do
   echo "Generating $PRODUCT..."
