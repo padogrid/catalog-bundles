@@ -1,0 +1,349 @@
+#!/usr/bin/env bash 
+
+# ========================================================================
+# Copyright (c) 2021 Netcrest Technologies, LLC. All rights reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ========================================================================
+
+SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
+. $SCRIPT_DIR/.argenv.sh
+
+EXECUTABLE="`basename $0`"
+BUNDLE_PRODUCT_LIST="gemfire geode hazelcast jet snappydata coherence"
+
+if [ "$HELP" == "true" ]; then
+cat <<EOF
+
+NAME
+   $EXECUTABLE - Update bundle repos in the specified git account
+
+SYNOPSIS
+   $EXECUTABLE [-user git_user_name] [-githost github|gitea] [-all | [-product bundle_product_name] | [-list|-header] ]
+
+DESCRIPTION
+   Updates the bundle catalog. By default, it searches the repos maintained by this repo's user account.
+
+   The user name can be changed by specifying the '-user' option. To include a list of user names,
+   set the 'GITHUB_USERS' environment variable in the '~/.padogrid/seten.sh' file.
+
+OPTIONS
+   -user
+             Git user name. If specified, then the specified user's repos are searched
+             for bundles. 
+
+   -githost
+             Git host. Supported git hosts are 'github' and 'gitea'. Default: github.
+            
+   -all
+             Includes all product bundles available in the remote bundle repo.
+   
+   -product bundle_product_name
+             Search the specified bundle product. Supported bundle product names are: 
+                $BUNDLE_PRODUCT_LIST
+
+   -list
+             Lists product bundles available in the remote bundle repo. If '-all'
+             is specified then it lists bundles available for all products, other wise, it lists
+             bundles for only the the current workspace product.
+
+   -header
+             Lists product bundles along with header information describing each bundle in the
+             remote bundle repo. If '-all' is specified then it lists bundles available
+             for all products, other wise, it lists bundles for only the the current workspace product.
+
+   -console
+             Displays README.md on the console. By default, if this option is not specified,
+             then it displays the README.md file in the browser. If the browser cannot be
+             launched then it displays the README.md file on the console instead.
+
+DEFAULT
+   $EXECUTABLE -user padogrid -githost github -list
+
+EXAMPLES
+   To list remote bundles for the current workspace product:
+      $EXECUTABLE -list
+
+   To list all remote bundles:
+      $EXECUTABLE -list
+
+   To list headers of remote bundles:
+      $EXECUTABLE -header
+
+   To view the bundle (or use case) catalog in the browser:
+      $EXECUTABLE -catalog
+
+   To view a remote bundle help (READEME.md) in the browser:
+      $EXECUTABLE bundle-jet-3-cluster-trade
+
+   To view a remote bundle help (READEME.md) on the console:
+      $EXECUTABLE -console bundle-jet-3-cluster-trade
+
+EOF
+   exit
+fi
+
+HEADER="true"
+
+#
+# Returns trimmed string
+# @param String to trim
+#
+function trimDoubleQuotes
+{
+    echo $1 | sed -e 's/^\"//'  -e 's/\"$//'
+}
+
+if [ "$PRODUCT_ARG" == "hazelcast" ] || [ "$PRODUCT_ARG" == "jet" ] ; then
+  PRODUCT="hazelcast"
+  PRODUCT_NAME="Hazelcast"
+elif [ "$PRODUCT_ARG" == "geode" ] || [ "$PRODUCT_ARG" == "gemfire" ]; then
+  PRODUCT="geode"
+  PRODUCT_NAME="Geode/GemFire"
+elif [ "$PRODUCT_ARG" == "snappydata" ]; then
+  PRODUCT="snappydata"
+  PRODUCT_NAME="SnappyData/ConputeDB"
+elif [ "$PRODUCT_ARG" == "coherence" ]; then
+  PRODUCT="coherence"
+  PRODUCT_NAME="Coherence"
+else
+  PRODUCT="hazelcast"
+  PRODUCT_NAME="Hazelcast"
+fi
+
+CATALOG_YAML=$PRODUCT-catalog.yaml
+CATALOG_JSON=$PRODUCT-catalog.json
+CATALOG_MD=$PRODUCT-catalog.md
+
+GIT_ORIGIN_URL=$(git config --list | grep "remote.origin.url")
+
+# remote.origin.url=git@github.com:padogrid/catalog-bundles.git
+if [ "$GIT_ORIGIN_URL" != "" ]; then
+  URL=$(echo "$GIT_ORIGIN_URL" | sed 's/remote.origin.url=//')
+  GITHUB_USER=$(echo $URL | sed -e 's/.*://' -e 's/\/.*$//')
+else
+  GITHUB_USER="padogrid"
+fi
+
+GITHUB_BASE_URL="https://github.com"
+if [ "$USER" != "" ]; then
+   GITHUB_USER="$USER"
+   GITHUB_USERS="$GITHUB_USER"
+else
+   GITHUB_USERS="padogrid $GITHUB_USERS"
+fi
+
+if [ "$ALL" == "true" ]; then
+   BUNDLE_PRODUCTS="$BUNDLE_PRODUCT_LIST"
+   BUNDLE_PRODUCT="$PRODUCT"
+elif [ "$PRODUCT_ARG" != "" ]; then
+   BUNDLE_PRODUCTS="$PRODUCT_ARG"
+   BUNDLE_PRODUCT="$PRODUCT_ARG"
+else
+   BUNDLE_PRODUCT=$"$PRODUCT"
+   if [ "$PRODUCT" == "hazelcast" ]; then
+      if [ "$CLUSTER_TYPE" == "jet" ]; then
+         BUNDLE_PRODUCTS="jet"
+      else
+         BUNDLE_PRODUCTS="$PRODUCT"
+      fi
+   else
+      BUNDLE_PRODUCTS="$PRODUCT"
+   fi
+fi
+
+if [ "$CATALOG" == "true" ]; then
+   LIST="false"
+   HEADER="false"
+   if [ "$GITHOST" == "gitea" ]; then
+      GITHUB_USER_HOME="$GITEA_HTTPS_URL/$GITHUB_USER"
+      if [ "$ALL" == "true" ]; then
+         CATALOG_URL="$GITHUB_USER_HOME/catalog-bundles/src/branch/master/all-catalog.md"
+      else
+         CATALOG_URL="$GITHUB_USER_HOME/catalog-bundles/src/branch/master/$BUNDLE_PRODUCT-catalog.md"
+      fi
+   else
+      GITHUB_USER_HOME="https://github.com/$GITHUB_USER"
+      if [ "$ALL" == "true" ]; then
+         CATALOG_URL="$GITHUB_USER_HOME/catalog-bundles/blob/master/all-catalog.md"
+      else
+         CATALOG_URL="$GITHUB_USER_HOME/catalog-bundles/blob/master/$BUNDLE_PRODUCT-catalog.md"
+      fi
+   fi
+   BROWSER_URL="${CATALOG_URL}"
+   if [[ ${OS_NAME} == DARWIN* ]]; then
+      open "$BROWSER_URL"
+   elif [[ ${OS_NAME} == CYGWIN* ]] || [ "$(which cmd.exe)" != "" ]; then
+      cmd.exe /c start "" "$BROWSER_URL" > /dev/null 2>&1
+   else
+      HEADER="true"
+      echo "(Catalog: $BROWSER_URL)"
+   fi
+   if [ "$HEADER" == "false" ]; then
+      exit
+   fi
+fi
+
+
+if [ "$ALL" == "true" ]; then
+    LIST="true"
+fi
+if [ "$USER" != "" ]; then
+   LIST="true"
+fi
+
+BUNDLE_FILE_PATH=${@: -1}
+ARG1=${@: -2}
+
+echo ""
+echo "Remote Bundle List"
+echo "------------------"
+echo ""
+
+# GitHub
+for GITHUB_USER in $GITHUB_USERS; do
+  GITHUB_USER_HOME="$GITHUB_BASE_URL/$GITHUB_USER"
+  BUNDLE_REPOS="$GITHUB_USER_HOME?tab=repositories"
+  RAW_BASE_URL="https://raw.githubusercontent.com/$GITHUB_USER"
+
+
+
+  echo -e "(Repo: ${CLightGreen}$GITHUB_USER_HOME${CNone})"
+  echo "catalog:" > $CATALOG_YAML
+  echo "{" > $CATALOG_JSON
+  echo "# :books: $PRODUCT_NAME Bundle Catalog - Use Cases :books:" > $CATALOG_MD
+  echo "" >> $CATALOG_MD
+  echo "The online bundles can be installed by executing the \`install_bundle\` commands as shown below. To view use case details for each bundle, click on their image." >> $CATALOG_MD
+
+
+  ALL_BUNDLE_LIST=""
+  NEXT_URL=$BUNDLE_REPOS
+  let BUNDLE_INDEX=0
+  while [ "$NEXT_URL" != "" ]; do
+     BUFFER=$(curl -sS $NEXT_URL)
+     NEXT_URL=$(echo "$BUFFER" | grep "Next" | grep "$GITHUB_USER_HOME?after=" | sed -e 's/.*href="//' -e 's/">Next.*$//')
+
+     for BUNDLE_PRODUCT in $BUNDLE_PRODUCTS; do
+        HREF=$(echo "$BUFFER" | grep "\/$GITHUB_USER/bundle-${BUNDLE_PRODUCT}\-")
+        BUNDLE_LIST=""
+        for i in $HREF; do
+           if [[ $i == *href=* ]]; then
+               BUNDLE_NAME=$(echo $i | sed -e "s/.*href=\"//" -e  "s/\"//g" -e "s/\/$GITHUB_USER\///")
+               if [[ $BUNDLE_NAME != *\/* ]]; then 
+                  BUNDLE_LIST="$BUNDLE_LIST $BUNDLE_NAME"
+               fi
+           fi
+        done
+        ALL_BUNDLE_LIST="$ALL_BUNDLE_LIST $BUNDLE_LIST"
+        for BUNDLE_NAME in $BUNDLE_LIST; do
+           let BUNDLE_INDEX=BUNDLE_INDEX+1
+           if [ $BUNDLE_INDEX -gt 1 ]; then
+              echo "  }," >> $CATALOG_JSON
+           fi
+           echo -e "[$BUNDLE_INDEX] ${CBrownOrange}${BUNDLE_NAME}${CNone}"
+           echo -e "       (${CUrl}$GITHUB_USER_HOME/$BUNDLE_NAME${CNone})"
+           if [ "$HEADER" == "true" ]; then
+#              RAW_FILE_URL="$RAW_BASE_URL/${BUNDLE_NAME}/master/README_HEADER.md"
+#              echo "    $(curl -sS $RAW_FILE_URL)"
+#              echo ""
+              RAW_README_URL="$RAW_BASE_URL/${BUNDLE_NAME}/master/README.md"
+    
+              BUFFER="$(curl -sS $RAW_README_URL) | head -n 10"
+              TITLE=$(echo "$BUFFER" | head -n 1 | sed 's/^# //')
+              DESCRIPTION=$(echo "$BUFFER" | head -n 3 | sed '1d')
+              echo "$BUFFER" | head -n 3 | sed '1d'
+              DESCRIPTION=$(echo -n $DESCRIPTION)
+#              HEADER=$(echo "$HEADER" | sed '2d')
+              IMAGE_LABEL=$TITLE
+              IMAGE_URL=$(echo "$BUFFER" | grep -m 1 images)
+              IMAGE_URL=$(echo "$IMAGE_URL" | sed -e 's/.*(//' -e 's/)//')
+              if [[ "$IMAGE_URL" == "https"* ]]; then
+                 ABS_IMAGE_URL=$IMAGE_URL
+              else
+                 ABS_IMAGE_URL=$GITHUB_USER_HOME/$BUNDLE_NAME/blob/master/${IMAGE_URL}?raw=true
+              fi
+              BUNDLE_URL="$GITHUB_USER_HOME/$BUNDLE_NAME"
+
+              # Yaml
+              echo ""
+              echo "  - bundle:" >> $CATALOG_YAML
+              echo "      title: $TITLE" >> $CATALOG_YAML
+              echo "      name: $BUNDLE_NAME" >> $CATALOG_YAML
+              echo "      image_label: $IMAGE_LABEL" >> $CATALOG_YAML
+              echo "      image_url: $IMAGE_URL" >> $CATALOG_YAML
+              echo "      url: $BUNDLE_URL" >> $CATALOG_YAML
+              echo "      description: $DESCRIPTION" >> $CATALOG_YAML
+              echo "" >> $CATALOG_YAML
+
+              # JSON
+              echo "  \"$BUNDLE_NAME\":" >> $CATALOG_JSON
+              echo "  {" >> $CATALOG_JSON
+              echo "    \"title\": \"$TITLE\"," >> $CATALOG_JSON
+              echo "    \"image_label\": \"$IMAGE_LABEL\"," >> $CATALOG_JSON
+              echo "    \"image_url\": \"$IMAGE_URL\"," >> $CATALOG_JSON
+              echo "    \"url\": \"$BUNDLE_URL\"," >> $CATALOG_JSON
+              echo "    \"description\": \"$DESCRIPTION\"" >> $CATALOG_JSON
+
+              # MD
+  #            echo "" >> $CATALOG_MD
+  #            echo "---" >> $CATALOG_MD
+  #            echo "## $TITLE" >> $CATALOG_MD
+  #            echo "" >> $CATALOG_MD
+  #            echo "$DESCRIPTION" >> $CATALOG_MD
+  #            echo "" >> $CATALOG_MD
+  #            echo "\`\`\`bash" >> $CATALOG_MD
+  #            echo "install_bundle -download $BUNDLE_NAME" >> $CATALOG_MD
+  #            echo "\`\`\`" >> $CATALOG_MD
+  #            echo "" >> $CATALOG_MD
+  #            echo "[![$IMAGE_LABEL]($ABS_IMAGE_URL)]($BUNDLE_URL)" >> $CATALOG_MD
+
+           fi
+        done
+     done
+  done
+  if [ $BUNDLE_INDEX -gt 0 ]; then
+     echo "  }" >> $CATALOG_JSON
+  fi
+  echo "}" >> $CATALOG_JSON
+  echo "---------------------------------------------------------------------------"
+  echo ""
+done
+
+SORTED_ALL_BUNDLE_LIST=$(echo $ALL_BUNDLE_LIST | tr ' ' '\n' | sort | tr '\n' ' ')
+for BUNDLE_NAME in $SORTED_ALL_BUNDLE_LIST; do
+  BUNDLE_JSON=$(cat $CATALOG_JSON | jq .\"$BUNDLE_NAME\")
+  TITLE=$(trimDoubleQuotes "$(echo $BUNDLE_JSON | jq .title)")
+  IMAGE_LABEL=$(trimDoubleQuotes "$(echo $BUNDLE_JSON | jq .image_label)")
+  IMAGE_URL=$(trimDoubleQuotes "$(echo $BUNDLE_JSON | jq .image_url)")
+  BUNDLE_URL=$(trimDoubleQuotes "$(echo $BUNDLE_JSON | jq .url)")
+  DESCRIPTION=$(trimDoubleQuotes "$(echo $BUNDLE_JSON | jq .description)")
+  if [[ "$IMAGE_URL" == "https"* ]]; then
+     ABS_IMAGE_URL=$IMAGE_URL
+  else
+     ABS_IMAGE_URL=$GITHUB_USER_HOME/$BUNDLE_NAME/blob/master/${IMAGE_URL}?raw=true
+  fi
+
+  # MD
+  echo "" >> $CATALOG_MD
+  echo "---" >> $CATALOG_MD
+  echo "## $TITLE" >> $CATALOG_MD
+  echo "" >> $CATALOG_MD
+  echo "$DESCRIPTION" >> $CATALOG_MD
+  echo "" >> $CATALOG_MD
+  echo "\`\`\`bash" >> $CATALOG_MD
+  echo "install_bundle -download $BUNDLE_NAME" >> $CATALOG_MD
+  echo "\`\`\`" >> $CATALOG_MD
+  echo "" >> $CATALOG_MD
+  echo "[![$IMAGE_LABEL]($ABS_IMAGE_URL)]($BUNDLE_URL)" >> $CATALOG_MD
+done
+

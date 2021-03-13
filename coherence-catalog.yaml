@@ -1,0 +1,9 @@
+catalog:
+  - bundle:
+      title: Coherence Bundle Template
+      name: bundle-coherence-template
+      image_label: Coherence Bundle Template
+      image_url: 
+      url: https://github.com/padogrid/bundle-coherence-template
+      description: This bundle serves as a template for creating a new Coherence onlne bundle.
+
