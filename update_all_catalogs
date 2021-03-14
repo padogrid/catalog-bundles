@@ -49,13 +49,21 @@ for PRODUCT in $PRODUCT_LIST; do
   ./update_catalog -header -product $PRODUCT
 done
 
+GEODE_HEADER="[Geode/GemFireBundle Catalog](#books-geodegemfire-bundle-catalog---use-cases-books)"
+HAZELCAST_HEADER="[Hazelcast Bundle Catalog](#books-hazelcast-bundle-catalog---use-cases-books)"
+SNAPPYDATA_HEADER="[SnappyData/ComputeDB Bundle Catalog](#books-snappydataconputedb-bundle-catalog---use-cases-books)"
+COHERENCE_HEADER="[Coherence Bundle Catalog](#books-coherence-bundle-catalog---use-cases-books)"
+
 # Generate combined catalog
 echo "Generating combined catalog..."
-echo "# :earth_americas: Combined Catalog - Use Cases :earth_americas:" > $ALL_MD
+echo "# :earth_americas: PadoGrid Combined Bundle Catalog - Use Cases :earth_americas:" > $ALL_MD
 echo "" >> $ALL_MD
-echo "This catalog combines all the online PadoGrid bundles." >> $ALL_MD
+echo "This catalog combines all the online PadoGrid bundles. The bundles in each data grid product are grouped as follows." >> $ALL_MD
 echo "" >> $ALL_MD
-echo "The online bundles can be installed by executing the \`install_bundle\` commands as shown below. To view use case details for each bundle, click on their image." >> $ALL_MD
+echo "- $GEODE_HEADER" >> $ALL_MD
+echo "- $HAZELCAST_HEADER" >> $ALL_MD
+echo "- $SNAPPYDATA_HEADER" >> $ALL_MD
+echo "- $COHERENCE_HEADER" >> $ALL_MD
 for PRODUCT in $PRODUCT_LIST; do
     echo "" >> $ALL_MD
     echo "---" >> $ALL_MD

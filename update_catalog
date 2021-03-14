@@ -205,6 +205,9 @@ fi
 BUNDLE_FILE_PATH=${@: -1}
 ARG1=${@: -2}
 
+HEADER1="The online bundles can be installed by executing the \`install_bundle\` commands as shown below. To view use case details for each bundle, click on their image."
+HEADER2="*The bundles listed below are sorted by bundle names, and as such, the order of bundles may change as new bundles are introduced.*"
+
 echo ""
 echo "Remote Bundle List"
 echo "------------------"
@@ -217,14 +220,14 @@ for GITHUB_USER in $GITHUB_USERS; do
   RAW_BASE_URL="https://raw.githubusercontent.com/$GITHUB_USER"
 
 
-
   echo -e "(Repo: ${CLightGreen}$GITHUB_USER_HOME${CNone})"
   echo "catalog:" > $CATALOG_YAML
   echo "{" > $CATALOG_JSON
   echo "# :books: $PRODUCT_NAME Bundle Catalog - Use Cases :books:" > $CATALOG_MD
   echo "" >> $CATALOG_MD
-  echo "The online bundles can be installed by executing the \`install_bundle\` commands as shown below. To view use case details for each bundle, click on their image." >> $CATALOG_MD
-
+  echo "$HEADER1" >> $CATALOG_MD
+  echo "" >> $CATALOG_MD
+  echo "$HEADER2" >> $CATALOG_MD
 
   ALL_BUNDLE_LIST=""
   NEXT_URL=$BUNDLE_REPOS
@@ -320,6 +323,7 @@ for GITHUB_USER in $GITHUB_USERS; do
 done
 
 SORTED_ALL_BUNDLE_LIST=$(echo $ALL_BUNDLE_LIST | tr ' ' '\n' | sort | tr '\n' ' ')
+let INDEX=0
 for BUNDLE_NAME in $SORTED_ALL_BUNDLE_LIST; do
   BUNDLE_JSON=$(cat $CATALOG_JSON | jq .\"$BUNDLE_NAME\")
   TITLE=$(trimDoubleQuotes "$(echo $BUNDLE_JSON | jq .title)")
@@ -334,9 +338,10 @@ for BUNDLE_NAME in $SORTED_ALL_BUNDLE_LIST; do
   fi
 
   # MD
+  let INDEX=INDEX+1
   echo "" >> $CATALOG_MD
   echo "---" >> $CATALOG_MD
-  echo "## $TITLE" >> $CATALOG_MD
+  echo "## ${INDEX}. $TITLE" >> $CATALOG_MD
   echo "" >> $CATALOG_MD
   echo "$DESCRIPTION" >> $CATALOG_MD
   echo "" >> $CATALOG_MD
