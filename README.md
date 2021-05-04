@@ -3,7 +3,8 @@
 This repo provides online catalogs of PadoGrid bundles that are readily available for installation.
 
 - [Geode/GemFire Bundle Catalog](geode-catalog.md)
-- [Hazelcast/Jet Bundle Catalog](hazelcast-catalog.md)
+- [Hazelcast IMDG Bundle Catalog](hazelcast-catalog.md)
+- [Hazelcast Jet Bundle Catalog](jet-catalog.md)
 - [SnappyData/ComputeDB Catalog](snappydata-catalog.md)
 - [Coherence Catalog](coherence-catalog.md)
 - [Combined Bundle Catalog](all-catalog.md)

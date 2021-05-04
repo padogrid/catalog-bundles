@@ -1,11 +1,19 @@
 {
-  "bundle-hazelcast-3n4-docker-debezium_hive_kafka":
+  "bundle-hazelcast-3n4-app-pado":
   {
-    "title": "Debezium-Hive-Kafka Hazelcast Connector",
-    "image_label": "Debezium-Hive-Kafka Hazelcast Connector",
-    "image_url": "images/debezium-hive-kafka.jpg",
-    "url": "https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_hive_kafka",
-    "description": "This bundle integrates Hazelcast with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes."
+    "title": "App: Pado",
+    "image_label": "App: Pado",
+    "image_url": "images/app-pado-import.png",
+    "url": "https://github.com/padogrid/bundle-hazelcast-3n4-app-pado",
+    "description": "The pado app provides a Hazelcast `Portable` class generator and CSV file import tools for Hazelcast. This bundle includes step-by-step instructions for ingesting mock data and UCI Machine Learning datasets into Hazelcast. It also includes a Pado scheduler demo that automates scheduled job executions for exporting and importing data from databases."
+  },
+  "bundle-hazelcast-4-app-perf_test_sb-cluster-sb":
+  {
+    "title": "Cluster Split-Brain",
+    "image_label": "Cluster Split-Brain",
+    "image_url": "images/split-brain.png",
+    "url": "https://github.com/padogrid/bundle-hazelcast-4-app-perf_test_sb-cluster-sb",
+    "description": "This bundle provides scripts, configuration files, and apps for creating a Hazelcast 4.x network split-brain environment where you can test Hazelcast's split-brain capabilities."
   },
   "bundle-hazelcast-4-app-kryo_codegen":
   {
@@ -14,6 +22,22 @@
     "image_url": "images/app-kryo-codegen.jpg",
     "url": "https://github.com/padogrid/bundle-hazelcast-4-app-kryo_codegen",
     "description": "This bundle provides step-by-step instructions for generating and deploying Avro and `KryoSerializer` in Hazelcast. Using PadoGrid's code generator, you can on the fly generate and deploy Avro wrapper classes and the correspoinding Kryo serializer."
+  },
+  "bundle-hazelcast-4-k8s-oc_helm":
+  {
+    "title": "Hazelcast OpenShift Helm Charts",
+    "image_label": "Hazelcast OpenShift Helm Charts",
+    "image_url": "images/oc-helm.jpg",
+    "url": "https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_helm",
+    "description": "This bundle deploys Hazelcast using Helm Charts with Prometheus metrics enabled. It also includes the PadoGrid container for ingesting mock data into the Hazelcast cluster."
+  },
+  "bundle-hazelcast-3n4-docker-debezium_hive_kafka":
+  {
+    "title": "Debezium-Hive-Kafka Hazelcast Connector",
+    "image_label": "Debezium-Hive-Kafka Hazelcast Connector",
+    "image_url": "images/debezium-hive-kafka.jpg",
+    "url": "https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_hive_kafka",
+    "description": "This bundle integrates Hazelcast with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes."
   },
   "bundle-hazelcast-3n4-docker-debezium_ksql_kafka":
   {
@@ -38,22 +62,6 @@
     "image_url": "https://github.com/padogrid/bundle-hazelcast-4-app-perf_test_sb-cluster-sb/blob/master/images/split-brain.png?raw=true",
     "url": "https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_sb-cluster-sb",
     "description": "This bundle provides scripts, configuration files, and apps for creating a network split-brain environment where you can test Hazelcast's split-brain capabilities."
-  },
-  "bundle-hazelcast-4-app-perf_test_sb-cluster-sb":
-  {
-    "title": "Cluster Split-Brain",
-    "image_label": "Cluster Split-Brain",
-    "image_url": "images/split-brain.png",
-    "url": "https://github.com/padogrid/bundle-hazelcast-4-app-perf_test_sb-cluster-sb",
-    "description": "This bundle provides scripts, configuration files, and apps for creating a Hazelcast 4.x network split-brain environment where you can test Hazelcast's split-brain capabilities."
-  },
-  "bundle-hazelcast-4-k8s-oc_helm":
-  {
-    "title": "Hazelcast OpenShift Helm Charts",
-    "image_label": "Hazelcast OpenShift Helm Charts",
-    "image_url": "images/oc-helm.jpg",
-    "url": "https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_helm",
-    "description": "This bundle deploys Hazelcast using Helm Charts with Prometheus metrics enabled. It also includes the PadoGrid container for ingesting mock data into the Hazelcast cluster."
   },
   "bundle-hazelcast-training-3n4-app-perf_test_ssl-cluster-ssl":
   {
@@ -110,14 +118,6 @@
     "image_url": "/images/db-sync.png",
     "url": "https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_db-cluster-db",
     "description": "The `db` bundle is preconfigured to synchronize Hazelcast with MySQL running on `localhost`. It includes the `db` cluster and `perf_test_db` app to read/write from/to Hazelcast and MySQL. It also includes instructions for replacing MySQL with another database."
-  },
-  "bundle-hazelcast-3n4-app-pado":
-  {
-    "title": "App: Pado",
-    "image_label": "App: Pado",
-    "image_url": "images/app-pado-import.png",
-    "url": "https://github.com/padogrid/bundle-hazelcast-3n4-app-pado",
-    "description": "The pado app provides a Hazelcast `Portable` class generator and CSV file import tools for Hazelcast. This bundle includes step-by-step instructions for ingesting mock data and UCI Machine Learning datasets into Hazelcast. It also includes a Pado scheduler demo that automates scheduled job executions for exporting and importing data from databases."
   },
   "bundle-hazelcast-4-k8s-oc_operator":
   {

@@ -104,9 +104,12 @@ function trimDoubleQuotes
     echo $1 | sed -e 's/^\"//'  -e 's/\"$//'
 }
 
-if [ "$PRODUCT_ARG" == "hazelcast" ] || [ "$PRODUCT_ARG" == "jet" ] ; then
+if [ "$PRODUCT_ARG" == "hazelcast" ]; then
   PRODUCT="hazelcast"
-  PRODUCT_NAME="Hazelcast"
+  PRODUCT_NAME="Hazelcast IMDG"
+elif [ "$PRODUCT_ARG" == "jet" ] ; then
+  PRODUCT="jet"
+  PRODUCT_NAME="Hazelcast Jet"
 elif [ "$PRODUCT_ARG" == "geode" ] || [ "$PRODUCT_ARG" == "gemfire" ]; then
   PRODUCT="geode"
   PRODUCT_NAME="Geode/GemFire"
