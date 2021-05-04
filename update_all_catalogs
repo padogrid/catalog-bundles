@@ -50,8 +50,8 @@ for PRODUCT in $PRODUCT_LIST; do
 done
 
 GEODE_HEADER="[Geode/GemFireBundle Catalog](#books-geodegemfire-bundle-catalog---use-cases-books)"
-HAZELCAST_HEADER="[Hazelcast IMDG Bundle Catalog](#books-hazelcast-bundle-catalog---use-cases-books)"
-JET_HEADER="[Hazelcast Jet Bundle Catalog](#books-jet-bundle-catalog---use-cases-books)"
+HAZELCAST_HEADER="[Hazelcast IMDG Bundle Catalog](#books-hazelcast-imdg-bundle-catalog---use-cases-books)"
+JET_HEADER="[Hazelcast Jet Bundle Catalog](#books-hazelcast-jet-bundle-catalog---use-cases-books)"
 SNAPPYDATA_HEADER="[SnappyData/ComputeDB Bundle Catalog](#books-snappydataconputedb-bundle-catalog---use-cases-books)"
 COHERENCE_HEADER="[Coherence Bundle Catalog](#books-coherence-bundle-catalog---use-cases-books)"
 

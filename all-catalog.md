@@ -3,8 +3,8 @@
 This catalog combines all the online PadoGrid bundles. The bundles in each data grid product are grouped as follows.
 
 - [Geode/GemFireBundle Catalog](#books-geodegemfire-bundle-catalog---use-cases-books)
-- [Hazelcast IMDG Bundle Catalog](#books-hazelcast-bundle-catalog---use-cases-books)
-- [Hazelcast Jet Bundle Catalog](#books-jet-bundle-catalog---use-cases-books)
+- [Hazelcast IMDG Bundle Catalog](#books-hazelcast-imdg-bundle-catalog---use-cases-books)
+- [Hazelcast Jet Bundle Catalog](#books-hazelcast-jet-bundle-catalog---use-cases-books)
 - [SnappyData/ComputeDB Bundle Catalog](#books-snappydataconputedb-bundle-catalog---use-cases-books)
 - [Coherence Bundle Catalog](#books-coherence-bundle-catalog---use-cases-books)
 
