@@ -26,16 +26,23 @@ if [ "$HELP" == "true" ]; then
 cat <<EOF
 
 NAME
-   $EXECUTABLE - Update bundle repos in the specified git account
+   $EXECUTABLE - Generate catalog files for the specified product
 
 SYNOPSIS
-   $EXECUTABLE [-user git_user_name] [-githost github|gitea] [-all | [-product bundle_product_name] | [-list|-header] ]
+   $EXECUTABLE [-user git_user_name] [-githost github|gitea] [-product product_name]
 
 DESCRIPTION
-   Updates the bundle catalog. By default, it searches the repos maintained by this repo's user account.
+   Generates cattalog files for the specified products. By default, it searches the repos maintained
+   by this repo's user account.
 
    The user name can be changed by specifying the '-user' option. To include a list of user names,
    set the 'GITHUB_USERS' environment variable in the '~/.padogrid/seten.sh' file.
+
+   It generates the following files:
+
+      1. <product_name>-catalog.yaml      
+      2. <product_name>-catalog.json
+      3. <product_name>-catalog.md
 
 OPTIONS
    -user
@@ -45,49 +52,25 @@ OPTIONS
    -githost
              Git host. Supported git hosts are 'github' and 'gitea'. Default: github.
             
-   -all
-             Includes all product bundles available in the remote bundle repo.
-   
-   -product bundle_product_name
-             Search the specified bundle product. Supported bundle product names are: 
-                $BUNDLE_PRODUCT_LIST
+   -product product_name
+             Product name. Supported product names are
 
-   -list
-             Lists product bundles available in the remote bundle repo. If '-all'
-             is specified then it lists bundles available for all products, other wise, it lists
-             bundles for only the the current workspace product.
+             $BUNDLE_PRODUCT_LIST
+
+             Default: hazelcast
 
    -header
              Lists product bundles along with header information describing each bundle in the
              remote bundle repo. If '-all' is specified then it lists bundles available
              for all products, other wise, it lists bundles for only the the current workspace product.
 
-   -console
-             Displays README.md on the console. By default, if this option is not specified,
-             then it displays the README.md file in the browser. If the browser cannot be
-             launched then it displays the README.md file on the console instead.
-
 DEFAULT
-   $EXECUTABLE -user padogrid -githost github -list
+   $EXECUTABLE -user padogrid -githost github -product hazelcast
 
 EXAMPLES
-   To list remote bundles for the current workspace product:
-      $EXECUTABLE -list
+   To generate files for geode
 
-   To list all remote bundles:
-      $EXECUTABLE -list
-
-   To list headers of remote bundles:
-      $EXECUTABLE -header
-
-   To view the bundle (or use case) catalog in the browser:
-      $EXECUTABLE -catalog
-
-   To view a remote bundle help (READEME.md) in the browser:
-      $EXECUTABLE bundle-jet-3-cluster-trade
-
-   To view a remote bundle help (READEME.md) on the console:
-      $EXECUTABLE -console bundle-jet-3-cluster-trade
+      $EXECUTABLE -product geode
 
 EOF
    exit
