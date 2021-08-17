@@ -32,7 +32,7 @@ SYNOPSIS
    $EXECUTABLE [-user git_user_name] [-githost github|gitea] [-product product_name]
 
 DESCRIPTION
-   Generates cattalog files for the specified products. By default, it searches the repos maintained
+   Generates catalog files for the specified products. By default, it searches the repos maintained
    by this repo's user account.
 
    The user name can be changed by specifying the '-user' option. To include a list of user names,
