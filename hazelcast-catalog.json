@@ -134,13 +134,5 @@
     "image_url": "/images/db-sched.png",
     "url": "https://github.com/padogrid/bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched",
     "description": "The `dbsched` bundle is preconfigured with the Pado scheduler to periodically execute jobs that dump database tables to CSV files from which it automatically extracts column information to generate the corresponding `VersionedPortable` classes. It then transforms the CSV records to objects using the generated classes before ingesting them into Hazelcast."
-  },
-  "bundle-hazelcast-3-app-perf_test_db-cluster-db":
-  {
-    "title": "Bundle: db",
-    "image_label": "Bundle: db",
-    "image_url": "/images/db-sync.png",
-    "url": "https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_db-cluster-db",
-    "description": "The `db` bundle is preconfigured to synchronize Hazelcast with MySQL running on `localhost`. It includes the `db` cluster and `perf_test_db` app to read/write from/to Hazelcast and MySQL. It also includes instructions for replacing MySQL with another database."
   }
 }
