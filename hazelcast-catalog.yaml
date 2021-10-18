@@ -1,5 +1,21 @@
 catalog:
   - bundle:
+      title: Debezium-Kafka Hazelcast Connector
+      name: bundle-hazelcast-3n4n5-docker-debezium_kafka
+      image_label: Debezium-Kafka Hazelcast Connector
+      image_url: images/debezium-kafka.png
+      url: https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_kafka
+      description: This bundle integrates Hazelcast with Debezium for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
+
+  - bundle:
+      title: Debezium-Hive-Kafka Hazelcast Connector
+      name: bundle-hazelcast-3n4n5-docker-debezium_hive_kafka
+      image_label: Debezium-Hive-Kafka Hazelcast Connector
+      image_url: images/debezium-hive-kafka.jpg
+      url: https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_hive_kafka
+      description: This bundle integrates Hazelcast with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
+
+  - bundle:
       title: Debezium-KSQL-Kafka Hazelcast Connector
       name: bundle-hazelcast-3n4n5-docker-debezium_ksql_kafka
       image_label: Debezium-KSQL-Kafka Hazelcast Connector
@@ -102,22 +118,6 @@ catalog:
       image_url: images/app-pado-import.png
       url: https://github.com/padogrid/bundle-hazelcast-3n4n5-app-pado
       description: The pado app provides a Hazelcast `Portable` class generator and CSV file import tools for Hazelcast. This bundle includes step-by-step instructions for ingesting mock data and UCI Machine Learning datasets into Hazelcast. It also includes a Pado scheduler demo that automates scheduled job executions for exporting and importing data from databases.
-
-  - bundle:
-      title: Debezium-Kafka Hazelcast Connector
-      name: bundle-hazelcast-3n4-docker-debezium_kafka
-      image_label: Debezium-Kafka Hazelcast Connector
-      image_url: /images/debezium-kafka.png
-      url: https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_kafka
-      description: This bundle integrates Hazelcast with Debezium for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
-
-  - bundle:
-      title: Debezium-Hive-Kafka Hazelcast Connector
-      name: bundle-hazelcast-3n4-docker-debezium_hive_kafka
-      image_label: Debezium-Hive-Kafka Hazelcast Connector
-      image_url: images/debezium-hive-kafka.jpg
-      url: https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_hive_kafka
-      description: This bundle integrates Hazelcast with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
 
   - bundle:
       title: Cluster Split-Brain

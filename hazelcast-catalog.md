@@ -27,29 +27,7 @@ install_bundle -download bundle-hazelcast-3-app-perf_test_sb-cluster-sb
 [![Cluster Split-Brain](https://github.com/padogrid/bundle-hazelcast-4-app-perf_test_sb-cluster-sb/blob/master/images/split-brain.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_sb-cluster-sb)
 
 ---
-## 3. Debezium-Hive-Kafka Hazelcast Connector
-
-This bundle integrates Hazelcast with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
-
-```bash
-install_bundle -download bundle-hazelcast-3n4-docker-debezium_hive_kafka
-```
-
-[![Debezium-Hive-Kafka Hazelcast Connector](https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_hive_kafka/blob/master/images/debezium-hive-kafka.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_hive_kafka)
-
----
-## 4. Debezium-Kafka Hazelcast Connector
-
-This bundle integrates Hazelcast with Debezium for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
-
-```bash
-install_bundle -download bundle-hazelcast-3n4-docker-debezium_kafka
-```
-
-[![Debezium-Kafka Hazelcast Connector](https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_kafka/blob/master//images/debezium-kafka.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-3n4-docker-debezium_kafka)
-
----
-## 5. App: Pado
+## 3. App: Pado
 
 The pado app provides a Hazelcast `Portable` class generator and CSV file import tools for Hazelcast. This bundle includes step-by-step instructions for ingesting mock data and UCI Machine Learning datasets into Hazelcast. It also includes a Pado scheduler demo that automates scheduled job executions for exporting and importing data from databases.
 
@@ -60,7 +38,7 @@ install_bundle -download bundle-hazelcast-3n4n5-app-pado
 [![App: Pado](https://github.com/padogrid/bundle-hazelcast-3n4n5-app-pado/blob/master/images/app-pado-import.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-3n4n5-app-pado)
 
 ---
-## 6. Bundle: MySQL Sync
+## 4. Bundle: MySQL Sync
 
 This bundle is preconfigured to synchronize Hazelcast with MySQL running as a Docker container. It includes the `db` cluster app to read/write from/to Hazelcast and MySQL. It also includes instructions for replacing MySQL with another database.
 
@@ -69,6 +47,28 @@ install_bundle -download bundle-hazelcast-3n4n5-docker-dbsync_mysql
 ```
 
 [![Bundle: MySQL Sync](https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-dbsync_mysql/blob/master/images/mysql-sync.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-dbsync_mysql)
+
+---
+## 5. Debezium-Hive-Kafka Hazelcast Connector
+
+This bundle integrates Hazelcast with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
+
+```bash
+install_bundle -download bundle-hazelcast-3n4n5-docker-debezium_hive_kafka
+```
+
+[![Debezium-Hive-Kafka Hazelcast Connector](https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_hive_kafka/blob/master/images/debezium-hive-kafka.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_hive_kafka)
+
+---
+## 6. Debezium-Kafka Hazelcast Connector
+
+This bundle integrates Hazelcast with Debezium for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
+
+```bash
+install_bundle -download bundle-hazelcast-3n4n5-docker-debezium_kafka
+```
+
+[![Debezium-Kafka Hazelcast Connector](https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_kafka/blob/master/images/debezium-kafka.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_kafka)
 
 ---
 ## 7. Debezium-KSQL-Kafka Hazelcast Connector
