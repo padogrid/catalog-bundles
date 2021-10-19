@@ -87,10 +87,10 @@ install_bundle -download bundle-hazelcast-3n4n5-docker-debezium_ksql_kafka
 This bundle deploys Hazelcast using Helm Charts with Prometheus metrics enabled. It also includes the PadoGrid container for ingesting mock data into the Hazelcast cluster.
 
 ```bash
-install_bundle -download bundle-hazelcast-4-k8s-oc_helm
+install_bundle -download bundle-hazelcast-3n4n5-k8s-oc_helm
 ```
 
-[![Hazelcast OpenShift Helm Charts](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_helm/blob/master/images/oc-helm.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_helm)
+[![Hazelcast OpenShift Helm Charts](https://github.com/padogrid/bundle-hazelcast-3n4n5-k8s-oc_helm/blob/master/images/oc-helm.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-3n4n5-k8s-oc_helm)
 
 ---
 ## 9. Hazelcast WAN Replication on OpenShift using Helm Charts
@@ -98,10 +98,10 @@ install_bundle -download bundle-hazelcast-4-k8s-oc_helm
 This bundle demonstrates the Hazelcast WAN topology by replicating data between two (2) Hazlecast Helm Chart clusters running on OpenShift.
 
 ```bash
-install_bundle -download bundle-hazelcast-4-k8s-oc_helm_wan
+install_bundle -download bundle-hazelcast-3n4n5-k8s-oc_helm_wan
 ```
 
-[![Hazelcast WAN Replication on OpenShift using Helm Charts](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_helm_wan/blob/master/images/oc-helm-wan.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_helm_wan)
+[![Hazelcast WAN Replication on OpenShift using Helm Charts](https://github.com/padogrid/bundle-hazelcast-3n4n5-k8s-oc_helm_wan/blob/master/images/oc-helm-wan.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-3n4n5-k8s-oc_helm_wan)
 
 ---
 ## 10. Hazelcast OpenShift Operator

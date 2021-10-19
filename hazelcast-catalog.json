@@ -1,4 +1,20 @@
 {
+  "bundle-hazelcast-3n4n5-k8s-oc_helm_wan":
+  {
+    "title": "Hazelcast WAN Replication on OpenShift using Helm Charts",
+    "image_label": "Hazelcast WAN Replication on OpenShift using Helm Charts",
+    "image_url": "images/oc-helm-wan.jpg",
+    "url": "https://github.com/padogrid/bundle-hazelcast-3n4n5-k8s-oc_helm_wan",
+    "description": "This bundle demonstrates the Hazelcast WAN topology by replicating data between two (2) Hazlecast Helm Chart clusters running on OpenShift."
+  },
+  "bundle-hazelcast-3n4n5-k8s-oc_helm":
+  {
+    "title": "Hazelcast OpenShift Helm Charts",
+    "image_label": "Hazelcast OpenShift Helm Charts",
+    "image_url": "images/oc-helm.jpg",
+    "url": "https://github.com/padogrid/bundle-hazelcast-3n4n5-k8s-oc_helm",
+    "description": "This bundle deploys Hazelcast using Helm Charts with Prometheus metrics enabled. It also includes the PadoGrid container for ingesting mock data into the Hazelcast cluster."
+  },
   "bundle-hazelcast-3n4n5-docker-debezium_kafka":
   {
     "title": "Debezium-Kafka Hazelcast Connector",
@@ -86,22 +102,6 @@
     "image_url": "images/oc-operator.jpg",
     "url": "https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_operator",
     "description": "This bundle contains OpenShift operator configuration files for deploying Hazelcast and PadoGrid. Hazelcast is deployed using the Hazelcast Operator downloaded from the 'hazelcast/hazelcast-operator' repo."
-  },
-  "bundle-hazelcast-4-k8s-oc_helm_wan":
-  {
-    "title": "Hazelcast WAN Replication on OpenShift using Helm Charts",
-    "image_label": "Hazelcast WAN Replication on OpenShift using Helm Charts",
-    "image_url": "images/oc-helm-wan.jpg",
-    "url": "https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_helm_wan",
-    "description": "This bundle demonstrates the Hazelcast WAN topology by replicating data between two (2) Hazlecast Helm Chart clusters running on OpenShift."
-  },
-  "bundle-hazelcast-4-k8s-oc_helm":
-  {
-    "title": "Hazelcast OpenShift Helm Charts",
-    "image_label": "Hazelcast OpenShift Helm Charts",
-    "image_url": "images/oc-helm.jpg",
-    "url": "https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_helm",
-    "description": "This bundle deploys Hazelcast using Helm Charts with Prometheus metrics enabled. It also includes the PadoGrid container for ingesting mock data into the Hazelcast cluster."
   },
   "bundle-hazelcast-3n4n5-docker-dbsync_mysql":
   {
