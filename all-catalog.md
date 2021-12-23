@@ -256,7 +256,18 @@ install_bundle -download bundle-hazelcast-4n5-app-perf_test_sb-cluster-sb
 [![Cluster Split-Brain](https://github.com/padogrid/bundle-hazelcast-4n5-app-perf_test_sb-cluster-sb/blob/master/images/split-brain.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-4n5-app-perf_test_sb-cluster-sb)
 
 ---
-## 14. Hazelcast Bundle Template
+## 14. Session Expiration Management Plugin
+
+This bundle provides a plugin that expires session objects in a given map and their relevant entries in other Hazelcast maps.
+
+```bash
+install_bundle -download bundle-hazelcast-4n5-cluster-session
+```
+
+[![Session Expiration Management Plugin](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session/blob/master/images/session.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session)
+
+---
+## 15. Hazelcast Bundle Template
 
 This bundle serves as a template for creating a new Hazelcast onlne bundle.
 
@@ -267,7 +278,7 @@ install_bundle -download bundle-hazelcast-template
 [![Hazelcast Bundle Template](https://github.com/padogrid/bundle-hazelcast-template/blob/master/?raw=true)](https://github.com/padogrid/bundle-hazelcast-template)
 
 ---
-## 15. Rolling Upgrade Training
+## 16. Rolling Upgrade Training
 
 As part of the Rolling Upgrade lab of Hazelcast Operations Training, this bundle includes a cluster and an app preconfigured to run with Hazelcast Enterprise 3.11.x which must be installed separately.
 
@@ -278,7 +289,7 @@ install_bundle -download bundle-hazelcast-training-3.11-app-perf_test_v3.11-clus
 [![Rolling Upgrade Training](https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11/blob/master/?raw=true)](https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11)
 
 ---
-## 16. IMDG Cluster: openssl
+## 17. IMDG Cluster: openssl
 
 As part of the TLS/SSL lab of Hazelcast Operations Training, this bundle includes the `openssl` cluster preconfigured to enable OpenSSL/BoringSSL.
 
@@ -289,7 +300,7 @@ install_bundle -download bundle-hazelcast-training-3n4n5-app-perf_test_openssl-c
 [![IMDG Cluster: openssl](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl/blob/master/images/openssl-cluster.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl)
 
 ---
-## 17. IMDG Cluster: ssl
+## 18. IMDG Cluster: ssl
 
 As part of the TLS/SSL lab of Hazelcast Operations Training, the `ssl` cluster has been preconfigured to enable SSL. It contains scripts to create both private and trust keystores that contain both member and client keys and certificates.
 
