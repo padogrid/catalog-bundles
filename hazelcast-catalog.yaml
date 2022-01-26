@@ -1,5 +1,37 @@
 catalog:
   - bundle:
+      title: Debezium-Kafka Hazelcast Connector
+      name: bundle-hazelcast-3n4n5-docker-debezium_kafka
+      image_label: Debezium-Kafka Hazelcast Connector
+      image_url: images/debezium-kafka.png
+      url: https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_kafka
+      description: This bundle integrates Hazelcast with Debezium for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
+
+  - bundle:
+      title: Debezium-KSQL-Kafka Hazelcast Connector
+      name: bundle-hazelcast-3n4n5-docker-debezium_ksql_kafka
+      image_label: Debezium-KSQL-Kafka Hazelcast Connector
+      image_url: images/debezium-ksql-kafka.jpg
+      url: https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_ksql_kafka
+      description: This bundle integrates Hazelcast with Debezium and Confluent KSQL and ksqlDB for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
+
+  - bundle:
+      title: Hazelcast Bundle Template
+      name: bundle-hazelcast-template
+      image_label: Hazelcast Bundle Template
+      image_url: 
+      url: https://github.com/padogrid/bundle-hazelcast-template
+      description: This bundle serves as a template for creating a new Hazelcast onlne bundle.
+
+  - bundle:
+      title: Debezium-Hive-Kafka Hazelcast Connector
+      name: bundle-hazelcast-3n4n5-docker-debezium_hive_kafka
+      image_label: Debezium-Hive-Kafka Hazelcast Connector
+      image_url: images/debezium-hive-kafka.jpg
+      url: https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_hive_kafka
+      description: This bundle integrates Hazelcast with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
+
+  - bundle:
       title: Session Expiration Management Plugin
       name: bundle-hazelcast-4n5-cluster-session
       image_label: Session Expiration Management Plugin
@@ -40,22 +72,6 @@ catalog:
       description: This bundle deploys Hazelcast using Helm Charts with Prometheus metrics enabled. It also includes the PadoGrid container for ingesting mock data into the Hazelcast cluster.
 
   - bundle:
-      title: Debezium-KSQL-Kafka Hazelcast Connector
-      name: bundle-hazelcast-3n4n5-docker-debezium_ksql_kafka
-      image_label: Debezium-KSQL-Kafka Hazelcast Connector
-      image_url: images/debezium-ksql-kafka.jpg
-      url: https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_ksql_kafka
-      description: This bundle integrates Hazelcast with Debezium and Confluent KSQL and ksqlDB for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
-
-  - bundle:
-      title: Debezium-Hive-Kafka Hazelcast Connector
-      name: bundle-hazelcast-3n4n5-docker-debezium_hive_kafka
-      image_label: Debezium-Hive-Kafka Hazelcast Connector
-      image_url: images/debezium-hive-kafka.jpg
-      url: https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_hive_kafka
-      description: This bundle integrates Hazelcast with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
-
-  - bundle:
       title: Bundle: MySQL Sync
       name: bundle-hazelcast-3n4n5-docker-dbsync_mysql
       image_label: Bundle: MySQL Sync
@@ -80,14 +96,6 @@ catalog:
       description: This bundle demonstrates the Hazelcast WAN topology by replicating data between two (2) Hazlecast Helm Chart clusters running on OpenShift.
 
   - bundle:
-      title: Debezium-Kafka Hazelcast Connector
-      name: bundle-hazelcast-3n4n5-docker-debezium_kafka
-      image_label: Debezium-Kafka Hazelcast Connector
-      image_url: images/debezium-kafka.png
-      url: https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_kafka
-      description: This bundle integrates Hazelcast with Debezium for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
-
-  - bundle:
       title: IMDG Cluster: ssl
       name: bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl
       image_label: IMDG Cluster: ssl
@@ -110,14 +118,6 @@ catalog:
       image_url: 
       url: https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11
       description: As part of the Rolling Upgrade lab of Hazelcast Operations Training, this bundle includes a cluster and an app preconfigured to run with Hazelcast Enterprise 3.11.x which must be installed separately.
-
-  - bundle:
-      title: Hazelcast Bundle Template
-      name: bundle-hazelcast-template
-      image_label: Hazelcast Bundle Template
-      image_url: 
-      url: https://github.com/padogrid/bundle-hazelcast-template
-      description: This bundle serves as a template for creating a new Hazelcast onlne bundle.
 
   - bundle:
       title: Hazelcast WAN Replication on OpenShift using Operator
