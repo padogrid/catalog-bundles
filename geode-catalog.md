@@ -90,7 +90,7 @@ This bundle integrates Geode with Debezium and Confluent ksqlDB for ingesting in
 install_bundle -download bundle-geode-1-docker-debezium_ksqldb_confluent
 ```
 
-[![Debezium-KSQL-Kafka Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent/blob/main/images/geode-debezium-confluent.jpg)](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent)
+[![Debezium-KSQL-Kafka Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent/blob/master/images/geode-debezium-confluent.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent)
 
 ---
 ## 9. Geode Bundle Template
