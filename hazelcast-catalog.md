@@ -150,7 +150,7 @@ install_bundle -download bundle-hazelcast-4n5-app-perf_test_sb-cluster-sb
 ---
 ## 14. Session Expiration Management Plugin
 
-This bundle provides a plugin that expires session objects in a given map and their relevant entries in other Hazelcast maps.
+This bundle provides a plugin that expires session objects in a given map and their relevant entries in other Hazelcast maps. The plugin also supports session expirations over the WAN (See [bundle-hazelcast-4n5-cluster-session-wan](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan).)
 
 ```bash
 install_bundle -download bundle-hazelcast-4n5-cluster-session
@@ -161,7 +161,7 @@ install_bundle -download bundle-hazelcast-4n5-cluster-session
 ---
 ## 15. Session Expiration in WAN Environment
 
-This bundle demonstrates the session expiration plugin in a WAN environment. It incorporates the bundled [session expiration plugin](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session.git) and the Sorint.lab's `IpDiscoveryStrategy` plugin.
+This bundle demonstrates the session expiration plugin in a WAN environment. It incorporates the session expiration plugin included in [bundle-hazelcast-4n5-cluster-session](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session.git) and the Sorint.lab's `IpDiscoveryStrategy` plugin.
 
 ```bash
 install_bundle -download bundle-hazelcast-4n5-cluster-session-wan

@@ -1,19 +1,19 @@
 catalog:
   - bundle:
-      title: Session Expiration in WAN Environment
-      name: bundle-hazelcast-4n5-cluster-session-wan
-      image_label: Session Expiration in WAN Environment
-      image_url: images/wan-session-expiration.png
-      url: https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan
-      description: This bundle demonstrates the session expiration plugin in a WAN environment. It incorporates the bundled [session expiration plugin](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session.git) and the Sorint.lab's `IpDiscoveryStrategy` plugin.
-
-  - bundle:
       title: Session Expiration Management Plugin
       name: bundle-hazelcast-4n5-cluster-session
       image_label: Session Expiration Management Plugin
       image_url: images/session.jpg
       url: https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session
-      description: This bundle provides a plugin that expires session objects in a given map and their relevant entries in other Hazelcast maps.
+      description: This bundle provides a plugin that expires session objects in a given map and their relevant entries in other Hazelcast maps. The plugin also supports session expirations over the WAN (See [bundle-hazelcast-4n5-cluster-session-wan](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan).)
+
+  - bundle:
+      title: Session Expiration in WAN Environment
+      name: bundle-hazelcast-4n5-cluster-session-wan
+      image_label: Session Expiration in WAN Environment
+      image_url: images/wan-session-expiration.png
+      url: https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan
+      description: This bundle demonstrates the session expiration plugin in a WAN environment. It incorporates the session expiration plugin included in [bundle-hazelcast-4n5-cluster-session](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session.git) and the Sorint.lab's `IpDiscoveryStrategy` plugin.
 
   - bundle:
       title: Hazelcast Kryo/Avro Code Generator
