@@ -94,7 +94,7 @@ install_bundle -download bundle-geode-1-docker-debezium_ksql_kafka
 [![Debezium-KSQL-Kafka Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksql_kafka/blob/master/images/geode-debezium-ksql-kafka.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksql_kafka)
 
 ---
-## 8. Debezium-KSQL-Kafka Geode Connector
+## 8. Debezium-ksqlDB-Confluent Geode Connector
 
 This bundle integrates Geode with Debezium and Confluent ksqlDB for ingesting initial data and CDC records from MySQL into Kafka and Geode via a Kafka sink connector included in the `padogrid` distribution.
 
@@ -102,7 +102,7 @@ This bundle integrates Geode with Debezium and Confluent ksqlDB for ingesting in
 install_bundle -download bundle-geode-1-docker-debezium_ksqldb_confluent
 ```
 
-[![Debezium-KSQL-Kafka Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent/blob/master/images/geode-debezium-confluent.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent)
+[![Debezium-ksqlDB-Confluent Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent/blob/master/images/geode-debezium-confluent.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent)
 
 ---
 ## 9. Geode Bundle Template
@@ -225,7 +225,7 @@ install_bundle -download bundle-hazelcast-3n4n5-k8s-oc_helm_wan
 ---
 ## 10. Hazelcast OpenShift Operator
 
-This bundle contains OpenShift operator configuration files for deploying Hazelcast and PadoGrid. Hazelcast is deployed using the Hazelcast Operator downloaded from the 'hazelcast/hazelcast-operator' repo.
+This bundle contains OpenShift operator configuration files for deploying Hazelcast and PadoGrid. Hazelcast is deployed using the Hazelcast Operator downloaded from the `hazelcast/hazelcast-operator` repo.
 
 ```bash
 install_bundle -download bundle-hazelcast-4-k8s-oc_operator
@@ -278,7 +278,18 @@ install_bundle -download bundle-hazelcast-4n5-cluster-session
 [![Session Expiration Management Plugin](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session/blob/master/images/session.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session)
 
 ---
-## 15. Hazelcast Bundle Template
+## 15. Session Expiration in WAN Environment
+
+This bundle demonstrates the session expiration plugin in a WAN environment. It incorporates the bundled [session expiration plugin](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session.git) and the Sorint.lab's [`IpDiscoveryStrategy`](https://github.com/sorint-lab-us/hazelcast-spi) plugin.
+
+```bash
+install_bundle -download bundle-hazelcast-4n5-cluster-session-wan
+```
+
+[![Session Expiration in WAN Environment](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan/blob/master/images/wan-session-expiration.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan)
+
+---
+## 16. Hazelcast Bundle Template
 
 This bundle serves as a template for creating a new Hazelcast onlne bundle.
 
@@ -289,7 +300,7 @@ install_bundle -download bundle-hazelcast-template
 [![Hazelcast Bundle Template](https://github.com/padogrid/bundle-hazelcast-template/blob/master/?raw=true)](https://github.com/padogrid/bundle-hazelcast-template)
 
 ---
-## 16. Rolling Upgrade Training
+## 17. Rolling Upgrade Training
 
 As part of the Rolling Upgrade lab of Hazelcast Operations Training, this bundle includes a cluster and an app preconfigured to run with Hazelcast Enterprise 3.11.x which must be installed separately.
 
@@ -300,7 +311,7 @@ install_bundle -download bundle-hazelcast-training-3.11-app-perf_test_v3.11-clus
 [![Rolling Upgrade Training](https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11/blob/master/?raw=true)](https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11)
 
 ---
-## 17. IMDG Cluster: openssl
+## 18. IMDG Cluster: openssl
 
 As part of the TLS/SSL lab of Hazelcast Operations Training, this bundle includes the `openssl` cluster preconfigured to enable OpenSSL/BoringSSL.
 
@@ -311,7 +322,7 @@ install_bundle -download bundle-hazelcast-training-3n4n5-app-perf_test_openssl-c
 [![IMDG Cluster: openssl](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl/blob/master/images/openssl-cluster.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl)
 
 ---
-## 18. IMDG Cluster: ssl
+## 19. IMDG Cluster: ssl
 
 As part of the TLS/SSL lab of Hazelcast Operations Training, the `ssl` cluster has been preconfigured to enable SSL. It contains scripts to create both private and trust keystores that contain both member and client keys and certificates.
 
