@@ -1,11 +1,19 @@
 {
+  "bundle-hazelcast-3n4n5-docker-dbsync_mysql":
+  {
+    "title": "Bundle: MySQL Sync",
+    "image_label": "Bundle: MySQL Sync",
+    "image_url": "images/mysql-sync.png",
+    "url": "https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-dbsync_mysql",
+    "description": "This bundle is preconfigured to synchronize Hazelcast with MySQL running as a Docker container. It includes the `db` cluster app to read/write from/to Hazelcast and MySQL. It also includes instructions for replacing MySQL with another database."
+  },
   "bundle-hazelcast-4n5-cluster-session-wan":
   {
     "title": "Session Expiration in WAN Environment",
     "image_label": "Session Expiration in WAN Environment",
     "image_url": "images/wan-session-expiration.png",
     "url": "https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan",
-    "description": "This bundle demonstrates the session expiration plugin in a WAN environment. It incorporates the session expiration plugin included in [bundle-hazelcast-4n5-cluster-session](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session.git) and the Sorint.lab's `IpDiscoveryStrategy` plugin."
+    "description": "This bundle demonstrates the session expiration plugin in a WAN environment. It incorporates the session expiration plugin included in [bundle-hazelcast-4n5-cluster-session](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session.git) and Sorint.lab's `IpDiscoveryStrategy` plugin."
   },
   "bundle-hazelcast-4n5-cluster-session":
   {
@@ -126,14 +134,6 @@
     "image_url": "images/oc-helm.jpg",
     "url": "https://github.com/padogrid/bundle-hazelcast-3n4n5-k8s-oc_helm",
     "description": "This bundle deploys Hazelcast using Helm Charts with Prometheus metrics enabled. It also includes the PadoGrid container for ingesting mock data into the Hazelcast cluster."
-  },
-  "bundle-hazelcast-3n4n5-docker-dbsync_mysql":
-  {
-    "title": "Bundle: MySQL Sync",
-    "image_label": "Bundle: MySQL Sync",
-    "image_url": "images/mysql-sync.png",
-    "url": "https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-dbsync_mysql",
-    "description": "This bundle is preconfigured to synchronize Hazelcast with MySQL running as a Docker container. It includes the `db` cluster app to read/write from/to Hazelcast and MySQL. It also includes instructions for replacing MySQL with another database."
   },
   "bundle-hazelcast-3n4n5-k8s-oc_helm_wan":
   {

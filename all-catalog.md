@@ -52,7 +52,7 @@ install_bundle -download bundle-geode-1-app-perf_test_powerbi-cluster-powerbi
 ---
 ## 4. Bundle: WAN
 
-The `wan` bundle includes two (2) local clusters configured with bi-directional WAN gateways. You can test the bundle immediately after installation. No configurations required.
+The `wan` bundle includes two (2) local clusters configured with bidirectional WAN gateways. You can test the bundle immediately after installation. No configurations required.
 
 ```bash
 install_bundle -download bundle-geode-1-app-perf_test_wan-cluster-ln-ny
@@ -61,7 +61,18 @@ install_bundle -download bundle-geode-1-app-perf_test_wan-cluster-ln-ny
 [![Bundle: WAN](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny/blob/master/images/wan-ny-ln.png?raw=true)](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny)
 
 ---
-## 5. Debezium-Hive-Kafka Geode Connector
+## 5. GemFire/Geode and MySQL Sync
+
+This bundle is preconfigured to synchronize Geode/GemFire with MySQL running as a Docker container. It includes the `db` cluster app to read/write from/to Geode/GemFire and MySQL. It also includes instructions for replacing MySQL with another database.
+
+```bash
+install_bundle -download bundle-geode-1-docker-dbsync_mysql
+```
+
+[![GemFire/Geode and MySQL Sync](https://github.com/padogrid/bundle-geode-1-docker-dbsync_mysql/blob/master/images/mysql-sync.png?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-dbsync_mysql)
+
+---
+## 6. Debezium-Hive-Kafka Geode Connector
 
 This bundle integrates Geode with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Geode cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
 
@@ -72,7 +83,7 @@ install_bundle -download bundle-geode-1-docker-debezium_hive_kafka
 [![Debezium-Hive-Kafka Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_hive_kafka/blob/master/images/geode-debezium-hive-kafka.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_hive_kafka)
 
 ---
-## 6. Debezium-Kafka Geode/GemFire Connector
+## 7. Debezium-Kafka Geode/GemFire Connector
 
 This bundle integrates Geode/GemFire with Debezium for ingesting initial data and CDC records from MySQL into a Geode/GemFire cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
 
@@ -83,7 +94,7 @@ install_bundle -download bundle-geode-1-docker-debezium_kafka
 [![Debezium-Kafka Geode/GemFire Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_kafka/blob/master/images/debezium-kafka.png?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_kafka)
 
 ---
-## 7. Debezium-KSQL-Kafka Geode Connector
+## 8. Debezium-KSQL-Kafka Geode Connector
 
 This bundle integrates Geode with Debezium and Confluent KSQL for ingesting initial data and CDC records from MySQL into a Geode cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
 
@@ -94,7 +105,7 @@ install_bundle -download bundle-geode-1-docker-debezium_ksql_kafka
 [![Debezium-KSQL-Kafka Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksql_kafka/blob/master/images/geode-debezium-ksql-kafka.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksql_kafka)
 
 ---
-## 8. Debezium-ksqlDB-Confluent Geode Connector
+## 9. Debezium-ksqlDB-Confluent Geode Connector
 
 This bundle integrates Geode with Debezium and Confluent ksqlDB for ingesting initial data and CDC records from MySQL into Kafka and Geode via a Kafka sink connector included in the `padogrid` distribution.
 
@@ -105,7 +116,7 @@ install_bundle -download bundle-geode-1-docker-debezium_ksqldb_confluent
 [![Debezium-ksqlDB-Confluent Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent/blob/master/images/geode-debezium-confluent.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent)
 
 ---
-## 9. Geode Bundle Template
+## 10. Geode Bundle Template
 
 This bundle serves as a template for creating a new Geode onlne bundle.
 
@@ -280,7 +291,7 @@ install_bundle -download bundle-hazelcast-4n5-cluster-session
 ---
 ## 15. Session Expiration in WAN Environment
 
-This bundle demonstrates the session expiration plugin in a WAN environment. It incorporates the session expiration plugin included in [bundle-hazelcast-4n5-cluster-session](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session.git) and the Sorint.lab's `IpDiscoveryStrategy` plugin.
+This bundle demonstrates the session expiration plugin in a WAN environment. It incorporates the session expiration plugin included in [bundle-hazelcast-4n5-cluster-session](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session.git) and Sorint.lab's `IpDiscoveryStrategy` plugin.
 
 ```bash
 install_bundle -download bundle-hazelcast-4n5-cluster-session-wan
