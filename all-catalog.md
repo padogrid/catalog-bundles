@@ -2,7 +2,7 @@
 
 This catalog combines all the online PadoGrid bundles. The bundles in each data grid product are grouped as follows.
 
-- [Generice (none) Catalog](#books-none-bundle-catalog---use-cases-books)
+- [Generic (none) Catalog](#books-generic-none-bundle-catalog---use-cases-books)
 - [Geode/GemFireBundle Catalog](#books-geodegemfire-bundle-catalog---use-cases-books)
 - [Hazelcast IMDG Bundle Catalog](#books-hazelcast-imdg-bundle-catalog---use-cases-books)
 - [Hazelcast Jet Bundle Catalog](#books-hazelcast-jet-bundle-catalog---use-cases-books)

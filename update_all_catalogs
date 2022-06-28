@@ -49,7 +49,7 @@ for PRODUCT in $PRODUCT_LIST; do
   ./update_catalog -header -product $PRODUCT
 done
 
-NONE_HEADER="[Generice (none) Catalog](#books-none-bundle-catalog---use-cases-books)"
+NONE_HEADER="[Generic (none) Catalog](#books-generic-none-bundle-catalog---use-cases-books)"
 GEODE_HEADER="[Geode/GemFireBundle Catalog](#books-geodegemfire-bundle-catalog---use-cases-books)"
 HAZELCAST_HEADER="[Hazelcast IMDG Bundle Catalog](#books-hazelcast-imdg-bundle-catalog---use-cases-books)"
 JET_HEADER="[Hazelcast Jet Bundle Catalog](#books-hazelcast-jet-bundle-catalog---use-cases-books)"
