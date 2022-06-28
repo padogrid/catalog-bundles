@@ -13,7 +13,7 @@ This bundle provides step-by-step instructions for creating a test environment a
 install_bundle -download bundle-none-imdg-benchmark-tests
 ```
 
-[![IMDG Product Benchmark Tests](https://github.com/padogrid)](https://github.com/padogrid/bundle-none-imdg-benchmark-tests)
+[![IMDG Product Benchmark Tests](https://github.com/padogrid/bundle-none-imdg-benchmark-tests/blob/master/images/benchmark-clusters.png?raw=true)](https://github.com/padogrid/bundle-none-imdg-benchmark-tests)
 
 ---
 ## 2. None Bundle Template
@@ -24,4 +24,4 @@ This bundle serves as a template for creating a new generic onlne bundle.
 install_bundle -download bundle-none-template
 ```
 
-[![None Bundle Template](https://github.com/padogrid)](https://github.com/padogrid/bundle-none-template)
+[![None Bundle Template](https://github.com/padogrid/bundle-none-template/blob/master/?raw=true)](https://github.com/padogrid/bundle-none-template)

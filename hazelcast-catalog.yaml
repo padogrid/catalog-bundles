@@ -3,7 +3,7 @@ catalog:
       title: Hazelcast Bundle Template
       name: bundle-hazelcast-template
       image_label: Hazelcast Bundle Template
-      image_url: https://github.com/padogrid
+      image_url: 
       url: https://github.com/padogrid/bundle-hazelcast-template
       description: This bundle serves as a template for creating a new Hazelcast onlne bundle.
 
@@ -11,7 +11,7 @@ catalog:
       title: IMDG Cluster: ssl
       name: bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl
       image_label: IMDG Cluster: ssl
-      image_url: https://github.com/padogrid
+      image_url: images/ssl-cluster.jpg
       url: https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl
       description: As part of the TLS/SSL lab of Hazelcast Operations Training, the `ssl` cluster has been preconfigured to enable SSL. It contains scripts to create both private and trust keystores that contain both member and client keys and certificates.
 
@@ -19,7 +19,7 @@ catalog:
       title: Rolling Upgrade Training
       name: bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11
       image_label: Rolling Upgrade Training
-      image_url: https://github.com/padogrid
+      image_url: 
       url: https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11
       description: As part of the Rolling Upgrade lab of Hazelcast Operations Training, this bundle includes a cluster and an app preconfigured to run with Hazelcast Enterprise 3.11.x which must be installed separately.
 
@@ -27,7 +27,7 @@ catalog:
       title: IMDG Cluster: openssl
       name: bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl
       image_label: IMDG Cluster: openssl
-      image_url: https://github.com/padogrid
+      image_url: images/openssl-cluster.jpg
       url: https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl
       description: As part of the TLS/SSL lab of Hazelcast Operations Training, this bundle includes the `openssl` cluster preconfigured to enable OpenSSL/BoringSSL.
 
@@ -35,7 +35,7 @@ catalog:
       title: Bundle: dbsched
       name: bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched
       image_label: Bundle: dbsched
-      image_url: https://github.com/padogrid
+      image_url: 
       url: https://github.com/padogrid/bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched
       description: The `dbsched` bundle is preconfigured with the Pado scheduler to periodically execute jobs that dump database tables to CSV files from which it automatically extracts column information to generate the corresponding `VersionedPortable` classes. It then transforms the CSV records to objects using the generated classes before ingesting them into Hazelcast.
 
@@ -43,7 +43,7 @@ catalog:
       title: Cluster Split-Brain
       name: bundle-hazelcast-3-app-perf_test_sb-cluster-sb
       image_label: Cluster Split-Brain
-      image_url: https://github.com/padogrid 
+      image_url: 
       url: https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_sb-cluster-sb
       description: This bundle provides scripts, configuration files, and apps for creating a network split-brain environment where you can test Hazelcast's split-brain capabilities.
 
@@ -51,7 +51,7 @@ catalog:
       title: App: Pado
       name: bundle-hazelcast-3n4n5-app-pado
       image_label: App: Pado
-      image_url: https://github.com/padogrid
+      image_url: images/app-pado-import.png
       url: https://github.com/padogrid/bundle-hazelcast-3n4n5-app-pado
       description: The pado app provides a Hazelcast `Portable` class generator and CSV file import tools for Hazelcast. This bundle includes step-by-step instructions for ingesting mock data and UCI Machine Learning datasets into Hazelcast. It also includes a Pado scheduler demo that automates scheduled job executions for exporting and importing data from databases.
 
@@ -59,7 +59,7 @@ catalog:
       title: Session Expiration in WAN Environment
       name: bundle-hazelcast-4n5-cluster-session-wan
       image_label: Session Expiration in WAN Environment
-      image_url: https://github.com/padogrid
+      image_url: images/wan-session-expiration.png
       url: https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan
       description: This bundle demonstrates the session expiration plugin in a WAN environment. It incorporates the session expiration plugin included in [bundle-hazelcast-4n5-cluster-session](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session.git) and Sorint.lab's `IpDiscoveryStrategy` plugin.
 
@@ -67,7 +67,7 @@ catalog:
       title: Session Expiration Management Plugin
       name: bundle-hazelcast-4n5-cluster-session
       image_label: Session Expiration Management Plugin
-      image_url: https://github.com/padogrid
+      image_url: images/session.jpg
       url: https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session
       description: This bundle provides a plugin that expires session objects in a given map and their relevant entries in other Hazelcast maps. The plugin also supports session expirations over the WAN (See [bundle-hazelcast-4n5-cluster-session-wan](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan).)
 
@@ -75,7 +75,7 @@ catalog:
       title: Hazelcast OpenShift Helm Charts
       name: bundle-hazelcast-3n4n5-k8s-oc_helm
       image_label: Hazelcast OpenShift Helm Charts
-      image_url: https://github.com/padogrid
+      image_url: images/oc-helm.jpg
       url: https://github.com/padogrid/bundle-hazelcast-3n4n5-k8s-oc_helm
       description: This bundle deploys Hazelcast using Helm Charts with Prometheus metrics enabled. It also includes the PadoGrid container for ingesting mock data into the Hazelcast cluster.
 
@@ -83,7 +83,7 @@ catalog:
       title: Debezium-KSQL-Kafka Hazelcast Connector
       name: bundle-hazelcast-3n4n5-docker-debezium_ksql_kafka
       image_label: Debezium-KSQL-Kafka Hazelcast Connector
-      image_url: https://github.com/padogrid
+      image_url: images/debezium-ksql-kafka.jpg
       url: https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_ksql_kafka
       description: This bundle integrates Hazelcast with Debezium and Confluent KSQL and ksqlDB for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
 
@@ -91,7 +91,7 @@ catalog:
       title: Hazelcast OpenShift Operator
       name: bundle-hazelcast-4-k8s-oc_operator
       image_label: Hazelcast OpenShift Operator
-      image_url: https://github.com/padogrid
+      image_url: images/oc-operator.jpg
       url: https://github.com/padogrid/bundle-hazelcast-4-k8s-oc_operator
       description: This bundle contains OpenShift operator configuration files for deploying Hazelcast and PadoGrid. Hazelcast is deployed using the Hazelcast Operator downloaded from the `hazelcast/hazelcast-operator` repo.
 
@@ -99,7 +99,7 @@ catalog:
       title: Debezium-Hive-Kafka Hazelcast Connector
       name: bundle-hazelcast-3n4n5-docker-debezium_hive_kafka
       image_label: Debezium-Hive-Kafka Hazelcast Connector
-      image_url: https://github.com/padogrid
+      image_url: images/debezium-hive-kafka.jpg
       url: https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_hive_kafka
       description: This bundle integrates Hazelcast with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
 
@@ -107,7 +107,7 @@ catalog:
       title: Hazelcast Kryo/Avro Code Generator
       name: bundle-hazelcast-4n5-app-kryo_codegen
       image_label: Hazelcast Kryo/Avro Code Generator
-      image_url: https://github.com/padogrid
+      image_url: images/app-kryo-codegen.jpg
       url: https://github.com/padogrid/bundle-hazelcast-4n5-app-kryo_codegen
       description: This bundle provides step-by-step instructions for generating and deploying Avro and `KryoSerializer` in Hazelcast. Using PadoGrid's code generator, you can on the fly generate and deploy Avro wrapper classes and the correspoinding Kryo serializer.
 
@@ -115,7 +115,7 @@ catalog:
       title: Bundle: MySQL Sync
       name: bundle-hazelcast-3n4n5-docker-dbsync_mysql
       image_label: Bundle: MySQL Sync
-      image_url: https://github.com/padogrid
+      image_url: images/mysql-sync.png
       url: https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-dbsync_mysql
       description: This bundle is preconfigured to synchronize Hazelcast with MySQL running as a Docker container. It includes the `db` cluster app to read/write from/to Hazelcast and MySQL. It also includes instructions for replacing MySQL with another database.
 
@@ -123,7 +123,7 @@ catalog:
       title: Cluster Split-Brain
       name: bundle-hazelcast-4n5-app-perf_test_sb-cluster-sb
       image_label: Cluster Split-Brain
-      image_url: https://github.com/padogrid
+      image_url: images/split-brain.png
       url: https://github.com/padogrid/bundle-hazelcast-4n5-app-perf_test_sb-cluster-sb
       description: This bundle provides scripts, configuration files, and apps for creating a Hazelcast 4.x network split-brain environment where you can test Hazelcast's split-brain capabilities.
 

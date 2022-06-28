@@ -13,7 +13,7 @@ This bundle integrates SnappyData/ComputeDB with Debezium for ingesting initial 
 install_bundle -download bundle-snappydata-1-docker-debezium_kafka
 ```
 
-[![Debezium-Kafka SnappyData/ComputeDB Connector](https://github.com/padogrid)](https://github.com/padogrid/bundle-snappydata-1-docker-debezium_kafka)
+[![Debezium-Kafka SnappyData/ComputeDB Connector](https://github.com/padogrid/bundle-snappydata-1-docker-debezium_kafka/blob/master/?raw=true)](https://github.com/padogrid/bundle-snappydata-1-docker-debezium_kafka)
 
 ---
 ## 2. SnappyData Bundle Template
@@ -24,4 +24,4 @@ This bundle serves as a template for creating a new SnappyData onlne bundle.
 install_bundle -download bundle-snappydata-template
 ```
 
-[![SnappyData Bundle Template](https://github.com/padogrid)](https://github.com/padogrid/bundle-snappydata-template)
+[![SnappyData Bundle Template](https://github.com/padogrid/bundle-snappydata-template/blob/master/?raw=true)](https://github.com/padogrid/bundle-snappydata-template)
