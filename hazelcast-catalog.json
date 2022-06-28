@@ -35,7 +35,7 @@
   {
     "title": "Bundle: dbsched",
     "image_label": "Bundle: dbsched",
-    "image_url": "",
+    "image_url": "/images/db-sched.png",
     "url": "https://github.com/padogrid/bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched",
     "description": "The `dbsched` bundle is preconfigured with the Pado scheduler to periodically execute jobs that dump database tables to CSV files from which it automatically extracts column information to generate the corresponding `VersionedPortable` classes. It then transforms the CSV records to objects using the generated classes before ingesting them into Hazelcast."
   },
@@ -43,7 +43,7 @@
   {
     "title": "Cluster Split-Brain",
     "image_label": "Cluster Split-Brain",
-    "image_url": "",
+    "image_url": "https://github.com/padogrid/bundle-hazelcast-4-app-perf_test_sb-cluster-sb/blob/master/images/split-brain.png?raw=true",
     "url": "https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_sb-cluster-sb",
     "description": "This bundle provides scripts, configuration files, and apps for creating a network split-brain environment where you can test Hazelcast's split-brain capabilities."
   },

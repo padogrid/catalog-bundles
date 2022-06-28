@@ -163,7 +163,7 @@ The `dbsched` bundle is preconfigured with the Pado scheduler to periodically ex
 install_bundle -download bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched
 ```
 
-[![Bundle: dbsched](https://github.com/padogrid/bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched/blob/master/?raw=true)](https://github.com/padogrid/bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched)
+[![Bundle: dbsched](https://github.com/padogrid/bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched/blob/master//images/db-sched.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched)
 
 ---
 ## 2. Cluster Split-Brain
@@ -174,7 +174,7 @@ This bundle provides scripts, configuration files, and apps for creating a netwo
 install_bundle -download bundle-hazelcast-3-app-perf_test_sb-cluster-sb
 ```
 
-[![Cluster Split-Brain](https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_sb-cluster-sb/blob/master/?raw=true)](https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_sb-cluster-sb)
+[![Cluster Split-Brain](https://github.com/padogrid/bundle-hazelcast-4-app-perf_test_sb-cluster-sb/blob/master/images/split-brain.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_sb-cluster-sb)
 
 ---
 ## 3. App: Pado
@@ -380,7 +380,7 @@ The `trade` cluster bundle installs a Jet cluster that includes the `build_app` 
 install_bundle -download bundle-jet-3-cluster-trade
 ```
 
-[![Jet Cluster: trade](https://github.com/padogrid/bundle-jet-3-cluster-trade/blob/master/?raw=true)](https://github.com/padogrid/bundle-jet-3-cluster-trade)
+[![Jet Cluster: trade](https://github.com/padogrid/bundle-jet-3-cluster-trade/blob/master//images/jet-trade.png?raw=true)](https://github.com/padogrid/bundle-jet-3-cluster-trade)
 
 ---
 ## 2. Jet App: trade-monitor
@@ -402,7 +402,7 @@ The `cdc_tutorial` bundle wraps the CDC tutorial available from the Hazelcast si
 install_bundle -download bundle-jet-4-docker-cdc_tutorial
 ```
 
-[![Jet CDC Tutorial](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial/blob/master/?raw=true)](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial)
+[![Jet CDC Tutorial](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial/blob/master//images/jet-cdc-tutorial.png?raw=true)](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial)
 
 ---
 
@@ -421,7 +421,7 @@ This bundle integrates SnappyData/ComputeDB with Debezium for ingesting initial 
 install_bundle -download bundle-snappydata-1-docker-debezium_kafka
 ```
 
-[![Debezium-Kafka SnappyData/ComputeDB Connector](https://github.com/padogrid/bundle-snappydata-1-docker-debezium_kafka/blob/master/?raw=true)](https://github.com/padogrid/bundle-snappydata-1-docker-debezium_kafka)
+[![Debezium-Kafka SnappyData/ComputeDB Connector](https://github.com/padogrid/bundle-snappydata-1-docker-debezium_kafka/blob/master//images/debezium-kafka.jpg?raw=true)](https://github.com/padogrid/bundle-snappydata-1-docker-debezium_kafka)
 
 ---
 ## 2. SnappyData Bundle Template

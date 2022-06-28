@@ -13,7 +13,7 @@ The `trade` cluster bundle installs a Jet cluster that includes the `build_app` 
 install_bundle -download bundle-jet-3-cluster-trade
 ```
 
-[![Jet Cluster: trade](https://github.com/padogrid/bundle-jet-3-cluster-trade/blob/master/?raw=true)](https://github.com/padogrid/bundle-jet-3-cluster-trade)
+[![Jet Cluster: trade](https://github.com/padogrid/bundle-jet-3-cluster-trade/blob/master//images/jet-trade.png?raw=true)](https://github.com/padogrid/bundle-jet-3-cluster-trade)
 
 ---
 ## 2. Jet App: trade-monitor
@@ -35,4 +35,4 @@ The `cdc_tutorial` bundle wraps the CDC tutorial available from the Hazelcast si
 install_bundle -download bundle-jet-4-docker-cdc_tutorial
 ```
 
-[![Jet CDC Tutorial](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial/blob/master/?raw=true)](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial)
+[![Jet CDC Tutorial](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial/blob/master//images/jet-cdc-tutorial.png?raw=true)](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial)

@@ -265,7 +265,7 @@ for GITHUB_USER in $GITHUB_USERS; do
 #              HEADER=$(echo "$HEADER" | sed '2d')
               IMAGE_LABEL=$TITLE
               IMAGE_URL=$(echo "$BUFFER" | grep -m 1 images)
-              IMAGE_URL=$(echo "$BUFFER" | grep "(images/" | grep -m 1 images)
+              IMAGE_URL=$(echo "$BUFFER" | grep "images/" | sed '/Driven/d' | grep -m 1 images)
               IMAGE_URL=$(echo "$IMAGE_URL" | sed -e 's/.*(//' -e 's/)//')
               if [[ "$IMAGE_URL" == "https"* ]]; then
                  ABS_IMAGE_URL=$IMAGE_URL

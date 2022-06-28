@@ -13,7 +13,7 @@ The `dbsched` bundle is preconfigured with the Pado scheduler to periodically ex
 install_bundle -download bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched
 ```
 
-[![Bundle: dbsched](https://github.com/padogrid/bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched/blob/master/?raw=true)](https://github.com/padogrid/bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched)
+[![Bundle: dbsched](https://github.com/padogrid/bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched/blob/master//images/db-sched.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched)
 
 ---
 ## 2. Cluster Split-Brain
@@ -24,7 +24,7 @@ This bundle provides scripts, configuration files, and apps for creating a netwo
 install_bundle -download bundle-hazelcast-3-app-perf_test_sb-cluster-sb
 ```
 
-[![Cluster Split-Brain](https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_sb-cluster-sb/blob/master/?raw=true)](https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_sb-cluster-sb)
+[![Cluster Split-Brain](https://github.com/padogrid/bundle-hazelcast-4-app-perf_test_sb-cluster-sb/blob/master/images/split-brain.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_sb-cluster-sb)
 
 ---
 ## 3. App: Pado
