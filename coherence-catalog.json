@@ -3,7 +3,7 @@
   {
     "title": "Coherence Bundle Template",
     "image_label": "Coherence Bundle Template",
-    "image_url": "",
+    "image_url": "https://github.com/padogrid",
     "url": "https://github.com/padogrid/bundle-coherence-template",
     "description": "This bundle serves as a template for creating a new Coherence onlne bundle."
   }

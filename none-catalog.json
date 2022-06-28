@@ -1,0 +1,18 @@
+{
+  "bundle-none-template":
+  {
+    "title": "None Bundle Template",
+    "image_label": "None Bundle Template",
+    "image_url": "https://github.com/padogrid",
+    "url": "https://github.com/padogrid/bundle-none-template",
+    "description": "This bundle serves as a template for creating a new generic onlne bundle."
+  },
+  "bundle-none-imdg-benchmark-tests":
+  {
+    "title": "IMDG Product Benchmark Tests",
+    "image_label": "IMDG Product Benchmark Tests",
+    "image_url": "https://github.com/padogrid",
+    "url": "https://github.com/padogrid/bundle-none-imdg-benchmark-tests",
+    "description": "This bundle provides step-by-step instructions for creating a test environment and conducting benchmark tests on IMDG products."
+  }
+}

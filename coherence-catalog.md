@@ -13,4 +13,4 @@ This bundle serves as a template for creating a new Coherence onlne bundle.
 install_bundle -download bundle-coherence-template
 ```
 
-[![Coherence Bundle Template](https://github.com/padogrid/bundle-coherence-template/blob/master/?raw=true)](https://github.com/padogrid/bundle-coherence-template)
+[![Coherence Bundle Template](https://github.com/padogrid)](https://github.com/padogrid/bundle-coherence-template)
