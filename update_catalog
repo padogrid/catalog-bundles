@@ -338,7 +338,7 @@ for BUNDLE_NAME in $SORTED_ALL_BUNDLE_LIST; do
   let INDEX=INDEX+1
   echo "" >> $CATALOG_MD
   echo "---" >> $CATALOG_MD
-  echo "## ${INDEX}. $TITLE" >> $CATALOG_MD
+  echo "## [${INDEX}. $TITLE]($BUNDLE_URL)" >> $CATALOG_MD
   echo "" >> $CATALOG_MD
   echo "$DESCRIPTION" >> $CATALOG_MD
   echo "" >> $CATALOG_MD

@@ -5,7 +5,7 @@ The online bundles can be installed by executing the `install_bundle` commands a
 *The bundles listed below are sorted by bundle names, and as such, the order of bundles may change as new bundles are introduced.*
 
 ---
-## 1. Coherence Bundle Template
+## [1. Coherence Bundle Template](https://github.com/padogrid/bundle-coherence-template)
 
 This bundle serves as a template for creating a new Coherence onlne bundle.
 

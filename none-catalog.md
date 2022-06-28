@@ -5,7 +5,7 @@ The online bundles can be installed by executing the `install_bundle` commands a
 *The bundles listed below are sorted by bundle names, and as such, the order of bundles may change as new bundles are introduced.*
 
 ---
-## 1. IMDG Product Benchmark Tests
+## [1. IMDG Product Benchmark Tests](https://github.com/padogrid/bundle-none-imdg-benchmark-tests)
 
 This bundle provides step-by-step instructions for creating a test environment and conducting benchmark tests on IMDG products.
 
@@ -16,7 +16,7 @@ install_bundle -download bundle-none-imdg-benchmark-tests
 [![IMDG Product Benchmark Tests](https://github.com/padogrid/bundle-none-imdg-benchmark-tests/blob/master/images/benchmark-clusters.png?raw=true)](https://github.com/padogrid/bundle-none-imdg-benchmark-tests)
 
 ---
-## 2. None Bundle Template
+## [2. Generic (none) Bundle Template](https://github.com/padogrid/bundle-none-template)
 
 This bundle serves as a template for creating a new generic onlne bundle.
 
@@ -24,4 +24,4 @@ This bundle serves as a template for creating a new generic onlne bundle.
 install_bundle -download bundle-none-template
 ```
 
-[![None Bundle Template](https://github.com/padogrid/bundle-none-template/blob/master/?raw=true)](https://github.com/padogrid/bundle-none-template)
+[![Generic (none) Bundle Template](https://github.com/padogrid/bundle-none-template/blob/master/?raw=true)](https://github.com/padogrid/bundle-none-template)

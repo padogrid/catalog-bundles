@@ -74,3 +74,4 @@ for PRODUCT in $PRODUCT_LIST; do
     echo "" >> $ALL_MD
     cat $PRODUCT-catalog.md >> $ALL_MD
 done
+echo "$EXECUTABLE complete."
