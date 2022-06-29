@@ -6,6 +6,7 @@ catalog:
       image_url: /images/jet-cdc-tutorial.png
       url: https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial
       description: The `cdc_tutorial` bundle wraps the CDC tutorial available from the Hazelcast site [https://jet-start.sh/docs/tutorials/cdc](https://jet-start.sh/docs/tutorials/cdc).
+      install: tmp/1-bundle-jet-4-docker-cdc_tutorial
 
   - bundle:
       title: Jet App: trade-monitor
@@ -14,6 +15,7 @@ catalog:
       image_url: images/jet-trade-monitor.jpg
       url: https://github.com/padogrid/bundle-jet-4-app-trade
       description: The `trade-monitor` app bundle installs the `trade-monitor` demo as part of the `hazelcast/hazelcast-platform-demos` GitHub repo maintained by Hazelcast.
+      install: tmp/2-bundle-jet-4-app-trade
 
   - bundle:
       title: Jet Cluster: trade
@@ -22,4 +24,5 @@ catalog:
       image_url: /images/jet-trade.png
       url: https://github.com/padogrid/bundle-jet-3-cluster-trade
       description: The `trade` cluster bundle installs a Jet cluster that includes the `build_app` script to clone and build the `realtime-trade-monitor` project maintained at the GitHub URL shown below.
+      install: tmp/3-bundle-jet-3-cluster-trade
 

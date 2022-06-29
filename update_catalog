@@ -260,7 +260,7 @@ for GITHUB_USER in $GITHUB_USERS; do
               BUFFER="$(curl -sS $RAW_README_URL) | head -n 30"
               TITLE=$(echo "$BUFFER" | head -n 1 | sed 's/^# //')
               DESCRIPTION=$(echo "$BUFFER" | head -n 3 | sed '1d')
-              echo "$BUFFER" | head -n 3 | sed '1d'
+             # echo "$BUFFER" | head -n 3 | sed '1d'
               DESCRIPTION=$(echo -n $DESCRIPTION)
 #              HEADER=$(echo "$HEADER" | sed '2d')
               IMAGE_LABEL=$TITLE
@@ -273,6 +273,8 @@ for GITHUB_USER in $GITHUB_USERS; do
                  ABS_IMAGE_URL=$GITHUB_USER_HOME/$BUNDLE_NAME/blob/master/${IMAGE_URL}?raw=true
               fi
               BUNDLE_URL="$GITHUB_USER_HOME/$BUNDLE_NAME"
+              INSTALL_BUNDLE_FILE="tmp/$BUNDLE_INDEX-$BUNDLE_NAME"
+              echo "$BUFFER" | awk '/Installing Bundle/{ f = 1; next } /Use Case/{ f = 0 } f' |  sed -ne "/^\`\`\`/,/^\`\`\`/p" > $INSTALL_BUNDLE_FILE
 
               # Yaml
               echo ""
@@ -283,6 +285,7 @@ for GITHUB_USER in $GITHUB_USERS; do
               echo "      image_url: $IMAGE_URL" >> $CATALOG_YAML
               echo "      url: $BUNDLE_URL" >> $CATALOG_YAML
               echo "      description: $DESCRIPTION" >> $CATALOG_YAML
+              echo "      install: $INSTALL_BUNDLE_FILE" >> $CATALOG_YAML
               echo "" >> $CATALOG_YAML
 
               # JSON
@@ -292,7 +295,8 @@ for GITHUB_USER in $GITHUB_USERS; do
               echo "    \"image_label\": \"$IMAGE_LABEL\"," >> $CATALOG_JSON
               echo "    \"image_url\": \"$IMAGE_URL\"," >> $CATALOG_JSON
               echo "    \"url\": \"$BUNDLE_URL\"," >> $CATALOG_JSON
-              echo "    \"description\": \"$DESCRIPTION\"" >> $CATALOG_JSON
+              echo "    \"description\": \"$DESCRIPTION\"," >> $CATALOG_JSON
+              echo "    \"install\": \"$INSTALL_BUNDLE_FILE\"" >> $CATALOG_JSON
 
               # MD
   #            echo "" >> $CATALOG_MD
@@ -328,6 +332,7 @@ for BUNDLE_NAME in $SORTED_ALL_BUNDLE_LIST; do
   IMAGE_URL=$(trimDoubleQuotes "$(echo $BUNDLE_JSON | jq .image_url)")
   BUNDLE_URL=$(trimDoubleQuotes "$(echo $BUNDLE_JSON | jq .url)")
   DESCRIPTION=$(trimDoubleQuotes "$(echo $BUNDLE_JSON | jq .description)")
+  INSTALL_BUNDLE_FILE=$(trimDoubleQuotes "$(echo $BUNDLE_JSON | jq .install)")
   if [[ "$IMAGE_URL" == "https"* ]]; then
      ABS_IMAGE_URL=$IMAGE_URL
   else
@@ -342,9 +347,13 @@ for BUNDLE_NAME in $SORTED_ALL_BUNDLE_LIST; do
   echo "" >> $CATALOG_MD
   echo "$DESCRIPTION" >> $CATALOG_MD
   echo "" >> $CATALOG_MD
-  echo "\`\`\`bash" >> $CATALOG_MD
-  echo "install_bundle -download $BUNDLE_NAME" >> $CATALOG_MD
-  echo "\`\`\`" >> $CATALOG_MD
+  if [ ! -f "$INSTALL_BUNDLE_FILE" ] || [ ! -s "$INSTALL_BUNDLE_FILE" ]; then
+     echo "\`\`\`bash" >> $CATALOG_MD
+     echo "install_bundle -download $BUNDLE_NAME" >> $CATALOG_MD
+     echo "\`\`\`" >> $CATALOG_MD
+  else
+     cat $INSTALL_BUNDLE_FILE >> $CATALOG_MD
+  fi
   echo "" >> $CATALOG_MD
   echo "[![$IMAGE_LABEL]($ABS_IMAGE_URL)]($BUNDLE_URL)" >> $CATALOG_MD
 done

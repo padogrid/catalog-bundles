@@ -23,7 +23,7 @@ The online bundles can be installed by executing the `install_bundle` commands a
 This bundle provides step-by-step instructions for creating a test environment and conducting benchmark tests on IMDG products.
 
 ```bash
-install_bundle -download bundle-none-imdg-benchmark-tests
+install_bundle -download -workspace bundle-none-imdg-benchmark-tests
 ```
 
 [![IMDG Product Benchmark Tests](https://github.com/padogrid/bundle-none-imdg-benchmark-tests/blob/master/images/benchmark-clusters.png?raw=true)](https://github.com/padogrid/bundle-none-imdg-benchmark-tests)
@@ -75,7 +75,11 @@ install_bundle -download bundle-geode-1-app-perf_test_powerbi-cluster-powerbi
 The `wan` bundle includes two (2) local clusters configured with bidirectional WAN gateways. You can test the bundle immediately after installation. No configurations required.
 
 ```bash
-install_bundle -download bundle-geode-1-app-perf_test_wan-cluster-ln-ny
+# To run
+install_bundle -download -workspace bundle-geode-1-app-perf_test_wan-cluster-ln-ny
+
+# To run and/or check in
+install_bundle -checkout bundle-geode-1-app-perf_test_wan-cluster-ln-ny
 ```
 
 [![Bundle: WAN](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny/blob/master/images/wan-ny-ln.png?raw=true)](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny)
@@ -86,7 +90,14 @@ install_bundle -download bundle-geode-1-app-perf_test_wan-cluster-ln-ny
 This bundle is preconfigured to synchronize Geode/GemFire with MySQL running as a Docker container. It includes the `db` cluster app to read/write from/to Geode/GemFire and MySQL. It also includes instructions for replacing MySQL with another database.
 
 ```bash
+# Instal in the current workspace
 install_bundle -download bundle-geode-1-docker-dbsync_mysql
+
+# Install in the new bundle default workspace
+install_bundle -download -workspae bundle-geode-1-docker-dbsync_mysql
+
+# Install in the new bundle default workspace with git intact
+install_bundle -checkout bundle-geode-1-docker-dbsync_mysql
 ```
 
 [![GemFire/Geode and MySQL Sync](https://github.com/padogrid/bundle-geode-1-docker-dbsync_mysql/blob/master/images/mysql-sync.png?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-dbsync_mysql)
@@ -130,7 +141,7 @@ install_bundle -download bundle-geode-1-docker-debezium_ksql_kafka
 This bundle integrates Geode with Debezium and Confluent ksqlDB for ingesting initial data and CDC records from MySQL into Kafka and Geode via a Kafka sink connector included in the `padogrid` distribution.
 
 ```bash
-install_bundle -download bundle-geode-1-docker-debezium_ksqldb_confluent
+install_bundle -checkout bundle-geode-1-docker-debezium_ksqldb_confluent
 ```
 
 [![Debezium-ksqlDB-Confluent Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent/blob/master/images/geode-debezium-confluent.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent)
@@ -159,7 +170,7 @@ The online bundles can be installed by executing the `install_bundle` commands a
 
 The `dbsched` bundle is preconfigured with the Pado scheduler to periodically execute jobs that dump database tables to CSV files from which it automatically extracts column information to generate the corresponding `VersionedPortable` classes. It then transforms the CSV records to objects using the generated classes before ingesting them into Hazelcast.
 
-```bash
+```console
 install_bundle -download bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched
 ```
 
@@ -170,7 +181,7 @@ install_bundle -download bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-c
 
 This bundle provides scripts, configuration files, and apps for creating a network split-brain environment where you can test Hazelcast's split-brain capabilities.
 
-```bash
+```console
 install_bundle -download bundle-hazelcast-3-app-perf_test_sb-cluster-sb
 ```
 
@@ -193,7 +204,14 @@ install_bundle -download bundle-hazelcast-3n4n5-app-pado
 This bundle is preconfigured to synchronize Hazelcast with MySQL running as a Docker container. It includes the `db` cluster app to read/write from/to Hazelcast and MySQL. It also includes instructions for replacing MySQL with another database.
 
 ```bash
+# Current workspace
 install_bundle -download bundle-hazelcast-3n4n5-docker-dbsync_mysql
+
+# New workspace: download 
+install_bundle -download -workspace bundle-hazelcast-3n4n5-docker-dbsync_mysql
+
+# New workspace: checkout
+install_bundle -checkout bundle-hazelcast-3n4n5-docker-dbsync_mysql
 ```
 
 [![Bundle: MySQL Sync](https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-dbsync_mysql/blob/master/images/mysql-sync.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-dbsync_mysql)
@@ -203,7 +221,7 @@ install_bundle -download bundle-hazelcast-3n4n5-docker-dbsync_mysql
 
 This bundle integrates Hazelcast with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
 
-```bash
+```console
 install_bundle -download bundle-hazelcast-3n4n5-docker-debezium_hive_kafka
 ```
 
@@ -214,7 +232,7 @@ install_bundle -download bundle-hazelcast-3n4n5-docker-debezium_hive_kafka
 
 This bundle integrates Hazelcast with Debezium for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
 
-```bash
+```console
 install_bundle -download bundle-hazelcast-3n4n5-docker-debezium_kafka
 ```
 
@@ -291,7 +309,7 @@ install_bundle -download bundle-hazelcast-4n5-app-kryo_codegen
 
 This bundle provides scripts, configuration files, and apps for creating a Hazelcast 4.x network split-brain environment where you can test Hazelcast's split-brain capabilities.
 
-```bash
+```console
 install_bundle -download bundle-hazelcast-4n5-app-perf_test_sb-cluster-sb
 ```
 
@@ -303,7 +321,7 @@ install_bundle -download bundle-hazelcast-4n5-app-perf_test_sb-cluster-sb
 This bundle provides a plugin that expires session objects in a given map and their relevant entries in other Hazelcast maps. The plugin also supports session expirations over the WAN (See [bundle-hazelcast-4n5-cluster-session-wan](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan).)
 
 ```bash
-install_bundle -download bundle-hazelcast-4n5-cluster-session
+install_bundle -download bundle-hazelcast-4n5-app-perf_test_session-cluster-session
 ```
 
 [![Session Expiration Management Plugin](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session/blob/master/images/session.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session)
@@ -314,7 +332,15 @@ install_bundle -download bundle-hazelcast-4n5-cluster-session
 This bundle demonstrates the session expiration plugin in a WAN environment. It incorporates the session expiration plugin included in [bundle-hazelcast-4n5-cluster-session](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session.git) and Sorint.lab's `IpDiscoveryStrategy` plugin.
 
 ```bash
-install_bundle -download bundle-hazelcast-4n5-cluster-session-wan
+# To run
+install_bundle -download -workspace bundle-hazelcast-4n5-cluster-session-wan
+
+# To run and/or check in
+install_bundle -checkout bundle-hazelcast-4n5-cluster-session-wan
+```
+```bash
+install_bundle -workspace session-wan bundle-hazelcast-4n5-cluster-session-wan-master.zip
+switch_workspace sesson-wan
 ```
 
 [![Session Expiration in WAN Environment](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan/blob/master/images/wan-session-expiration.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan)
@@ -376,7 +402,7 @@ The online bundles can be installed by executing the `install_bundle` commands a
 
 The `trade` cluster bundle installs a Jet cluster that includes the `build_app` script to clone and build the `realtime-trade-monitor` project maintained at the GitHub URL shown below.
 
-```bash
+```console
 install_bundle -download bundle-jet-3-cluster-trade
 ```
 
@@ -387,7 +413,7 @@ install_bundle -download bundle-jet-3-cluster-trade
 
 The `trade-monitor` app bundle installs the `trade-monitor` demo as part of the `hazelcast/hazelcast-platform-demos` GitHub repo maintained by Hazelcast.
 
-```bash
+```console
 install_bundle -download bundle-jet-4-app-trade
 ```
 
@@ -398,7 +424,7 @@ install_bundle -download bundle-jet-4-app-trade
 
 The `cdc_tutorial` bundle wraps the CDC tutorial available from the Hazelcast site [https://jet-start.sh/docs/tutorials/cdc](https://jet-start.sh/docs/tutorials/cdc).
 
-```bash
+```console
 install_bundle -download bundle-jet-4-docker-cdc_tutorial
 ```
 
@@ -417,7 +443,7 @@ The online bundles can be installed by executing the `install_bundle` commands a
 
 This bundle integrates SnappyData/ComputeDB with Debezium for ingesting initial data and CDC records from MySQL into a SnappyData/ComputeDB cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
 
-```bash
+```console
 install_bundle -download bundle-snappydata-1-docker-debezium_kafka
 ```
 

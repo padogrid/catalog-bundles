@@ -6,4 +6,5 @@ catalog:
       image_url: 
       url: https://github.com/padogrid/bundle-coherence-template
       description: This bundle serves as a template for creating a new Coherence onlne bundle.
+      install: tmp/1-bundle-coherence-template
 

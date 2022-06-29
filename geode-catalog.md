@@ -32,7 +32,11 @@ install_bundle -download bundle-geode-1-app-perf_test_powerbi-cluster-powerbi
 The `wan` bundle includes two (2) local clusters configured with bidirectional WAN gateways. You can test the bundle immediately after installation. No configurations required.
 
 ```bash
-install_bundle -download bundle-geode-1-app-perf_test_wan-cluster-ln-ny
+# To run
+install_bundle -download -workspace bundle-geode-1-app-perf_test_wan-cluster-ln-ny
+
+# To run and/or check in
+install_bundle -checkout bundle-geode-1-app-perf_test_wan-cluster-ln-ny
 ```
 
 [![Bundle: WAN](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny/blob/master/images/wan-ny-ln.png?raw=true)](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny)
@@ -43,7 +47,14 @@ install_bundle -download bundle-geode-1-app-perf_test_wan-cluster-ln-ny
 This bundle is preconfigured to synchronize Geode/GemFire with MySQL running as a Docker container. It includes the `db` cluster app to read/write from/to Geode/GemFire and MySQL. It also includes instructions for replacing MySQL with another database.
 
 ```bash
+# Instal in the current workspace
 install_bundle -download bundle-geode-1-docker-dbsync_mysql
+
+# Install in the new bundle default workspace
+install_bundle -download -workspae bundle-geode-1-docker-dbsync_mysql
+
+# Install in the new bundle default workspace with git intact
+install_bundle -checkout bundle-geode-1-docker-dbsync_mysql
 ```
 
 [![GemFire/Geode and MySQL Sync](https://github.com/padogrid/bundle-geode-1-docker-dbsync_mysql/blob/master/images/mysql-sync.png?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-dbsync_mysql)
@@ -87,7 +98,7 @@ install_bundle -download bundle-geode-1-docker-debezium_ksql_kafka
 This bundle integrates Geode with Debezium and Confluent ksqlDB for ingesting initial data and CDC records from MySQL into Kafka and Geode via a Kafka sink connector included in the `padogrid` distribution.
 
 ```bash
-install_bundle -download bundle-geode-1-docker-debezium_ksqldb_confluent
+install_bundle -checkout bundle-geode-1-docker-debezium_ksqldb_confluent
 ```
 
 [![Debezium-ksqlDB-Confluent Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent/blob/master/images/geode-debezium-confluent.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent)
