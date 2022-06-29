@@ -49,7 +49,7 @@ for PRODUCT in $PRODUCT_LIST; do
   ./update_catalog -header -product $PRODUCT
 done
 
-LINK_HEADER="![PadoGrid](https://github.com/padogrid/padogrid/raw/develop/images/padogrid-3d-16x16.png) [*PadoGrid*](https://github.com/padogrid) | [*Catalogs*](https://github.com/padogrid/catalog-bundles/blob/master/all-catalog.md) | [*Documentation*](https://github.com/padogrid/padogrid/wiki) | [*FAQ*](https://github.com/padogrid/padogrid/wiki/faq) | [*Repositories*](https://github.com/padogrid?tab=repositories)"
+LINK_HEADER="![PadoGrid](https://github.com/padogrid/padogrid/raw/develop/images/padogrid-3d-16x16.png) [*PadoGrid*](https://github.com/padogrid) | [*Catalogs*](https://github.com/padogrid/catalog-bundles/blob/master/all-catalog.md) | [*Documentation*](https://github.com/padogrid/padogrid/wiki) | [*FAQ*](https://github.com/padogrid/padogrid/wiki/faq) | [*Repositories*](https://github.com/padogrid?tab=repositories) | [*Releases*](https://github.com/padogrid/padogrid/releases)"
 
 NONE_HEADER="[Generic (none) Catalog](#books-generic-none-bundle-catalog-books)"
 GEODE_HEADER="[Geode/GemFire Catalog](#books-geodegemfire-bundle-catalog-books)"
