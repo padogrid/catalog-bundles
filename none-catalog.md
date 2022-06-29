@@ -11,7 +11,7 @@ The online bundles can be installed by executing the `install_bundle` commands a
 ---
 ## [1. IMDG Product Benchmark Tests](https://github.com/padogrid/bundle-none-imdg-benchmark-tests)
 
-This bundle provides step-by-step instructions for creating a test environment and conducting benchmark tests on IMDG products.
+---
 
 ```bash
 install_bundle -download -workspace bundle-none-imdg-benchmark-tests
