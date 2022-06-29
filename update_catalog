@@ -195,7 +195,7 @@ BUNDLE_FILE_PATH=${@: -1}
 ARG1=${@: -2}
 
 HEADER1="The online bundles can be installed by executing the \`install_bundle\` commands as shown below. To view use case details for each bundle, click on their image."
-HEADER2="*The bundles listed below are sorted by bundle names, and as such, the order of bundles may change as new bundles are introduced.*"
+HEADER2="*The bundles listed below are sorted by bundle names, and as such the order of bundles may change as new bundles are introduced.*"
 
 echo ""
 echo "Remote Bundle List"
@@ -212,7 +212,7 @@ for GITHUB_USER in $GITHUB_USERS; do
   echo -e "(Repo: ${CLightGreen}$GITHUB_USER_HOME${CNone})"
   echo "catalog:" > $CATALOG_YAML
   echo "{" > $CATALOG_JSON
-  echo "# :books: $PRODUCT_NAME Bundle Catalog - Use Cases :books:" > $CATALOG_MD
+  echo "# :books: $PRODUCT_NAME Bundle Catalog :books:" > $CATALOG_MD
   echo "" >> $CATALOG_MD
   echo "$HEADER1" >> $CATALOG_MD
   echo "" >> $CATALOG_MD

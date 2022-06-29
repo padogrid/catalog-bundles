@@ -1,21 +1,25 @@
-# :earth_americas: PadoGrid Combined Bundle Catalog - Use Cases :earth_americas:
-
-This catalog combines all the online PadoGrid bundles. The bundles in each data grid product are grouped as follows.
-
-- [Generic (none) Catalog](#books-generic-none-bundle-catalog---use-cases-books)
-- [Geode/GemFireBundle Catalog](#books-geodegemfire-bundle-catalog---use-cases-books)
-- [Hazelcast IMDG Bundle Catalog](#books-hazelcast-imdg-bundle-catalog---use-cases-books)
-- [Hazelcast Jet Bundle Catalog](#books-hazelcast-jet-bundle-catalog---use-cases-books)
-- [SnappyData/ComputeDB Bundle Catalog](#books-snappydataconputedb-bundle-catalog---use-cases-books)
-- [Coherence Bundle Catalog](#books-coherence-bundle-catalog---use-cases-books)
+![PadoGrid](https://github.com/padogrid/padogrid/raw/develop/images/padogrid-3d-16x16.png) [*PadoGrid*](https://github.com/padogrid) | [*Catalogs*](https://github.com/padogrid/catalog-bundles/blob/master/all-catalog.md) | [*Documentation*](https://github.com/padogrid/padogrid/wiki) | [*FAQ*](https://github.com/padogrid/padogrid/wiki/faq) | [*Repositories*](https://github.com/padogrid?tab=repositories)
 
 ---
 
-# :books: Generic (none) Bundle Catalog - Use Cases :books:
+# :earth_americas: PadoGrid Bundle Catalogs :earth_americas:
+
+*Bundles represent fully implemented use cases.* This page lists all of the open source PadoGrid bundles. The bundles in each product are grouped as follows.
+
+- [Generic (none) Catalog](#books-generic-none-bundle-catalog-books)
+- [Geode/GemFire Catalog](#books-geodegemfire-bundle-catalog-books)
+- [Hazelcast IMDG Catalog](#books-hazelcast-imdg-bundle-catalog-books)
+- [Hazelcast Jet Catalog](#books-hazelcast-jet-bundle-catalog-books)
+- [SnappyData/ComputeDB Catalog](#books-snappydataconputedb-bundle-catalog-books)
+- [Coherence Catalog](#books-coherence-bundle-catalog-books)
+
+---
+
+# :books: Generic (none) Bundle Catalog :books:
 
 The online bundles can be installed by executing the `install_bundle` commands as shown below. To view use case details for each bundle, click on their image.
 
-*The bundles listed below are sorted by bundle names, and as such, the order of bundles may change as new bundles are introduced.*
+*The bundles listed below are sorted by bundle names, and as such the order of bundles may change as new bundles are introduced.*
 
 ---
 ## [1. IMDG Product Benchmark Tests](https://github.com/padogrid/bundle-none-imdg-benchmark-tests)
@@ -41,11 +45,11 @@ install_bundle -download bundle-none-template
 
 ---
 
-# :books: Geode/GemFire Bundle Catalog - Use Cases :books:
+# :books: Geode/GemFire Bundle Catalog :books:
 
 The online bundles can be installed by executing the `install_bundle` commands as shown below. To view use case details for each bundle, click on their image.
 
-*The bundles listed below are sorted by bundle names, and as such, the order of bundles may change as new bundles are introduced.*
+*The bundles listed below are sorted by bundle names, and as such the order of bundles may change as new bundles are introduced.*
 
 ---
 ## [1. Geode/GemFire Kryo Code Generator](https://github.com/padogrid/bundle-geode-1-app-kryo_codegen)
@@ -159,11 +163,11 @@ install_bundle -download bundle-geode-template
 
 ---
 
-# :books: Hazelcast IMDG Bundle Catalog - Use Cases :books:
+# :books: Hazelcast IMDG Bundle Catalog :books:
 
 The online bundles can be installed by executing the `install_bundle` commands as shown below. To view use case details for each bundle, click on their image.
 
-*The bundles listed below are sorted by bundle names, and as such, the order of bundles may change as new bundles are introduced.*
+*The bundles listed below are sorted by bundle names, and as such the order of bundles may change as new bundles are introduced.*
 
 ---
 ## [1. Bundle: dbsched](https://github.com/padogrid/bundle-hazelcast-3-app-pado_dbsched-perf_test_dbsched-cluster-dbsched)
@@ -391,11 +395,11 @@ install_bundle -download bundle-hazelcast-training-3n4n5-app-perf_test_ssl-clust
 
 ---
 
-# :books: Hazelcast Jet Bundle Catalog - Use Cases :books:
+# :books: Hazelcast Jet Bundle Catalog :books:
 
 The online bundles can be installed by executing the `install_bundle` commands as shown below. To view use case details for each bundle, click on their image.
 
-*The bundles listed below are sorted by bundle names, and as such, the order of bundles may change as new bundles are introduced.*
+*The bundles listed below are sorted by bundle names, and as such the order of bundles may change as new bundles are introduced.*
 
 ---
 ## [1. Jet Cluster: trade](https://github.com/padogrid/bundle-jet-3-cluster-trade)
@@ -432,11 +436,11 @@ install_bundle -download bundle-jet-4-docker-cdc_tutorial
 
 ---
 
-# :books: SnappyData/ConputeDB Bundle Catalog - Use Cases :books:
+# :books: SnappyData/ConputeDB Bundle Catalog :books:
 
 The online bundles can be installed by executing the `install_bundle` commands as shown below. To view use case details for each bundle, click on their image.
 
-*The bundles listed below are sorted by bundle names, and as such, the order of bundles may change as new bundles are introduced.*
+*The bundles listed below are sorted by bundle names, and as such the order of bundles may change as new bundles are introduced.*
 
 ---
 ## [1. Debezium-Kafka SnappyData/ComputeDB Connector](https://github.com/padogrid/bundle-snappydata-1-docker-debezium_kafka)
@@ -462,11 +466,11 @@ install_bundle -download bundle-snappydata-template
 
 ---
 
-# :books: Coherence Bundle Catalog - Use Cases :books:
+# :books: Coherence Bundle Catalog :books:
 
 The online bundles can be installed by executing the `install_bundle` commands as shown below. To view use case details for each bundle, click on their image.
 
-*The bundles listed below are sorted by bundle names, and as such, the order of bundles may change as new bundles are introduced.*
+*The bundles listed below are sorted by bundle names, and as such the order of bundles may change as new bundles are introduced.*
 
 ---
 ## [1. Coherence Bundle Template](https://github.com/padogrid/bundle-coherence-template)
@@ -478,3 +482,7 @@ install_bundle -download bundle-coherence-template
 ```
 
 [![Coherence Bundle Template](https://github.com/padogrid/bundle-coherence-template/blob/master/?raw=true)](https://github.com/padogrid/bundle-coherence-template)
+
+---
+
+![PadoGrid](https://github.com/padogrid/padogrid/raw/develop/images/padogrid-3d-16x16.png) [*PadoGrid*](https://github.com/padogrid) | [*Catalogs*](https://github.com/padogrid/catalog-bundles/blob/master/all-catalog.md) | [*Documentation*](https://github.com/padogrid/padogrid/wiki) | [*FAQ*](https://github.com/padogrid/padogrid/wiki/faq) | [*Repositories*](https://github.com/padogrid?tab=repositories)

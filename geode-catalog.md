@@ -1,8 +1,12 @@
-# :books: Geode/GemFire Bundle Catalog - Use Cases :books:
+![PadoGrid](https://github.com/padogrid/padogrid/raw/develop/images/padogrid-3d-16x16.png) [*PadoGrid*](https://github.com/padogrid) | [*Catalogs*](https://github.com/padogrid/catalog-bundles/blob/master/all-catalog.md) | [*Documentation*](https://github.com/padogrid/padogrid/wiki) | [*FAQ*](https://github.com/padogrid/padogrid/wiki/faq) | [*Repositories*](https://github.com/padogrid?tab=repositories)
+
+---
+
+# :books: Geode/GemFire Bundle Catalog :books:
 
 The online bundles can be installed by executing the `install_bundle` commands as shown below. To view use case details for each bundle, click on their image.
 
-*The bundles listed below are sorted by bundle names, and as such, the order of bundles may change as new bundles are introduced.*
+*The bundles listed below are sorted by bundle names, and as such the order of bundles may change as new bundles are introduced.*
 
 ---
 ## [1. Geode/GemFire Kryo Code Generator](https://github.com/padogrid/bundle-geode-1-app-kryo_codegen)
@@ -113,3 +117,7 @@ install_bundle -download bundle-geode-template
 ```
 
 [![Geode Bundle Template](https://github.com/padogrid/bundle-geode-template/blob/master/?raw=true)](https://github.com/padogrid/bundle-geode-template)
+
+---
+
+![PadoGrid](https://github.com/padogrid/padogrid/raw/develop/images/padogrid-3d-16x16.png) [*PadoGrid*](https://github.com/padogrid) | [*Catalogs*](https://github.com/padogrid/catalog-bundles/blob/master/all-catalog.md) | [*Documentation*](https://github.com/padogrid/padogrid/wiki) | [*FAQ*](https://github.com/padogrid/padogrid/wiki/faq) | [*Repositories*](https://github.com/padogrid?tab=repositories)

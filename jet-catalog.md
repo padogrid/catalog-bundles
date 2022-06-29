@@ -1,8 +1,12 @@
-# :books: Hazelcast Jet Bundle Catalog - Use Cases :books:
+![PadoGrid](https://github.com/padogrid/padogrid/raw/develop/images/padogrid-3d-16x16.png) [*PadoGrid*](https://github.com/padogrid) | [*Catalogs*](https://github.com/padogrid/catalog-bundles/blob/master/all-catalog.md) | [*Documentation*](https://github.com/padogrid/padogrid/wiki) | [*FAQ*](https://github.com/padogrid/padogrid/wiki/faq) | [*Repositories*](https://github.com/padogrid?tab=repositories)
+
+---
+
+# :books: Hazelcast Jet Bundle Catalog :books:
 
 The online bundles can be installed by executing the `install_bundle` commands as shown below. To view use case details for each bundle, click on their image.
 
-*The bundles listed below are sorted by bundle names, and as such, the order of bundles may change as new bundles are introduced.*
+*The bundles listed below are sorted by bundle names, and as such the order of bundles may change as new bundles are introduced.*
 
 ---
 ## [1. Jet Cluster: trade](https://github.com/padogrid/bundle-jet-3-cluster-trade)
@@ -36,3 +40,7 @@ install_bundle -download bundle-jet-4-docker-cdc_tutorial
 ```
 
 [![Jet CDC Tutorial](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial/blob/master//images/jet-cdc-tutorial.png?raw=true)](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial)
+
+---
+
+![PadoGrid](https://github.com/padogrid/padogrid/raw/develop/images/padogrid-3d-16x16.png) [*PadoGrid*](https://github.com/padogrid) | [*Catalogs*](https://github.com/padogrid/catalog-bundles/blob/master/all-catalog.md) | [*Documentation*](https://github.com/padogrid/padogrid/wiki) | [*FAQ*](https://github.com/padogrid/padogrid/wiki/faq) | [*Repositories*](https://github.com/padogrid?tab=repositories)

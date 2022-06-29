@@ -49,18 +49,26 @@ for PRODUCT in $PRODUCT_LIST; do
   ./update_catalog -header -product $PRODUCT
 done
 
-NONE_HEADER="[Generic (none) Catalog](#books-generic-none-bundle-catalog---use-cases-books)"
-GEODE_HEADER="[Geode/GemFireBundle Catalog](#books-geodegemfire-bundle-catalog---use-cases-books)"
-HAZELCAST_HEADER="[Hazelcast IMDG Bundle Catalog](#books-hazelcast-imdg-bundle-catalog---use-cases-books)"
-JET_HEADER="[Hazelcast Jet Bundle Catalog](#books-hazelcast-jet-bundle-catalog---use-cases-books)"
-SNAPPYDATA_HEADER="[SnappyData/ComputeDB Bundle Catalog](#books-snappydataconputedb-bundle-catalog---use-cases-books)"
-COHERENCE_HEADER="[Coherence Bundle Catalog](#books-coherence-bundle-catalog---use-cases-books)"
+LINK_HEADER="![PadoGrid](https://github.com/padogrid/padogrid/raw/develop/images/padogrid-3d-16x16.png) [*PadoGrid*](https://github.com/padogrid) | [*Catalogs*](https://github.com/padogrid/catalog-bundles/blob/master/all-catalog.md) | [*Documentation*](https://github.com/padogrid/padogrid/wiki) | [*FAQ*](https://github.com/padogrid/padogrid/wiki/faq) | [*Repositories*](https://github.com/padogrid?tab=repositories)"
+
+NONE_HEADER="[Generic (none) Catalog](#books-generic-none-bundle-catalog-books)"
+GEODE_HEADER="[Geode/GemFire Catalog](#books-geodegemfire-bundle-catalog-books)"
+HAZELCAST_HEADER="[Hazelcast IMDG Catalog](#books-hazelcast-imdg-bundle-catalog-books)"
+JET_HEADER="[Hazelcast Jet Catalog](#books-hazelcast-jet-bundle-catalog-books)"
+SNAPPYDATA_HEADER="[SnappyData/ComputeDB Catalog](#books-snappydataconputedb-bundle-catalog-books)"
+COHERENCE_HEADER="[Coherence Catalog](#books-coherence-bundle-catalog-books)"
 
 # Generate combined catalog
 echo "Generating combined catalog..."
-echo "# :earth_americas: PadoGrid Combined Bundle Catalog - Use Cases :earth_americas:" > $ALL_MD
+
+# Start with the link header
+echo "$LINK_HEADER" > $ALL_MD
 echo "" >> $ALL_MD
-echo "This catalog combines all the online PadoGrid bundles. The bundles in each data grid product are grouped as follows." >> $ALL_MD
+echo "---" >> $ALL_MD
+echo "" >> $ALL_MD
+echo "# :earth_americas: PadoGrid Bundle Catalogs :earth_americas:" >> $ALL_MD
+echo "" >> $ALL_MD
+echo "*Bundles represent fully implemented use cases.* This page lists all of the open source PadoGrid bundles. The bundles in each product are grouped as follows." >> $ALL_MD
 echo "" >> $ALL_MD
 echo "- $NONE_HEADER" >> $ALL_MD
 echo "- $GEODE_HEADER" >> $ALL_MD
@@ -68,10 +76,39 @@ echo "- $HAZELCAST_HEADER" >> $ALL_MD
 echo "- $JET_HEADER" >> $ALL_MD
 echo "- $SNAPPYDATA_HEADER" >> $ALL_MD
 echo "- $COHERENCE_HEADER" >> $ALL_MD
+
+# Create link header files for products
+LINK_HEADER_TOP_FILE="tmp/top_link.md"
+echo "$LINK_HEADER" > $LINK_HEADER_TOP_FILE
+echo "" >> "$LINK_HEADER_TOP_FILE"
+echo "---" >> "$LINK_HEADER_TOP_FILE"
+echo "" >> "$LINK_HEADER_TOP_FILE"
+LINK_HEADER_BOTTOM_FILE="tmp/bottom_link.md"
+echo "" > "$LINK_HEADER_BOTTOM_FILE"
+echo "---" >> "$LINK_HEADER_BOTTOM_FILE"
+echo "" >> "$LINK_HEADER_BOTTOM_FILE"
+echo "$LINK_HEADER" >> "$LINK_HEADER_BOTTOM_FILE"
+
+# Append prodct MDs
 for PRODUCT in $PRODUCT_LIST; do
     echo "" >> $ALL_MD
     echo "---" >> $ALL_MD
     echo "" >> $ALL_MD
     cat $PRODUCT-catalog.md >> $ALL_MD
+
+    # Add the link hader in the product catalog md
+    # Top
+    mv $PRODUCT-catalog.md tmp/tmp.md
+    cp $LINK_HEADER_TOP_FILE $PRODUCT-catalog.md
+    cat tmp/tmp.md >> $PRODUCT-catalog.md
+    # Bottom
+    cat $LINK_HEADER_BOTTOM_FILE >> $PRODUCT-catalog.md
 done
+
+# End with the link header
+echo "" >> $ALL_MD
+echo "---" >> $ALL_MD
+echo "" >> $ALL_MD
+echo "$LINK_HEADER" >> $ALL_MD
+
 echo "$EXECUTABLE complete."
