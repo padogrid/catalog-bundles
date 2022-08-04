@@ -1,20 +1,20 @@
 {
-  "bundle-snappydata-template":
-  {
-    "title": "SnappyData Bundle Template",
-    "image_label": "SnappyData Bundle Template",
-    "image_url": "",
-    "url": "https://github.com/padogrid/bundle-snappydata-template",
-    "description": "This bundle serves as a template for creating a new SnappyData onlne bundle.",
-    "install": "tmp/1-bundle-snappydata-template"
-  },
   "bundle-snappydata-1-docker-debezium_kafka":
   {
     "title": "Debezium-Kafka SnappyData/ComputeDB Connector",
     "image_label": "Debezium-Kafka SnappyData/ComputeDB Connector",
     "image_url": "/images/debezium-kafka.jpg",
     "url": "https://github.com/padogrid/bundle-snappydata-1-docker-debezium_kafka",
-    "description": "This bundle integrates SnappyData/ComputeDB with Debezium for ingesting initial data and CDC records from MySQL into a SnappyData/ComputeDB cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.",
-    "install": "tmp/2-bundle-snappydata-1-docker-debezium_kafka"
+    "description": "--- # Debezium-Kafka SnappyData/ComputeDB Connector",
+    "install": "tmp/1-bundle-snappydata-1-docker-debezium_kafka"
+  },
+  "bundle-snappydata-template":
+  {
+    "title": "SnappyData Bundle Template",
+    "image_label": "SnappyData Bundle Template",
+    "image_url": "https://github.com/padogrid/padogrid/wiki/Quick-Start | head -n 30",
+    "url": "https://github.com/padogrid/bundle-snappydata-template",
+    "description": "--- # SnappyData Bundle Template",
+    "install": "tmp/2-bundle-snappydata-template"
   }
 }

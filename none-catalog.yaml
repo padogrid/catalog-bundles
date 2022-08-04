@@ -12,8 +12,8 @@ catalog:
       title: Generic (none) Bundle Template
       name: bundle-none-template
       image_label: Generic (none) Bundle Template
-      image_url: 
+      image_url: https://github.com/padogrid/padogrid/wiki/Quick-Start | head -n 30
       url: https://github.com/padogrid/bundle-none-template
-      description: This bundle serves as a template for creating a new generic onlne bundle.
+      description: ---
       install: tmp/2-bundle-none-template
 
