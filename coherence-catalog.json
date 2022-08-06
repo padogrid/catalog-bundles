@@ -3,9 +3,9 @@
   {
     "title": "Coherence Bundle Template",
     "image_label": "Coherence Bundle Template",
-    "image_url": "https://github.com/padogrid/padogrid/wiki/Quick-Start | head -n 30",
+    "image_url": "https://github.com/padogrid/padogrid/wiki/Quick-Start",
     "url": "https://github.com/padogrid/bundle-coherence-template",
-    "description": "--- # Coherence Bundle Template",
+    "description": "This bundle serves as a template for creating a new Coherence onlne bundle.",
     "install": "tmp/1-bundle-coherence-template"
   }
 }

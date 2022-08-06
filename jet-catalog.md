@@ -11,7 +11,7 @@ The online bundles can be installed by executing the `install_bundle` commands a
 ---
 ## [1. Jet Cluster: trade](https://github.com/padogrid/bundle-jet-3-cluster-trade)
 
---- # Jet Cluster: trade
+The `trade` cluster bundle installs a Jet cluster that includes the `build_app` script to clone and build the `realtime-trade-monitor` project maintained at the GitHub URL shown below. [https://github.com/cangencer/realtime-trade-monitor.git](https://github.com/cangencer/realtime-trade-monitor.git)
 
 ```console
 install_bundle -download bundle-jet-3-cluster-trade
@@ -22,7 +22,7 @@ install_bundle -download bundle-jet-3-cluster-trade
 ---
 ## [2. Jet App: trade-monitor](https://github.com/padogrid/bundle-jet-4-app-trade)
 
---- # Jet App: trade-monitor
+The `trade-monitor` app bundle installs the `trade-monitor` demo as part of the `hazelcast/hazelcast-platform-demos` GitHub repo maintained by Hazelcast. [https://github.com/hazelcast/hazelcast-platform-demos/tree/master/banking/trade-monitor](https://github.com/hazelcast/hazelcast-platform-demos/tree/master/banking/trade-monitor)
 
 ```console
 install_bundle -download bundle-jet-4-app-trade
@@ -33,7 +33,7 @@ install_bundle -download bundle-jet-4-app-trade
 ---
 ## [3. Jet CDC Tutorial](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial)
 
---- # Jet CDC Tutorial
+The `cdc_tutorial` bundle wraps the CDC tutorial available from the Hazelcast site [https://jet-start.sh/docs/tutorials/cdc](https://jet-start.sh/docs/tutorials/cdc).
 
 ```console
 install_bundle -download bundle-jet-4-docker-cdc_tutorial

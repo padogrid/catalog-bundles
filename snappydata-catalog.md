@@ -11,7 +11,7 @@ The online bundles can be installed by executing the `install_bundle` commands a
 ---
 ## [1. Debezium-Kafka SnappyData/ComputeDB Connector](https://github.com/padogrid/bundle-snappydata-1-docker-debezium_kafka)
 
---- # Debezium-Kafka SnappyData/ComputeDB Connector
+This bundle integrates SnappyData/ComputeDB with Debezium for ingesting initial data and CDC records from MySQL into a SnappyData/ComputeDB cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
 
 ```console
 install_bundle -download bundle-snappydata-1-docker-debezium_kafka
@@ -22,13 +22,13 @@ install_bundle -download bundle-snappydata-1-docker-debezium_kafka
 ---
 ## [2. SnappyData Bundle Template](https://github.com/padogrid/bundle-snappydata-template)
 
---- # SnappyData Bundle Template
+This bundle serves as a template for creating a new SnappyData onlne bundle.
 
 ```bash
 install_bundle -download bundle-snappydata-template
 ```
 
-[![SnappyData Bundle Template](https://github.com/padogrid/padogrid/wiki/Quick-Start | head -n 30)](https://github.com/padogrid/bundle-snappydata-template)
+[![SnappyData Bundle Template](https://github.com/padogrid/padogrid/wiki/Quick-Start)](https://github.com/padogrid/bundle-snappydata-template)
 
 ---
 

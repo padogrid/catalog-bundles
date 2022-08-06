@@ -254,14 +254,12 @@ for GITHUB_USER in $GITHUB_USERS; do
            if [ "$HEADER" == "true" ]; then
               RAW_README_URL="$RAW_BASE_URL/${BUNDLE_NAME}/master/README.md"
     
-              BUFFER="$(curl -sS $RAW_README_URL) | head -n 30"
-              #TITLE=$(echo "$BUFFER" | head -n 1 | sed 's/^# //')
+              BUFFER="$(curl -sS $RAW_README_URL)"
               TITLE=$(echo "$BUFFER" | grep -m 1 "^# " | sed 's/^# //')
               BUFFER=$(echo "$BUFFER" | sed '1d')
-              DESCRIPTION=$(echo "$BUFFER" | head -n 3 | sed '1d')
+              DESCRIPTION=$(echo "$BUFFER" | sed -e '/Installing Bundle/,$d' -e '/Table of Contents/,$d' -e '1,/^#.*$/d')
               DESCRIPTION=$(echo -n $DESCRIPTION)
               IMAGE_LABEL=$TITLE
-              #IMAGE_URL=$(echo "$BUFFER" | grep -m 1 images)
               IMAGE_URL=$(echo "$BUFFER" | grep "images/" | sed '/Driven/d' | grep -m 1 images)
               IMAGE_URL=$(echo "$IMAGE_URL" | sed -e 's/.*(//' -e 's/)//')
               if [[ "$IMAGE_URL" == "https"* ]]; then
