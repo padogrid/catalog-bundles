@@ -85,9 +85,8 @@ install_bundle -download bundle-geode-1-app-perf_test_sb-cluster-sb
 [![Cluster Split-Brain](https://github.com/padogrid/bundle-geode-1-app-perf_test_sb-cluster-sb/blob/master/images/split-brain-Type-2.drawio.png?raw=true)](https://github.com/padogrid/bundle-geode-1-app-perf_test_sb-cluster-sb)
 
 ---
-## [4. Bundle: WAN](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny)
 
---- # Bundle: WAN
+## [4. Bundle: WAN](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny)
 
 ```bash
 # To run
