@@ -77,6 +77,11 @@ echo "- $JET_HEADER" >> $ALL_MD
 echo "- $SNAPPYDATA_HEADER" >> $ALL_MD
 echo "- $COHERENCE_HEADER" >> $ALL_MD
 
+# Place interim files in the tmp dir
+if [ ! -d tmp ]; then
+   mkdir tmp
+fi
+
 # Create link header files for products
 LINK_HEADER_TOP_FILE="tmp/top_link.md"
 echo "$LINK_HEADER" > $LINK_HEADER_TOP_FILE
