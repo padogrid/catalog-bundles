@@ -33,10 +33,10 @@ install_bundle -download bundle-geode-1-app-perf_test_powerbi-cluster-powerbi
 ---
 ## [3. Geode/GemFire Split-Brain](https://github.com/padogrid/bundle-geode-1-app-perf_test_sb-cluster-sb)
 
-This bundle provides scripts, configuration files, and apps for creating a Geode/GemFire network split-brain environment where you can test Geode/GemFire split-brain capabilities.
+This bundle provides scripts, configuration files, and apps for creating a Geode/GemFire network split-brain environment where you can test Geode/GemFire split-brain capabilities. Although it focuses on split-brain issues, the scripts provided cover any system failures.
 
 ```console
-install_bundle -download bundle-geode-1-app-perf_test_sb-cluster-sb
+install_bundle -download -workspace bundle-geode-1-app-perf_test_sb-cluster-sb
 ```
 
 [![Geode/GemFire Split-Brain](https://github.com/padogrid/bundle-geode-1-app-perf_test_sb-cluster-sb/blob/master/images/split-brain-Type-2.drawio.png?raw=true)](https://github.com/padogrid/bundle-geode-1-app-perf_test_sb-cluster-sb)
