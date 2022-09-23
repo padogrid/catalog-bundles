@@ -1,12 +1,12 @@
 catalog:
   - bundle:
       title: Bundle: dbsched
-      name: bundle-hazelcast-3n4n5-app-pado_dbsched-perf_test_dbsched-cluster-dbsched
+      name: bundle-hazelcast-3n4n5-app-pado_dbsched-perf_test_dbsched-docker-mysql
       image_label: Bundle: dbsched
       image_url: images/db-sched.png
-      url: https://github.com/padogrid/bundle-hazelcast-3n4n5-app-pado_dbsched-perf_test_dbsched-cluster-dbsched
+      url: https://github.com/padogrid/bundle-hazelcast-3n4n5-app-pado_dbsched-perf_test_dbsched-docker-mysql
       description: The `dbsched` bundle is preconfigured with the Pado scheduler to periodically execute jobs that dump database tables to CSV files from which it automatically extracts column information to generate the corresponding `VersionedPortable` classes. It then transforms the CSV records to objects using the generated classes before ingesting them into Hazelcast.
-      install: tmp/1-bundle-hazelcast-3n4n5-app-pado_dbsched-perf_test_dbsched-cluster-dbsched
+      install: tmp/1-bundle-hazelcast-3n4n5-app-pado_dbsched-perf_test_dbsched-docker-mysql
 
   - bundle:
       title: App: Pado
