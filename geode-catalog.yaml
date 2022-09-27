@@ -1,12 +1,21 @@
 catalog:
   - bundle:
+      title: Geode/GemFire Split-Brain
+      name: bundle-geode-1-app-perf_test_sb-cluster-sb
+      image_label: Geode/GemFire Split-Brain
+      image_url: images/split-brain-Type-2.drawio.png
+      url: https://github.com/padogrid/bundle-geode-1-app-perf_test_sb-cluster-sb
+      description: This bundle provides scripts, configuration files, and apps for creating a Geode/GemFire network split-brain environment where you can test Geode/GemFire split-brain capabilities. Although it focuses on split-brain issues, the scripts provided cover any system failures.
+      install: tmp/1-bundle-geode-1-app-perf_test_sb-cluster-sb
+
+  - bundle:
       title: Geode Bundle Template
       name: bundle-geode-template
       image_label: Geode Bundle Template
       image_url: https://github.com/padogrid/padogrid/wiki/Quick-Start
       url: https://github.com/padogrid/bundle-geode-template
       description: This bundle serves as a template for creating a new Geode onlne bundle.
-      install: tmp/1-bundle-geode-template
+      install: tmp/2-bundle-geode-template
 
   - bundle:
       title: Bundle: WAN
@@ -15,16 +24,7 @@ catalog:
       image_url: images/wan-ny-ln.png
       url: https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny
       description: The `wan` bundle includes two (2) local clusters configured with bidirectional WAN gateways. You can test the bundle immediately after installation. No configurations required. To understand how the clusters are configured, please see the following WAN example. It provides step-by-step instructions for creating and running WAN enabled clusters from scratch. [Geode/GemFire WAN Example](https://github.com/padogrid/padogrid/wiki/Geode-WAN-Example)
-      install: tmp/2-bundle-geode-1-app-perf_test_wan-cluster-ln-ny
-
-  - bundle:
-      title: Geode/GemFire Split-Brain
-      name: bundle-geode-1-app-perf_test_sb-cluster-sb
-      image_label: Geode/GemFire Split-Brain
-      image_url: images/split-brain-Type-2.drawio.png
-      url: https://github.com/padogrid/bundle-geode-1-app-perf_test_sb-cluster-sb
-      description: This bundle provides scripts, configuration files, and apps for creating a Geode/GemFire network split-brain environment where you can test Geode/GemFire split-brain capabilities. Although it focuses on split-brain issues, the scripts provided cover any system failures.
-      install: tmp/3-bundle-geode-1-app-perf_test_sb-cluster-sb
+      install: tmp/3-bundle-geode-1-app-perf_test_wan-cluster-ln-ny
 
   - bundle:
       title: Geode/GemFire Kryo Code Generator
