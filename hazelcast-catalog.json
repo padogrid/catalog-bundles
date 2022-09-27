@@ -1,11 +1,11 @@
 {
   "bundle-hazelcast-examples-python":
   {
-    "title": "A Hazelcast Python Example",
-    "image_label": "A Hazelcast Python Example",
+    "title": "Hazelcast JupyterLab Python Examples",
+    "image_label": "Hazelcast JupyterLab Python Examples",
     "image_url": "images/examples-python.drawio.png",
     "url": "https://github.com/padogrid/bundle-hazelcast-examples-python",
-    "description": "This bundle provides Python client examples running on PythonLab in PadoGrid. It demonstrates how PadoGrid workspaces are seamlessly integrated with JupyterLab workspaces.",
+    "description": "This bundle provides Hazelcast Python client examples running on PythonLab in PadoGrid. It demonstrates how PadoGrid workspaces are seamlessly integrated with JupyterLab workspaces.",
     "install": "tmp/1-bundle-hazelcast-examples-python"
   },
   "bundle-hazelcast-4n5-cluster-session":

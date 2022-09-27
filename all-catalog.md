@@ -361,15 +361,15 @@ switch_workspace sesson-wan
 [![Session Expiration in WAN Environment](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan/blob/master/images/wan-session-expiration.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan)
 
 ---
-## [16. A Hazelcast Python Example](https://github.com/padogrid/bundle-hazelcast-examples-python)
+## [16. Hazelcast JupyterLab Python Examples](https://github.com/padogrid/bundle-hazelcast-examples-python)
 
-This bundle provides Python client examples running on PythonLab in PadoGrid. It demonstrates how PadoGrid workspaces are seamlessly integrated with JupyterLab workspaces.
+This bundle provides Hazelcast Python client examples running on PythonLab in PadoGrid. It demonstrates how PadoGrid workspaces are seamlessly integrated with JupyterLab workspaces.
 
 ```bash
 install_bundle -download -workspace bundle-hazelcast-examples-python
 ```
 
-[![A Hazelcast Python Example](https://github.com/padogrid/bundle-hazelcast-examples-python/blob/master/images/examples-python.drawio.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-examples-python)
+[![Hazelcast JupyterLab Python Examples](https://github.com/padogrid/bundle-hazelcast-examples-python/blob/master/images/examples-python.drawio.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-examples-python)
 
 ---
 ## [17. Hazelcast Bundle Template](https://github.com/padogrid/bundle-hazelcast-template)
