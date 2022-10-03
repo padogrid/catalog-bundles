@@ -113,7 +113,7 @@ install_bundle -download bundle-geode-1-docker-debezium_ksql_kafka
 This bundle integrates Geode with Debezium and Confluent ksqlDB for ingesting initial data and CDC records from MySQL into Kafka and Geode via a Kafka sink connector included in the `padogrid` distribution.
 
 ```bash
-install_bundle -checkout bundle-geode-1-docker-debezium_ksqldb_confluent
+install_bundle -download -workspace bundle-geode-1-docker-debezium_ksqldb_confluent
 ```
 
 [![Debezium-ksqlDB-Confluent Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent/blob/master/images/geode-debezium-confluent.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent)

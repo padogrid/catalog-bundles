@@ -156,7 +156,7 @@ install_bundle -download bundle-geode-1-docker-debezium_ksql_kafka
 This bundle integrates Geode with Debezium and Confluent ksqlDB for ingesting initial data and CDC records from MySQL into Kafka and Geode via a Kafka sink connector included in the `padogrid` distribution.
 
 ```bash
-install_bundle -checkout bundle-geode-1-docker-debezium_ksqldb_confluent
+install_bundle -download -workspace bundle-geode-1-docker-debezium_ksqldb_confluent
 ```
 
 [![Debezium-ksqlDB-Confluent Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent/blob/master/images/geode-debezium-confluent.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent)
@@ -361,7 +361,18 @@ switch_workspace sesson-wan
 [![Session Expiration in WAN Environment](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan/blob/master/images/wan-session-expiration.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-4n5-cluster-session-wan)
 
 ---
-## [16. Hazelcast JupyterLab Python Examples](https://github.com/padogrid/bundle-hazelcast-examples-python)
+## [16. Debezium-ksqlDB-Confluent Hazelcast Connector](https://github.com/padogrid/bundle-hazelcast-5-docker-debezium_ksqldb_confluent)
+
+This bundle integrates Hazelcast with Debezium and Confluent ksqlDB for ingesting initial data and CDC records from MySQL into Kafka and Hazelcast via a Kafka sink connector included in the `padogrid` distribution.
+
+```bash
+install_bundle -download -workspace bundle-hazelcast-5-docker-debezium_ksqldb_confluent
+```
+
+[![Debezium-ksqlDB-Confluent Hazelcast Connector](https://github.com/padogrid/bundle-hazelcast-5-docker-debezium_ksqldb_confluent/blob/master/images/hazelcast-debezium-confluent.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-5-docker-debezium_ksqldb_confluent)
+
+---
+## [17. Hazelcast JupyterLab Python Examples](https://github.com/padogrid/bundle-hazelcast-examples-python)
 
 This bundle provides Hazelcast Python client examples running on PythonLab in PadoGrid. It demonstrates how PadoGrid workspaces are seamlessly integrated with JupyterLab workspaces.
 
@@ -372,7 +383,7 @@ install_bundle -download -workspace bundle-hazelcast-examples-python
 [![Hazelcast JupyterLab Python Examples](https://github.com/padogrid/bundle-hazelcast-examples-python/blob/master/images/examples-python.drawio.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-examples-python)
 
 ---
-## [17. Hazelcast Bundle Template](https://github.com/padogrid/bundle-hazelcast-template)
+## [18. Hazelcast Bundle Template](https://github.com/padogrid/bundle-hazelcast-template)
 
 This bundle serves as a template for creating a new Hazelcast onlne bundle.
 
@@ -383,7 +394,7 @@ install_bundle -download bundle-hazelcast-template
 [![Hazelcast Bundle Template](https://github.com/padogrid/padogrid/wiki/Quick-Start)](https://github.com/padogrid/bundle-hazelcast-template)
 
 ---
-## [18. Rolling Upgrade Training](https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11)
+## [19. Rolling Upgrade Training](https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11)
 
 As part of the Rolling Upgrade lab of Hazelcast Operations Training, this bundle includes a cluster and an app preconfigured to run with Hazelcast Enterprise 3.11.x which must be installed separately.
 
@@ -394,7 +405,7 @@ install_bundle -download bundle-hazelcast-training-3.11-app-perf_test_v3.11-clus
 [![Rolling Upgrade Training](https://github.com/padogrid/padogrid/wiki/Quick-Start)](https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11)
 
 ---
-## [19. IMDG Cluster: openssl](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl)
+## [20. IMDG Cluster: openssl](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl)
 
 As part of the TLS/SSL lab of Hazelcast Operations Training, this bundle includes the `openssl` cluster preconfigured to enable OpenSSL/BoringSSL.
 
@@ -405,7 +416,7 @@ install_bundle -download bundle-hazelcast-training-3n4n5-app-perf_test_openssl-c
 [![IMDG Cluster: openssl](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl/blob/master/images/openssl-cluster.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl)
 
 ---
-## [20. IMDG Cluster: ssl](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl)
+## [21. IMDG Cluster: ssl](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl)
 
 As part of the TLS/SSL lab of Hazelcast Operations Training, the `ssl` cluster has been preconfigured to enable SSL. It contains scripts to create both private and trust keystores that contain both member and client keys and certificates.
 
