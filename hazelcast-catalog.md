@@ -95,7 +95,7 @@ install_bundle -download bundle-hazelcast-3n4n5-docker-debezium_ksql_kafka
 ---
 ## [8. Hazelcast OpenShift Helm Charts](https://github.com/padogrid/bundle-hazelcast-3n4n5-k8s-oc_helm)
 
-This bundle deploys Hazelcast using Helm Charts with Prometheus metrics enabled. It also includes the PadoGrid container for ingesting mock data into the Hazelcast cluster. For Prometheus instructions plese see the following link: [Configuring Prometheus Metrics](README-PROM.md).
+This bundle deploys Hazelcast using Helm Charts with Prometheus metrics enabled. It also includes the PadoGrid container for ingesting mock data into the Hazelcast cluster. For Prometheus instructions please see the following link: [Configuring Prometheus Metrics](README-PROM.md).
 
 ```bash
 install_bundle -download bundle-hazelcast-3n4n5-k8s-oc_helm
@@ -202,7 +202,7 @@ install_bundle -download -workspace bundle-hazelcast-5-docker-debezium_ksqldb_co
 ---
 ## [17. Hazelcast JupyterLab Python Examples](https://github.com/padogrid/bundle-hazelcast-examples-python)
 
-This bundle provides Hazelcast Python client examples running on PythonLab in PadoGrid. It demonstrates how PadoGrid workspaces are seamlessly integrated with JupyterLab workspaces.
+This bundle provides Hazelcast Python client examples running on JupyterLab in PadoGrid. It demonstrates how PadoGrid workspaces are seamlessly integrated with JupyterLab workspaces.
 
 ```bash
 install_bundle -download -workspace bundle-hazelcast-examples-python
