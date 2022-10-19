@@ -44,6 +44,17 @@ install_bundle -download bundle-none-template
 [![Generic (none) Bundle Template](https://github.com/padogrid/padogrid/wiki/Quick-Start)](https://github.com/padogrid/bundle-none-template)
 
 ---
+## [3. PadoGrid Tutorial](https://github.com/padogrid/bundle-none-tutorial-padogrid)
+
+This tutorial bundle covers PadoGrid essentials.
+
+```bash
+install_bundle -checkout bundle-none-tutorial-padogrid
+```
+
+[![PadoGrid Tutorial](https://github.com/padogrid/bundle-none-tutorial-padogrid/blob/master/images/padogrid-tutorial.drawio.png?raw=true)](https://github.com/padogrid/bundle-none-tutorial-padogrid)
+
+---
 
 # :books: Geode/GemFire Bundle Catalog :books:
 

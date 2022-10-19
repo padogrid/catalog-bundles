@@ -1,12 +1,21 @@
 catalog:
   - bundle:
+      title: PadoGrid Tutorial
+      name: bundle-none-tutorial-padogrid
+      image_label: PadoGrid Tutorial
+      image_url: images/padogrid-tutorial.drawio.png
+      url: https://github.com/padogrid/bundle-none-tutorial-padogrid
+      description: This tutorial bundle covers PadoGrid essentials.
+      install: tmp/1-bundle-none-tutorial-padogrid
+
+  - bundle:
       title: Generic (none) Bundle Template
       name: bundle-none-template
       image_label: Generic (none) Bundle Template
       image_url: https://github.com/padogrid/padogrid/wiki/Quick-Start
       url: https://github.com/padogrid/bundle-none-template
       description: This bundle serves as a template for creating a new generic onlne bundle.
-      install: tmp/1-bundle-none-template
+      install: tmp/2-bundle-none-template
 
   - bundle:
       title: IMDG Product Benchmark Tests
@@ -15,5 +24,5 @@ catalog:
       image_url: images/benchmark-clusters.png
       url: https://github.com/padogrid/bundle-none-imdg-benchmark-tests
       description: This bundle provides step-by-step instructions for creating a test environment and conducting benchmark tests on IMDG products.
-      install: tmp/2-bundle-none-imdg-benchmark-tests
+      install: tmp/3-bundle-none-imdg-benchmark-tests
 
