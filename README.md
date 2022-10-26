@@ -6,6 +6,8 @@ This repo provides online catalogs of PadoGrid bundles that are readily availabl
 - [Geode/GemFire Bundle Catalog](geode-catalog.md)
 - [Hazelcast IMDG Bundle Catalog](hazelcast-catalog.md)
 - [Hazelcast Jet Bundle Catalog](jet-catalog.md)
+- [Kafka Bundle Catalog](kafka-catalog.md)
+- [Kafka Confluent Bundle Catalog](confluent-catalog.md)
 - [SnappyData/ComputeDB Catalog](snappydata-catalog.md)
 - [Coherence Catalog](coherence-catalog.md)
 - [Combined Bundle Catalog](all-catalog.md)
