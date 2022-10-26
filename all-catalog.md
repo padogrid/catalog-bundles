@@ -7,10 +7,11 @@
 *Bundles represent fully implemented use cases.* This page lists all of the open source PadoGrid bundles. The bundles in each product are grouped as follows.
 
 - [Generic (none) Catalog](#books-generic-none-bundle-catalog-books)
-- [Kafka/Confluent Catalog](#books-kafkaconfluent-bundle-catalog-books)
 - [Geode/GemFire Catalog](#books-geodegemfire-bundle-catalog-books)
 - [Hazelcast IMDG Catalog](#books-hazelcast-imdg-bundle-catalog-books)
 - [Hazelcast Jet Catalog](#books-hazelcast-jet-bundle-catalog-books)
+- [Kafka Catalog](#books-kafka-bundle-catalog-books)
+- [Kafka Confluent Catalog](#books-kafka-confluent-bundle-catalog-books)
 - [SnappyData/ComputeDB Catalog](#books-snappydataconputedb-bundle-catalog-books)
 - [Coherence Catalog](#books-coherence-bundle-catalog-books)
 
@@ -518,7 +519,7 @@ install_bundle -download -workspace bundle-confluent-7-examples-python
 [![Confluent JupyterLab Python Examples](https://github.com/padogrid/bundle-confluent-7-examples-python/blob/master/images/confluent-examples-python.drawio.png?raw=true)](https://github.com/padogrid/bundle-confluent-7-examples-python)
 
 ---
-## [2. Kafka Bundle Template](https://github.com/padogrid/bundle-confluent-template)
+## [2. Kafka Confluent Bundle Template](https://github.com/padogrid/bundle-confluent-template)
 
 This bundle serves as a template for creating a new Kafka onlne bundle.
 
@@ -526,7 +527,7 @@ This bundle serves as a template for creating a new Kafka onlne bundle.
 install_bundle -download bundle-confluent-template
 ```
 
-[![Kafka Bundle Template](https://github.com/padogrid/padogrid/wiki/Quick-Start)](https://github.com/padogrid/bundle-confluent-template)
+[![Kafka Confluent Bundle Template](https://github.com/padogrid/padogrid/wiki/Quick-Start)](https://github.com/padogrid/bundle-confluent-template)
 
 ---
 

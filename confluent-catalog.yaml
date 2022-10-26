@@ -1,8 +1,8 @@
 catalog:
   - bundle:
-      title: Kafka Bundle Template
+      title: Kafka Confluent Bundle Template
       name: bundle-confluent-template
-      image_label: Kafka Bundle Template
+      image_label: Kafka Confluent Bundle Template
       image_url: https://github.com/padogrid/padogrid/wiki/Quick-Start
       url: https://github.com/padogrid/bundle-confluent-template
       description: This bundle serves as a template for creating a new Kafka onlne bundle.

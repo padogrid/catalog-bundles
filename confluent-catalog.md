@@ -20,7 +20,7 @@ install_bundle -download -workspace bundle-confluent-7-examples-python
 [![Confluent JupyterLab Python Examples](https://github.com/padogrid/bundle-confluent-7-examples-python/blob/master/images/confluent-examples-python.drawio.png?raw=true)](https://github.com/padogrid/bundle-confluent-7-examples-python)
 
 ---
-## [2. Kafka Bundle Template](https://github.com/padogrid/bundle-confluent-template)
+## [2. Kafka Confluent Bundle Template](https://github.com/padogrid/bundle-confluent-template)
 
 This bundle serves as a template for creating a new Kafka onlne bundle.
 
@@ -28,7 +28,7 @@ This bundle serves as a template for creating a new Kafka onlne bundle.
 install_bundle -download bundle-confluent-template
 ```
 
-[![Kafka Bundle Template](https://github.com/padogrid/padogrid/wiki/Quick-Start)](https://github.com/padogrid/bundle-confluent-template)
+[![Kafka Confluent Bundle Template](https://github.com/padogrid/padogrid/wiki/Quick-Start)](https://github.com/padogrid/bundle-confluent-template)
 
 ---
 

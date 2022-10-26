@@ -52,10 +52,11 @@ done
 LINK_HEADER="![PadoGrid](https://github.com/padogrid/padogrid/raw/develop/images/padogrid-3d-16x16.png) [*PadoGrid*](https://github.com/padogrid) | [*Catalogs*](https://github.com/padogrid/catalog-bundles/blob/master/all-catalog.md) | [*Manual*](https://github.com/padogrid/padogrid/wiki) | [*FAQ*](https://github.com/padogrid/padogrid/wiki/faq) | [*Releases*](https://github.com/padogrid/padogrid/releases) | [*Templates*](https://github.com/padogrid/padogrid/wiki/Using-Bundle-Templates) | [*Pods*](https://github.com/padogrid/padogrid/wiki/Understanding-Padogrid-Pods) | [*Kubernetes*](https://github.com/padogrid/padogrid/wiki/Kubernetes) | [*Docker*](https://github.com/padogrid/padogrid/wiki/Docker) | [*Apps*](https://github.com/padogrid/padogrid/wiki/Apps) | [*Quick Start*](https://github.com/padogrid/padogrid/wiki/Quick-Start)"
 
 NONE_HEADER="[Generic (none) Catalog](#books-generic-none-bundle-catalog-books)"
-KAFKA_HEADER="[Kafka/Confluent Catalog](#books-kafkaconfluent-bundle-catalog-books)"
 GEODE_HEADER="[Geode/GemFire Catalog](#books-geodegemfire-bundle-catalog-books)"
 HAZELCAST_HEADER="[Hazelcast IMDG Catalog](#books-hazelcast-imdg-bundle-catalog-books)"
 JET_HEADER="[Hazelcast Jet Catalog](#books-hazelcast-jet-bundle-catalog-books)"
+KAFKA_HEADER="[Kafka Catalog](#books-kafka-bundle-catalog-books)"
+CONFLUENT_HEADER="[Kafka Confluent Catalog](#books-kafka-confluent-bundle-catalog-books)"
 SNAPPYDATA_HEADER="[SnappyData/ComputeDB Catalog](#books-snappydataconputedb-bundle-catalog-books)"
 COHERENCE_HEADER="[Coherence Catalog](#books-coherence-bundle-catalog-books)"
 
@@ -72,10 +73,11 @@ echo "" >> $ALL_MD
 echo "*Bundles represent fully implemented use cases.* This page lists all of the open source PadoGrid bundles. The bundles in each product are grouped as follows." >> $ALL_MD
 echo "" >> $ALL_MD
 echo "- $NONE_HEADER" >> $ALL_MD
-echo "- $KAFKA_HEADER" >> $ALL_MD
 echo "- $GEODE_HEADER" >> $ALL_MD
 echo "- $HAZELCAST_HEADER" >> $ALL_MD
 echo "- $JET_HEADER" >> $ALL_MD
+echo "- $KAFKA_HEADER" >> $ALL_MD
+echo "- $CONFLUENT_HEADER" >> $ALL_MD
 echo "- $SNAPPYDATA_HEADER" >> $ALL_MD
 echo "- $COHERENCE_HEADER" >> $ALL_MD
 
