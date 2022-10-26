@@ -7,6 +7,7 @@
 *Bundles represent fully implemented use cases.* This page lists all of the open source PadoGrid bundles. The bundles in each product are grouped as follows.
 
 - [Generic (none) Catalog](#books-generic-none-bundle-catalog-books)
+- [Kafka/Confluent Catalog](#books-kafkaconfluent-bundle-catalog-books)
 - [Geode/GemFire Catalog](#books-geodegemfire-bundle-catalog-books)
 - [Hazelcast IMDG Catalog](#books-hazelcast-imdg-bundle-catalog-books)
 - [Hazelcast Jet Catalog](#books-hazelcast-jet-bundle-catalog-books)
@@ -477,6 +478,55 @@ install_bundle -download bundle-jet-4-docker-cdc_tutorial
 ```
 
 [![Jet CDC Tutorial](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial/blob/master//images/jet-cdc-tutorial.png?raw=true)](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial)
+
+---
+
+# :books: Kafka Bundle Catalog :books:
+
+The online bundles can be installed by executing the `install_bundle` commands as shown below. To view use case details for each bundle, click on their image.
+
+*The bundles listed below are sorted by bundle names, and as such the order of bundles may change as new bundles are introduced.*
+
+---
+## [1. Kafka Bundle Template](https://github.com/padogrid/bundle-kafka-template)
+
+This bundle serves as a template for creating a new Kafka onlne bundle.
+
+```bash
+install_bundle -download bundle-kafka-template
+```
+
+[![Kafka Bundle Template](https://github.com/padogrid/padogrid/wiki/Quick-Start)](https://github.com/padogrid/bundle-kafka-template)
+
+---
+
+# :books: Kafka Confluent Bundle Catalog :books:
+
+The online bundles can be installed by executing the `install_bundle` commands as shown below. To view use case details for each bundle, click on their image.
+
+*The bundles listed below are sorted by bundle names, and as such the order of bundles may change as new bundles are introduced.*
+
+---
+## [1. Confluent JupyterLab Python Examples](https://github.com/padogrid/bundle-confluent-7-examples-python)
+
+This bundle provides Kafka Python client examples running on JupyterLab in PadoGrid. It demonstrates how PadoGrid workspaces are seamlessly integrated with JupyterLab workspaces.
+
+```bash
+install_bundle -download -workspace bundle-confluent-7-examples-python
+```
+
+[![Confluent JupyterLab Python Examples](https://github.com/padogrid/bundle-confluent-7-examples-python/blob/master/images/confluent-examples-python.drawio.png?raw=true)](https://github.com/padogrid/bundle-confluent-7-examples-python)
+
+---
+## [2. Kafka Bundle Template](https://github.com/padogrid/bundle-confluent-template)
+
+This bundle serves as a template for creating a new Kafka onlne bundle.
+
+```bash
+install_bundle -download bundle-confluent-template
+```
+
+[![Kafka Bundle Template](https://github.com/padogrid/padogrid/wiki/Quick-Start)](https://github.com/padogrid/bundle-confluent-template)
 
 ---
 

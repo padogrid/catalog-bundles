@@ -1,0 +1,11 @@
+{
+  "bundle-kafka-template":
+  {
+    "title": "Kafka Bundle Template",
+    "image_label": "Kafka Bundle Template",
+    "image_url": "https://github.com/padogrid/padogrid/wiki/Quick-Start",
+    "url": "https://github.com/padogrid/bundle-kafka-template",
+    "description": "This bundle serves as a template for creating a new Kafka onlne bundle.",
+    "install": "tmp/1-bundle-kafka-template"
+  }
+}

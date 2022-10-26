@@ -20,7 +20,7 @@ SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
 . $SCRIPT_DIR/.argenv.sh
 
 EXECUTABLE="`basename $0`"
-BUNDLE_PRODUCT_LIST="none gemfire geode hazelcast jet snappydata coherence"
+BUNDLE_PRODUCT_LIST="none gemfire geode hazelcast jet kafka confluent snappydata coherence"
 
 if [ "$HELP" == "true" ]; then
 cat <<EOF
@@ -90,15 +90,21 @@ function trimDoubleQuotes
 if [ "$PRODUCT_ARG" == "none" ]; then
   PRODUCT="none"
   PRODUCT_NAME="Generic (none)"
+elif [ "$PRODUCT_ARG" == "geode" ] || [ "$PRODUCT_ARG" == "gemfire" ]; then
+  PRODUCT="geode"
+  PRODUCT_NAME="Geode/GemFire"
 elif [ "$PRODUCT_ARG" == "hazelcast" ]; then
   PRODUCT="hazelcast"
   PRODUCT_NAME="Hazelcast IMDG"
 elif [ "$PRODUCT_ARG" == "jet" ] ; then
   PRODUCT="jet"
   PRODUCT_NAME="Hazelcast Jet"
-elif [ "$PRODUCT_ARG" == "geode" ] || [ "$PRODUCT_ARG" == "gemfire" ]; then
-  PRODUCT="geode"
-  PRODUCT_NAME="Geode/GemFire"
+elif [ "$PRODUCT_ARG" == "kafka" ]; then
+  PRODUCT="kafka"
+  PRODUCT_NAME="Kafka"
+elif [ "$PRODUCT_ARG" == "confluent" ]; then
+  PRODUCT="confluent"
+  PRODUCT_NAME="Kafka Confluent"
 elif [ "$PRODUCT_ARG" == "snappydata" ]; then
   PRODUCT="snappydata"
   PRODUCT_NAME="SnappyData/ConputeDB"
