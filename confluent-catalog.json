@@ -1,13 +1,4 @@
 {
-  "bundle-confluent-template":
-  {
-    "title": "Kafka Confluent Bundle Template",
-    "image_label": "Kafka Confluent Bundle Template",
-    "image_url": "https://github.com/padogrid/padogrid/wiki/Quick-Start",
-    "url": "https://github.com/padogrid/bundle-confluent-template",
-    "description": "This bundle serves as a template for creating a new Kafka onlne bundle.",
-    "install": "tmp/1-bundle-confluent-template"
-  },
   "bundle-confluent-7-examples-python":
   {
     "title": "Confluent JupyterLab Python Examples",
@@ -15,6 +6,15 @@
     "image_url": "images/confluent-examples-python.drawio.png",
     "url": "https://github.com/padogrid/bundle-confluent-7-examples-python",
     "description": "This bundle provides Kafka Python client examples running on JupyterLab in PadoGrid. It demonstrates how PadoGrid workspaces are seamlessly integrated with JupyterLab workspaces.",
-    "install": "tmp/2-bundle-confluent-7-examples-python"
+    "install": "tmp/1-bundle-confluent-7-examples-python"
+  },
+  "bundle-confluent-template":
+  {
+    "title": "Kafka Confluent Bundle Template",
+    "image_label": "Kafka Confluent Bundle Template",
+    "image_url": "https://github.com/padogrid/padogrid/wiki/Quick-Start",
+    "url": "https://github.com/padogrid/bundle-confluent-template",
+    "description": "This bundle serves as a template for creating a new Kafka onlne bundle.",
+    "install": "tmp/2-bundle-confluent-template"
   }
 }

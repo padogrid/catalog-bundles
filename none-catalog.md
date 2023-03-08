@@ -36,7 +36,7 @@ install_bundle -download bundle-none-template
 This tutorial bundle covers PadoGrid essentials.
 
 ```bash
-install_bundle -checkout bundle-none-tutorial-padogrid
+install_bundle -download -workspace bundle-none-tutorial-padogrid
 ```
 
 [![PadoGrid Tutorial](https://github.com/padogrid/bundle-none-tutorial-padogrid/blob/master/images/padogrid-tutorial.drawio.png?raw=true)](https://github.com/padogrid/bundle-none-tutorial-padogrid)
