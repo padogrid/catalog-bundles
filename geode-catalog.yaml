@@ -1,75 +1,12 @@
 catalog:
   - bundle:
-      title: Debezium-ksqlDB-Confluent Geode Connector
-      name: bundle-geode-1-docker-debezium_ksqldb_confluent
-      image_label: Debezium-ksqlDB-Confluent Geode Connector
-      image_url: images/geode-debezium-confluent.jpg
-      url: https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent
-      description: This bundle integrates Geode with Debezium and Confluent ksqlDB for ingesting initial data and CDC records from MySQL into Kafka and Geode via a Kafka sink connector included in the `padogrid` distribution.
-      install: tmp/1-bundle-geode-1-docker-debezium_ksqldb_confluent
-
-  - bundle:
       title: Bundle: WAN
       name: bundle-geode-1-app-perf_test_wan-cluster-ln-ny
       image_label: Bundle: WAN
       image_url: images/wan-ny-ln.png
       url: https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny
       description: The `wan` bundle includes two (2) local clusters configured with bidirectional WAN gateways. You can test the bundle immediately after installation. No configurations required. To understand how the clusters are configured, please see the following WAN example. It provides step-by-step instructions for creating and running WAN enabled clusters from scratch. [Geode/GemFire WAN Example](https://github.com/padogrid/padogrid/wiki/Geode-WAN-Example)
-      install: tmp/2-bundle-geode-1-app-perf_test_wan-cluster-ln-ny
-
-  - bundle:
-      title: Bundle: Power BI
-      name: bundle-geode-1-app-perf_test_powerbi-cluster-powerbi
-      image_label: Bundle: Power BI
-      image_url: images/powerbi.png
-      url: https://github.com/padogrid/bundle-geode-1-app-perf_test_powerbi-cluster-powerbi
-      description: This bundle contains a Microsoft Power BI example that interfaces Power BI with Geode/GemFire via the REST API. This article can be viewed in your browser by running the following: ```bash show_bundle bundle-geode-1-app-perf_test_powerbi-cluster-powerbi ```
-      install: tmp/3-bundle-geode-1-app-perf_test_powerbi-cluster-powerbi
-
-  - bundle:
-      title: Geode/GemFire Split-Brain
-      name: bundle-geode-1-app-perf_test_sb-cluster-sb
-      image_label: Geode/GemFire Split-Brain
-      image_url: images/split-brain-Type-2.drawio.png
-      url: https://github.com/padogrid/bundle-geode-1-app-perf_test_sb-cluster-sb
-      description: This bundle provides scripts, configuration files, and apps for creating a Geode/GemFire network split-brain environment where you can test Geode/GemFire split-brain capabilities. Although it focuses on split-brain issues, the scripts provided cover any system failures.
-      install: tmp/4-bundle-geode-1-app-perf_test_sb-cluster-sb
-
-  - bundle:
-      title: Geode Bundle Template
-      name: bundle-geode-template
-      image_label: Geode Bundle Template
-      image_url: https://github.com/padogrid/padogrid/wiki/Quick-Start
-      url: https://github.com/padogrid/bundle-geode-template
-      description: This bundle serves as a template for creating a new Geode onlne bundle.
-      install: tmp/5-bundle-geode-template
-
-  - bundle:
-      title: Geode/GemFire Kryo Code Generator
-      name: bundle-geode-1-app-kryo_codegen
-      image_label: Geode/GemFire Kryo Code Generator
-      image_url: images/geode-app-kryo-codegen.jpg
-      url: https://github.com/padogrid/bundle-geode-1-app-kryo_codegen
-      description: This bundle provides step-by-step instructions for generating and deploying Avro and `KryoSerializer` in Geode/GemFire. Using PadoGrid's code generator, you can on the fly generate and deploy Avro wrapper classes and the corresponding Kryo serializer.
-      install: tmp/6-bundle-geode-1-app-kryo_codegen
-
-  - bundle:
-      title: Debezium-Hive-Kafka Geode Connector
-      name: bundle-geode-1-docker-debezium_hive_kafka
-      image_label: Debezium-Hive-Kafka Geode Connector
-      image_url: images/geode-debezium-hive-kafka.jpg
-      url: https://github.com/padogrid/bundle-geode-1-docker-debezium_hive_kafka
-      description: This bundle integrates Geode with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Geode cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
-      install: tmp/7-bundle-geode-1-docker-debezium_hive_kafka
-
-  - bundle:
-      title: Debezium-KSQL-Kafka Geode Connector
-      name: bundle-geode-1-docker-debezium_ksql_kafka
-      image_label: Debezium-KSQL-Kafka Geode Connector
-      image_url: images/geode-debezium-ksql-kafka.jpg
-      url: https://github.com/padogrid/bundle-geode-1-docker-debezium_ksql_kafka
-      description: This bundle integrates Geode with Debezium and Confluent KSQL for ingesting initial data and CDC records from MySQL into a Geode cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
-      install: tmp/8-bundle-geode-1-docker-debezium_ksql_kafka
+      install: tmp/1-bundle-geode-1-app-perf_test_wan-cluster-ln-ny
 
   - bundle:
       title: Debezium-Kafka Geode/GemFire Connector
@@ -78,7 +15,70 @@ catalog:
       image_url: images/debezium-kafka.png
       url: https://github.com/padogrid/bundle-geode-1-docker-debezium_kafka
       description: This bundle integrates Geode/GemFire with Debezium for ingesting initial data and CDC records from MySQL into a Geode/GemFire cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
-      install: tmp/9-bundle-geode-1-docker-debezium_kafka
+      install: tmp/2-bundle-geode-1-docker-debezium_kafka
+
+  - bundle:
+      title: Debezium-ksqlDB-Confluent Geode Connector
+      name: bundle-geode-1-docker-debezium_ksqldb_confluent
+      image_label: Debezium-ksqlDB-Confluent Geode Connector
+      image_url: images/geode-debezium-confluent.jpg
+      url: https://github.com/padogrid/bundle-geode-1-docker-debezium_ksqldb_confluent
+      description: This bundle integrates Geode with Debezium and Confluent ksqlDB for ingesting initial data and CDC records from MySQL into Kafka and Geode via a Kafka sink connector included in the `padogrid` distribution.
+      install: tmp/3-bundle-geode-1-docker-debezium_ksqldb_confluent
+
+  - bundle:
+      title: Bundle: Power BI
+      name: bundle-geode-1-app-perf_test_powerbi-cluster-powerbi
+      image_label: Bundle: Power BI
+      image_url: images/powerbi.png
+      url: https://github.com/padogrid/bundle-geode-1-app-perf_test_powerbi-cluster-powerbi
+      description: This bundle contains a Microsoft Power BI example that interfaces Power BI with Geode/GemFire via the REST API. This article can be viewed in your browser by running the following: ```bash show_bundle bundle-geode-1-app-perf_test_powerbi-cluster-powerbi ```
+      install: tmp/4-bundle-geode-1-app-perf_test_powerbi-cluster-powerbi
+
+  - bundle:
+      title: Geode/GemFire Split-Brain
+      name: bundle-geode-1-app-perf_test_sb-cluster-sb
+      image_label: Geode/GemFire Split-Brain
+      image_url: images/split-brain-Type-2.drawio.png
+      url: https://github.com/padogrid/bundle-geode-1-app-perf_test_sb-cluster-sb
+      description: This bundle provides scripts, configuration files, and apps for creating a Geode/GemFire network split-brain environment where you can test Geode/GemFire split-brain capabilities. Although it focuses on split-brain issues, the scripts provided cover any system failures.
+      install: tmp/5-bundle-geode-1-app-perf_test_sb-cluster-sb
+
+  - bundle:
+      title: Geode Bundle Template
+      name: bundle-geode-template
+      image_label: Geode Bundle Template
+      image_url: https://github.com/padogrid/padogrid/wiki/Quick-Start
+      url: https://github.com/padogrid/bundle-geode-template
+      description: This bundle serves as a template for creating a new Geode onlne bundle.
+      install: tmp/6-bundle-geode-template
+
+  - bundle:
+      title: Geode/GemFire Kryo Code Generator
+      name: bundle-geode-1-app-kryo_codegen
+      image_label: Geode/GemFire Kryo Code Generator
+      image_url: images/geode-app-kryo-codegen.jpg
+      url: https://github.com/padogrid/bundle-geode-1-app-kryo_codegen
+      description: This bundle provides step-by-step instructions for generating and deploying Avro and `KryoSerializer` in Geode/GemFire. Using PadoGrid's code generator, you can on the fly generate and deploy Avro wrapper classes and the corresponding Kryo serializer.
+      install: tmp/7-bundle-geode-1-app-kryo_codegen
+
+  - bundle:
+      title: Debezium-Hive-Kafka Geode Connector
+      name: bundle-geode-1-docker-debezium_hive_kafka
+      image_label: Debezium-Hive-Kafka Geode Connector
+      image_url: images/geode-debezium-hive-kafka.jpg
+      url: https://github.com/padogrid/bundle-geode-1-docker-debezium_hive_kafka
+      description: This bundle integrates Geode with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Geode cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
+      install: tmp/8-bundle-geode-1-docker-debezium_hive_kafka
+
+  - bundle:
+      title: Debezium-KSQL-Kafka Geode Connector
+      name: bundle-geode-1-docker-debezium_ksql_kafka
+      image_label: Debezium-KSQL-Kafka Geode Connector
+      image_url: images/geode-debezium-ksql-kafka.jpg
+      url: https://github.com/padogrid/bundle-geode-1-docker-debezium_ksql_kafka
+      description: This bundle integrates Geode with Debezium and Confluent KSQL for ingesting initial data and CDC records from MySQL into a Geode cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
+      install: tmp/9-bundle-geode-1-docker-debezium_ksql_kafka
 
   - bundle:
       title: GemFire/Geode and MySQL Sync
