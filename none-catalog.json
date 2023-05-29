@@ -1,13 +1,4 @@
 {
-  "bundle-none-tutorial-padogrid":
-  {
-    "title": "PadoGrid Tutorial",
-    "image_label": "PadoGrid Tutorial",
-    "image_url": "images/padogrid-tutorial.drawio.png",
-    "url": "https://github.com/padogrid/bundle-none-tutorial-padogrid",
-    "description": "This tutorial bundle covers PadoGrid essentials.",
-    "install": "tmp/1-bundle-none-tutorial-padogrid"
-  },
   "bundle-none-template":
   {
     "title": "Generic (none) Bundle Template",
@@ -15,7 +6,16 @@
     "image_url": "https://github.com/padogrid/padogrid/wiki/Quick-Start",
     "url": "https://github.com/padogrid/bundle-none-template",
     "description": "This bundle serves as a template for creating a new generic onlne bundle.",
-    "install": "tmp/2-bundle-none-template"
+    "install": "tmp/1-bundle-none-template"
+  },
+  "bundle-none-tutorial-padogrid":
+  {
+    "title": "PadoGrid Tutorial",
+    "image_label": "PadoGrid Tutorial",
+    "image_url": "images/padogrid-tutorial.drawio.png",
+    "url": "https://github.com/padogrid/bundle-none-tutorial-padogrid",
+    "description": "This tutorial bundle covers PadoGrid essentials.",
+    "install": "tmp/2-bundle-none-tutorial-padogrid"
   },
   "bundle-none-imdg-benchmark-tests":
   {

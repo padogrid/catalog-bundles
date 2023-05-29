@@ -20,7 +20,7 @@ SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
 . $SCRIPT_DIR/.argenv.sh
 
 EXECUTABLE="`basename $0`"
-BUNDLE_PRODUCT_LIST="none gemfire geode hazelcast jet kafka confluent snappydata coherence"
+BUNDLE_PRODUCT_LIST="none gemfire geode hazelcast jet kafka confluent mosquitto snappydata coherence"
 
 if [ "$HELP" == "true" ]; then
 cat <<EOF
@@ -41,7 +41,7 @@ EOF
    exit
 fi
 
-PRODUCT_LIST="none geode hazelcast jet kafka confluent snappydata coherence"
+PRODUCT_LIST="none geode hazelcast jet kafka confluent mosquitto snappydata coherence"
 ALL_MD="all-catalog.md"
 
 for PRODUCT in $PRODUCT_LIST; do
@@ -57,6 +57,7 @@ HAZELCAST_HEADER="[Hazelcast IMDG Catalog](#books-hazelcast-imdg-bundle-catalog-
 JET_HEADER="[Hazelcast Jet Catalog](#books-hazelcast-jet-bundle-catalog-books)"
 KAFKA_HEADER="[Kafka Catalog](#books-kafka-bundle-catalog-books)"
 CONFLUENT_HEADER="[Kafka Confluent Catalog](#books-kafka-confluent-bundle-catalog-books)"
+MOSQUITTO_HEADER="[Mosquitto Catalog](#books-mosquitto-bundle-catalog-books)"
 SNAPPYDATA_HEADER="[SnappyData/ComputeDB Catalog](#books-snappydataconputedb-bundle-catalog-books)"
 COHERENCE_HEADER="[Coherence Catalog](#books-coherence-bundle-catalog-books)"
 
@@ -78,6 +79,7 @@ echo "- $HAZELCAST_HEADER" >> $ALL_MD
 echo "- $JET_HEADER" >> $ALL_MD
 echo "- $KAFKA_HEADER" >> $ALL_MD
 echo "- $CONFLUENT_HEADER" >> $ALL_MD
+echo "- $MOSQUITTO_HEADER" >> $ALL_MD
 echo "- $SNAPPYDATA_HEADER" >> $ALL_MD
 echo "- $COHERENCE_HEADER" >> $ALL_MD
 

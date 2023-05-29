@@ -20,7 +20,7 @@ SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
 . $SCRIPT_DIR/.argenv.sh
 
 EXECUTABLE="`basename $0`"
-BUNDLE_PRODUCT_LIST="none gemfire geode hazelcast jet kafka confluent snappydata coherence"
+BUNDLE_PRODUCT_LIST="none gemfire geode hazelcast jet kafka confluent mosquitto snappydata coherence"
 
 if [ "$HELP" == "true" ]; then
 cat <<EOF
@@ -105,6 +105,9 @@ elif [ "$PRODUCT_ARG" == "kafka" ]; then
 elif [ "$PRODUCT_ARG" == "confluent" ]; then
   PRODUCT="confluent"
   PRODUCT_NAME="Kafka Confluent"
+elif [ "$PRODUCT_ARG" == "mosquitto" ]; then
+  PRODUCT="mosquitto"
+  PRODUCT_NAME="Mosquitto"
 elif [ "$PRODUCT_ARG" == "snappydata" ]; then
   PRODUCT="snappydata"
   PRODUCT_NAME="SnappyData/ConputeDB"
