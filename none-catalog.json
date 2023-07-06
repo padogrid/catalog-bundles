@@ -1,4 +1,13 @@
 {
+  "bundle-none-tutorial-docker-haproxy":
+  {
+    "title": "Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center",
+    "image_label": "Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center",
+    "image_url": "images/haproxy.drawio.png",
+    "url": "https://github.com/padogrid/bundle-none-tutorial-docker-haproxy",
+    "description": "",
+    "install": "tmp/1-bundle-none-tutorial-docker-haproxy"
+  },
   "bundle-none-app-simulator":
   {
     "title": "Data Feed Simulator",
@@ -6,7 +15,7 @@
     "image_url": "images/igloo.png",
     "url": "https://github.com/padogrid/bundle-none-app-simulator",
     "description": "This bundle includes a data feed simulator for generating continous numerical data for MQTT and Hazelcast.",
-    "install": "tmp/1-bundle-none-app-simulator"
+    "install": "tmp/2-bundle-none-app-simulator"
   },
   "bundle-none-template":
   {
@@ -15,7 +24,7 @@
     "image_url": "https://github.com/padogrid/padogrid/wiki/Quick-Start",
     "url": "https://github.com/padogrid/bundle-none-template",
     "description": "This bundle serves as a template for creating a new generic onlne bundle.",
-    "install": "tmp/2-bundle-none-template"
+    "install": "tmp/3-bundle-none-template"
   },
   "bundle-none-tutorial-padogrid":
   {
@@ -24,7 +33,7 @@
     "image_url": "images/padogrid-tutorial.drawio.png",
     "url": "https://github.com/padogrid/bundle-none-tutorial-padogrid",
     "description": "This tutorial bundle covers PadoGrid essentials.",
-    "install": "tmp/3-bundle-none-tutorial-padogrid"
+    "install": "tmp/4-bundle-none-tutorial-padogrid"
   },
   "bundle-none-imdg-benchmark-tests":
   {
@@ -33,6 +42,6 @@
     "image_url": "images/benchmark-clusters.png",
     "url": "https://github.com/padogrid/bundle-none-imdg-benchmark-tests",
     "description": "This bundle provides step-by-step instructions for creating a test environment and conducting benchmark tests on IMDG products.",
-    "install": "tmp/4-bundle-none-imdg-benchmark-tests"
+    "install": "tmp/5-bundle-none-imdg-benchmark-tests"
   }
 }

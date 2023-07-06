@@ -42,7 +42,18 @@ install_bundle -download bundle-none-template
 [![Generic (none) Bundle Template](https://github.com/padogrid/padogrid/wiki/Quick-Start)](https://github.com/padogrid/bundle-none-template)
 
 ---
-## [4. PadoGrid Tutorial](https://github.com/padogrid/bundle-none-tutorial-padogrid)
+## [4. Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center](https://github.com/padogrid/bundle-none-tutorial-docker-haproxy)
+
+
+
+```bash
+install_bundle -download -workspace haproxy bundle-none-tutorial-docker-haproxy
+```
+
+[![Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center](https://github.com/padogrid/bundle-none-tutorial-docker-haproxy/blob/master/images/haproxy.drawio.png?raw=true)](https://github.com/padogrid/bundle-none-tutorial-docker-haproxy)
+
+---
+## [5. PadoGrid Tutorial](https://github.com/padogrid/bundle-none-tutorial-padogrid)
 
 This tutorial bundle covers PadoGrid essentials.
 
