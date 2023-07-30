@@ -1,30 +1,12 @@
 catalog:
   - bundle:
-      title: Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center
-      name: bundle-none-tutorial-docker-haproxy
-      image_label: Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center
-      image_url: images/haproxy.drawio.png
-      url: https://github.com/padogrid/bundle-none-tutorial-docker-haproxy
-      description: 
-      install: tmp/1-bundle-none-tutorial-docker-haproxy
-
-  - bundle:
       title: Data Feed Simulator
       name: bundle-none-app-simulator
       image_label: Data Feed Simulator
       image_url: images/igloo.png
       url: https://github.com/padogrid/bundle-none-app-simulator
       description: This bundle includes a data feed simulator for generating continous numerical data for MQTT and Hazelcast.
-      install: tmp/2-bundle-none-app-simulator
-
-  - bundle:
-      title: Generic (none) Bundle Template
-      name: bundle-none-template
-      image_label: Generic (none) Bundle Template
-      image_url: https://github.com/padogrid/padogrid/wiki/Quick-Start
-      url: https://github.com/padogrid/bundle-none-template
-      description: This bundle serves as a template for creating a new generic onlne bundle.
-      install: tmp/3-bundle-none-template
+      install: tmp/1-bundle-none-app-simulator
 
   - bundle:
       title: PadoGrid Tutorial
@@ -33,7 +15,25 @@ catalog:
       image_url: images/padogrid-tutorial.drawio.png
       url: https://github.com/padogrid/bundle-none-tutorial-padogrid
       description: This tutorial bundle covers PadoGrid essentials.
-      install: tmp/4-bundle-none-tutorial-padogrid
+      install: tmp/2-bundle-none-tutorial-padogrid
+
+  - bundle:
+      title: Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center
+      name: bundle-none-tutorial-docker-haproxy
+      image_label: Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center
+      image_url: images/haproxy.drawio.png
+      url: https://github.com/padogrid/bundle-none-tutorial-docker-haproxy
+      description: 
+      install: tmp/3-bundle-none-tutorial-docker-haproxy
+
+  - bundle:
+      title: Generic (none) Bundle Template
+      name: bundle-none-template
+      image_label: Generic (none) Bundle Template
+      image_url: https://github.com/padogrid/padogrid/wiki/Quick-Start
+      url: https://github.com/padogrid/bundle-none-template
+      description: This bundle serves as a template for creating a new generic onlne bundle.
+      install: tmp/4-bundle-none-template
 
   - bundle:
       title: IMDG Product Benchmark Tests
