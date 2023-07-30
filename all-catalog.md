@@ -60,7 +60,7 @@ install_bundle -download bundle-none-template
 ---
 ## [4. Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center](https://github.com/padogrid/bundle-none-tutorial-docker-haproxy)
 
-
+This bundle walks through steps involved in configuring a TLS termination proxy to secure Mosquitto, Grafana, Prometheus, and Hazelcast Management Center using HAProxy.
 
 ```bash
 install_bundle -download -workspace haproxy bundle-none-tutorial-docker-haproxy
