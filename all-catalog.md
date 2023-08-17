@@ -401,6 +401,7 @@ install_bundle -download -workspace bundle-hazelcast-4n5-cluster-session-wan
 install_bundle -checkout bundle-hazelcast-4n5-cluster-session-wan
 ```
 ```bash
+# If behind firewall, then manually download the bundle distribution and execute the following.
 install_bundle -workspace session-wan bundle-hazelcast-4n5-cluster-session-wan-master.zip
 switch_workspace sesson-wan
 ```

@@ -1,13 +1,4 @@
 {
-  "bundle-none-tutorial-docker-haproxy":
-  {
-    "title": "Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center",
-    "image_label": "Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center",
-    "image_url": "images/haproxy.drawio.png",
-    "url": "https://github.com/padogrid/bundle-none-tutorial-docker-haproxy",
-    "description": "This bundle walks through steps involved in configuring a TLS termination proxy to secure Mosquitto, Grafana, Prometheus, and Hazelcast Management Center using HAProxy.",
-    "install": "tmp/1-bundle-none-tutorial-docker-haproxy"
-  },
   "bundle-none-app-simulator":
   {
     "title": "Data Feed Simulator",
@@ -15,7 +6,16 @@
     "image_url": "images/igloo.png",
     "url": "https://github.com/padogrid/bundle-none-app-simulator",
     "description": "This bundle includes a data feed simulator for generating continous numerical data for MQTT and Hazelcast.",
-    "install": "tmp/2-bundle-none-app-simulator"
+    "install": "tmp/1-bundle-none-app-simulator"
+  },
+  "bundle-none-tutorial-docker-haproxy":
+  {
+    "title": "Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center",
+    "image_label": "Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center",
+    "image_url": "images/haproxy.drawio.png",
+    "url": "https://github.com/padogrid/bundle-none-tutorial-docker-haproxy",
+    "description": "This bundle walks through steps involved in configuring a TLS termination proxy to secure Mosquitto, Grafana, Prometheus, and Hazelcast Management Center using HAProxy.",
+    "install": "tmp/2-bundle-none-tutorial-docker-haproxy"
   },
   "bundle-none-tutorial-padogrid":
   {
