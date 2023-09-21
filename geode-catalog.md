@@ -42,7 +42,7 @@ install_bundle -download -workspace bundle-geode-1-app-perf_test_sb-cluster-sb
 [![Geode/GemFire Split-Brain](https://github.com/padogrid/bundle-geode-1-app-perf_test_sb-cluster-sb/blob/master/images/split-brain-Type-2.drawio.png?raw=true)](https://github.com/padogrid/bundle-geode-1-app-perf_test_sb-cluster-sb)
 
 ---
-## [4. Bundle: WAN](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny)
+## [4. Geode/GemFire WAN](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny)
 
 The `wan` bundle includes two (2) local clusters configured with bidirectional WAN gateways. You can test the bundle immediately after installation. No configurations required. To understand how the clusters are configured, please see the following WAN example. It provides step-by-step instructions for creating and running WAN enabled clusters from scratch. [Geode/GemFire WAN Example](https://github.com/padogrid/padogrid/wiki/Geode-WAN-Example)
 
@@ -54,7 +54,7 @@ install_bundle -download -workspace bundle-geode-1-app-perf_test_wan-cluster-ln-
 install_bundle -checkout bundle-geode-1-app-perf_test_wan-cluster-ln-ny
 ```
 
-[![Bundle: WAN](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny/blob/master/images/wan-ny-ln.png?raw=true)](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny)
+[![Geode/GemFire WAN](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny/blob/master/images/wan-ny-ln.png?raw=true)](https://github.com/padogrid/bundle-geode-1-app-perf_test_wan-cluster-ln-ny)
 
 ---
 ## [5. GemFire/Geode and MySQL Sync](https://github.com/padogrid/bundle-geode-1-docker-dbsync_mysql)

@@ -270,6 +270,7 @@ for GITHUB_USER in $GITHUB_USERS; do
     
               BUFFER="$(curl -sS $RAW_README_URL)"
               TITLE=$(echo "$BUFFER" | grep -m 1 "^# " | sed 's/^# //')
+              BUFFER=$(echo "$BUFFER" | sed '/^\<!-- Platforms --\>.*/,+1d')
               BUFFER=$(echo "$BUFFER" | sed '1d')
               DESCRIPTION=$(echo "$BUFFER" | sed -e '/Installing Bundle/,$d' -e '/Table of Contents/,$d' -e '1,/^#.*$/d')
               DESCRIPTION=$(echo -n $DESCRIPTION)

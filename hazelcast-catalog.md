@@ -9,7 +9,7 @@ The online bundles can be installed by executing the `install_bundle` commands a
 *The bundles listed below are sorted by bundle names, and as such the order of bundles may change as new bundles are introduced.*
 
 ---
-## [1. Cluster Split-Brain](https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_sb-cluster-sb)
+## [1. Hazelcast Split-Brain](https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_sb-cluster-sb)
 
 This bundle provides scripts, configuration files, and apps for creating a network split-brain environment where you can test Hazelcast's split-brain capabilities.
 
@@ -17,7 +17,7 @@ This bundle provides scripts, configuration files, and apps for creating a netwo
 install_bundle -download bundle-hazelcast-3-app-perf_test_sb-cluster-sb
 ```
 
-[![Cluster Split-Brain](https://github.com/padogrid/bundle-hazelcast-4-app-perf_test_sb-cluster-sb/blob/master/images/split-brain.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_sb-cluster-sb)
+[![Hazelcast Split-Brain](https://github.com/padogrid/bundle-hazelcast-4-app-perf_test_sb-cluster-sb/blob/master/images/split-brain.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-3-app-perf_test_sb-cluster-sb)
 
 ---
 ## [2. App: Pado](https://github.com/padogrid/bundle-hazelcast-3n4n5-app-pado)
