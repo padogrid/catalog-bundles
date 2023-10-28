@@ -219,7 +219,18 @@ install_bundle -init -checkout bundle-hazelcast-5-app-ml_lstm-cluster-ml_jet
 [![Neural Network: LSTM RNN](https://github.com/padogrid/bundle-hazelcast-5-app-ml_lstm-cluster-ml_jet/blob/master/images/ml-lstm-dna.drawio.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-5-app-ml_lstm-cluster-ml_jet)
 
 ---
-## [18. Debezium-ksqlDB-Confluent Hazelcast Connector](https://github.com/padogrid/bundle-hazelcast-5-docker-debezium_ksqldb_confluent)
+## [18. Hazelcast Multi-Cluster Demo](https://github.com/padogrid/bundle-hazelcast-5-cluster-wan-app-granfana)
+
+This bundle demonstrates Grafana capabilities of monitoring four (4) Hazelcast clusters.
+
+```bash
+install_bundle -init -download -workspace bundle-hazelcast-5-cluster-wan-app-granfana
+```
+
+[![Hazelcast Multi-Cluster Demo](https://github.com/padogrid/bundle-hazelcast-5-cluster-wan-app-granfana/blob/master/images/multi-clusters.drawio.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-5-cluster-wan-app-granfana)
+
+---
+## [19. Debezium-ksqlDB-Confluent Hazelcast Connector](https://github.com/padogrid/bundle-hazelcast-5-docker-debezium_ksqldb_confluent)
 
 This bundle integrates Hazelcast with Debezium and Confluent ksqlDB for ingesting initial data and CDC records from MySQL into Kafka and Hazelcast via a Kafka sink connector included in the `padogrid` distribution.
 
@@ -230,7 +241,7 @@ install_bundle -download -workspace bundle-hazelcast-5-docker-debezium_ksqldb_co
 [![Debezium-ksqlDB-Confluent Hazelcast Connector](https://github.com/padogrid/bundle-hazelcast-5-docker-debezium_ksqldb_confluent/blob/master/images/hazelcast-debezium-confluent.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-5-docker-debezium_ksqldb_confluent)
 
 ---
-## [19. PadoGrid Hazelcast Playground](https://github.com/padogrid/bundle-hazelcast-5-playground-python)
+## [20. PadoGrid Hazelcast Playground](https://github.com/padogrid/bundle-hazelcast-5-playground-python)
 
 This bundle includes Hazelcast Playground, a web app for browsing and updating Hazelcast data structures.
 
@@ -241,7 +252,7 @@ install_bundle -download bundle-hazelcast-5-playground-python
 [![PadoGrid Hazelcast Playground](https://github.com/padogrid/bundle-hazelcast-5-playground-python/blob/master/images/playground-screenshot.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-5-playground-python)
 
 ---
-## [20. Hazelcast Job: Executing Remote Python Code ](https://github.com/padogrid/bundle-hazelcast-5-tutorial-app-jet_python)
+## [21. Hazelcast Job: Executing Remote Python Code ](https://github.com/padogrid/bundle-hazelcast-5-tutorial-app-jet_python)
 
 This bundle walks through the Hazelcast Jet job preparation, submission, and deubgging steps in detail and provides troubleshooting tips.
 
@@ -252,7 +263,7 @@ install_bundle -download bundle-hazelcast-5-tutorial-app-jet_python
 [![Hazelcast Job: Executing Remote Python Code ](https://github.com/padogrid/bundle-hazelcast-5-tutorial-app-jet_python/blob/master/images/jet_python.drawio.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-5-tutorial-app-jet_python)
 
 ---
-## [21. Hazelcast JupyterLab Python Examples](https://github.com/padogrid/bundle-hazelcast-examples-python)
+## [22. Hazelcast JupyterLab Python Examples](https://github.com/padogrid/bundle-hazelcast-examples-python)
 
 This bundle provides Hazelcast Python client examples running on JupyterLab in PadoGrid. It demonstrates how PadoGrid workspaces are seamlessly integrated with JupyterLab workspaces.
 
@@ -263,7 +274,7 @@ install_bundle -download -workspace bundle-hazelcast-examples-python
 [![Hazelcast JupyterLab Python Examples](https://github.com/padogrid/bundle-hazelcast-examples-python/blob/master/images/examples-python.drawio.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-examples-python)
 
 ---
-## [22. Hazelcast Bundle Template](https://github.com/padogrid/bundle-hazelcast-template)
+## [23. Hazelcast Bundle Template](https://github.com/padogrid/bundle-hazelcast-template)
 
 This bundle serves as a template for creating a new Hazelcast onlne bundle.
 
@@ -274,7 +285,7 @@ install_bundle -download bundle-hazelcast-template
 [![Hazelcast Bundle Template](https://github.com/padogrid/padogrid/wiki/Quick-Start)](https://github.com/padogrid/bundle-hazelcast-template)
 
 ---
-## [23. Rolling Upgrade Training](https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11)
+## [24. Rolling Upgrade Training](https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11)
 
 As part of the Rolling Upgrade lab of Hazelcast Operations Training, this bundle includes a cluster and an app preconfigured to run with Hazelcast Enterprise 3.11.x which must be installed separately.
 
@@ -285,7 +296,7 @@ install_bundle -download bundle-hazelcast-training-3.11-app-perf_test_v3.11-clus
 [![Rolling Upgrade Training](https://github.com/padogrid/padogrid/wiki/Quick-Start)](https://github.com/padogrid/bundle-hazelcast-training-3.11-app-perf_test_v3.11-cluster-v3.11)
 
 ---
-## [24. IMDG Cluster: openssl](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl)
+## [25. IMDG Cluster: openssl](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl)
 
 As part of the TLS/SSL lab of Hazelcast Operations Training, this bundle includes the `openssl` cluster preconfigured to enable OpenSSL/BoringSSL.
 
@@ -296,7 +307,7 @@ install_bundle -download bundle-hazelcast-training-3n4n5-app-perf_test_openssl-c
 [![IMDG Cluster: openssl](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl/blob/master/images/openssl-cluster.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl)
 
 ---
-## [25. IMDG Cluster: ssl](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl)
+## [26. IMDG Cluster: ssl](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl)
 
 As part of the TLS/SSL lab of Hazelcast Operations Training, the `ssl` cluster has been preconfigured to enable SSL. It contains scripts to create both private and trust keystores that contain both member and client keys and certificates.
 

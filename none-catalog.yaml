@@ -1,12 +1,12 @@
 catalog:
   - bundle:
-      title: Generic (none) Bundle Template
-      name: bundle-none-template
-      image_label: Generic (none) Bundle Template
-      image_url: https://github.com/padogrid/padogrid/wiki/Quick-Start
-      url: https://github.com/padogrid/bundle-none-template
-      description: This bundle serves as a template for creating a new generic onlne bundle.
-      install: tmp/1-bundle-none-template
+      title: Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center
+      name: bundle-none-tutorial-docker-haproxy
+      image_label: Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center
+      image_url: images/haproxy.drawio.png
+      url: https://github.com/padogrid/bundle-none-tutorial-docker-haproxy
+      description: This bundle walks through steps involved in configuring a TLS termination proxy to secure Mosquitto, Grafana, Prometheus, and Hazelcast Management Center using HAProxy.
+      install: tmp/1-bundle-none-tutorial-docker-haproxy
 
   - bundle:
       title: PadoGrid Tutorial
@@ -18,22 +18,13 @@ catalog:
       install: tmp/2-bundle-none-tutorial-padogrid
 
   - bundle:
-      title: Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center
-      name: bundle-none-tutorial-docker-haproxy
-      image_label: Configuring HAProxy for TLS Termination - Mosquitto, Grafana, Prometheus, Hazelcast Management Center
-      image_url: images/haproxy.drawio.png
-      url: https://github.com/padogrid/bundle-none-tutorial-docker-haproxy
-      description: This bundle walks through steps involved in configuring a TLS termination proxy to secure Mosquitto, Grafana, Prometheus, and Hazelcast Management Center using HAProxy.
-      install: tmp/3-bundle-none-tutorial-docker-haproxy
-
-  - bundle:
       title: IMDG Product Benchmark Tests
       name: bundle-none-imdg-benchmark-tests
       image_label: IMDG Product Benchmark Tests
       image_url: images/benchmark-clusters.png
       url: https://github.com/padogrid/bundle-none-imdg-benchmark-tests
       description: This bundle provides step-by-step instructions for creating a test environment and conducting benchmark tests on IMDG products.
-      install: tmp/4-bundle-none-imdg-benchmark-tests
+      install: tmp/3-bundle-none-imdg-benchmark-tests
 
   - bundle:
       title: Data Feed Simulator
@@ -42,5 +33,14 @@ catalog:
       image_url: images/igloo.png
       url: https://github.com/padogrid/bundle-none-app-simulator
       description: This bundle includes a data feed simulator for generating continous numerical data for MQTT and Hazelcast.
-      install: tmp/5-bundle-none-app-simulator
+      install: tmp/4-bundle-none-app-simulator
+
+  - bundle:
+      title: Generic (none) Bundle Template
+      name: bundle-none-template
+      image_label: Generic (none) Bundle Template
+      image_url: https://github.com/padogrid/padogrid/wiki/Quick-Start
+      url: https://github.com/padogrid/bundle-none-template
+      description: This bundle serves as a template for creating a new generic onlne bundle.
+      install: tmp/5-bundle-none-template
 
