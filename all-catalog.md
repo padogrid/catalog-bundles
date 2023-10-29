@@ -427,15 +427,15 @@ install_bundle -init -checkout bundle-hazelcast-5-app-ml_lstm-cluster-ml_jet
 [![Neural Network: LSTM RNN](https://github.com/padogrid/bundle-hazelcast-5-app-ml_lstm-cluster-ml_jet/blob/master/images/ml-lstm-dna.drawio.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-5-app-ml_lstm-cluster-ml_jet)
 
 ---
-## [18. Hazelcast Multi-Cluster Demo](https://github.com/padogrid/bundle-hazelcast-5-cluster-wan-app-granfana)
+## [18. Hazelcast Multi-Cluster Demo](https://github.com/padogrid/bundle-hazelcast-5-cluster-wan-app-grafana)
 
-This bundle demonstrates Grafana capabilities of monitoring four (4) Hazelcast clusters.
+This bundle demonstrates Grafana capabilities of monitoring four (4) Hazelcast clusters. It includes two (2) independent clusters and two (2) bi-directional WAN clusters along with a workflow simulator.
 
 ```bash
-install_bundle -init -download -workspace bundle-hazelcast-5-cluster-wan-app-granfana
+install_bundle -init -download -workspace bundle-hazelcast-5-cluster-wan-app-grafana
 ```
 
-[![Hazelcast Multi-Cluster Demo](https://github.com/padogrid/bundle-hazelcast-5-cluster-wan-app-granfana/blob/master/images/multi-clusters.drawio.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-5-cluster-wan-app-granfana)
+[![Hazelcast Multi-Cluster Demo](https://github.com/padogrid/bundle-hazelcast-5-cluster-wan-app-grafana/blob/master/images/multi-clusters.drawio.png?raw=true)](https://github.com/padogrid/bundle-hazelcast-5-cluster-wan-app-grafana)
 
 ---
 ## [19. Debezium-ksqlDB-Confluent Hazelcast Connector](https://github.com/padogrid/bundle-hazelcast-5-docker-debezium_ksqldb_confluent)

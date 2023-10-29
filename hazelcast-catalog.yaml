@@ -1,12 +1,12 @@
 catalog:
   - bundle:
       title: Hazelcast Multi-Cluster Demo
-      name: bundle-hazelcast-5-cluster-wan-app-granfana
+      name: bundle-hazelcast-5-cluster-wan-app-grafana
       image_label: Hazelcast Multi-Cluster Demo
       image_url: images/multi-clusters.drawio.png
-      url: https://github.com/padogrid/bundle-hazelcast-5-cluster-wan-app-granfana
-      description: This bundle demonstrates Grafana capabilities of monitoring four (4) Hazelcast clusters.
-      install: tmp/1-bundle-hazelcast-5-cluster-wan-app-granfana
+      url: https://github.com/padogrid/bundle-hazelcast-5-cluster-wan-app-grafana
+      description: This bundle demonstrates Grafana capabilities of monitoring four (4) Hazelcast clusters. It includes two (2) independent clusters and two (2) bi-directional WAN clusters along with a workflow simulator.
+      install: tmp/1-bundle-hazelcast-5-cluster-wan-app-grafana
 
   - bundle:
       title: PadoGrid Hazelcast Playground
