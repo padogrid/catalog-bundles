@@ -20,7 +20,7 @@ SCRIPT_DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
 . $SCRIPT_DIR/.argenv.sh
 
 EXECUTABLE="`basename $0`"
-BUNDLE_PRODUCT_LIST="none gemfire geode hazelcast jet kafka confluent mosquitto snappydata coherence"
+BUNDLE_PRODUCT_LIST="none gemfire geode hazelcast kafka confluent mosquitto snappydata coherence"
 
 if [ "$HELP" == "true" ]; then
 cat <<EOF
@@ -96,9 +96,6 @@ elif [ "$PRODUCT_ARG" == "geode" ] || [ "$PRODUCT_ARG" == "gemfire" ]; then
 elif [ "$PRODUCT_ARG" == "hazelcast" ]; then
   PRODUCT="hazelcast"
   PRODUCT_NAME="Hazelcast IMDG"
-elif [ "$PRODUCT_ARG" == "jet" ] ; then
-  PRODUCT="jet"
-  PRODUCT_NAME="Hazelcast Jet"
 elif [ "$PRODUCT_ARG" == "kafka" ]; then
   PRODUCT="kafka"
   PRODUCT_NAME="Kafka"
@@ -149,15 +146,6 @@ elif [ "$PRODUCT_ARG" != "" ]; then
    BUNDLE_PRODUCT="$PRODUCT_ARG"
 else
    BUNDLE_PRODUCT=$"$PRODUCT"
-   if [ "$PRODUCT" == "hazelcast" ]; then
-      if [ "$CLUSTER_TYPE" == "jet" ]; then
-         BUNDLE_PRODUCTS="jet"
-      else
-         BUNDLE_PRODUCTS="$PRODUCT"
-      fi
-   else
-      BUNDLE_PRODUCTS="$PRODUCT"
-   fi
 fi
 
 if [ "$CATALOG" == "true" ]; then

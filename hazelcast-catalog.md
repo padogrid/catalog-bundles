@@ -221,7 +221,7 @@ install_bundle -init -checkout bundle-hazelcast-5-app-ml_lstm-cluster-ml_jet
 ---
 ## [18. Hazelcast Multi-Cluster Demo](https://github.com/padogrid/bundle-hazelcast-5-cluster-wan-app-grafana)
 
-This bundle demonstrates Grafana capabilities of monitoring four (4) Hazelcast clusters. It includes two (2) independent clusters and two (2) bi-directional WAN clusters along with a workflow simulator.
+This bundle demonstrates Grafana capabilities of monitoring five (5) Hazelcast clusters. It includes three (3) independent clusters and two (2) bi-directional WAN clusters along with a workflow simulator.
 
 ```bash
 install_bundle -init -download -workspace bundle-hazelcast-5-cluster-wan-app-grafana

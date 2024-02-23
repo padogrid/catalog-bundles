@@ -9,7 +9,6 @@
 - [Generic (none) Catalog](#books-generic-none-bundle-catalog-books)
 - [Geode/GemFire Catalog](#books-geodegemfire-bundle-catalog-books)
 - [Hazelcast IMDG Catalog](#books-hazelcast-imdg-bundle-catalog-books)
-- [Hazelcast Jet Catalog](#books-hazelcast-jet-bundle-catalog-books)
 - [Kafka Catalog](#books-kafka-bundle-catalog-books)
 - [Kafka Confluent Catalog](#books-kafka-confluent-bundle-catalog-books)
 - [Mosquitto Catalog](#books-mosquitto-bundle-catalog-books)
@@ -429,7 +428,7 @@ install_bundle -init -checkout bundle-hazelcast-5-app-ml_lstm-cluster-ml_jet
 ---
 ## [18. Hazelcast Multi-Cluster Demo](https://github.com/padogrid/bundle-hazelcast-5-cluster-wan-app-grafana)
 
-This bundle demonstrates Grafana capabilities of monitoring four (4) Hazelcast clusters. It includes two (2) independent clusters and two (2) bi-directional WAN clusters along with a workflow simulator.
+This bundle demonstrates Grafana capabilities of monitoring five (5) Hazelcast clusters. It includes three (3) independent clusters and two (2) bi-directional WAN clusters along with a workflow simulator.
 
 ```bash
 install_bundle -init -download -workspace bundle-hazelcast-5-cluster-wan-app-grafana
@@ -524,36 +523,6 @@ install_bundle -download bundle-hazelcast-training-3n4n5-app-perf_test_ssl-clust
 ```
 
 [![IMDG Cluster: ssl](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl/blob/master/images/ssl-cluster.jpg?raw=true)](https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl)
-
----
-
-# :books: Hazelcast Jet Bundle Catalog :books:
-
-The online bundles can be installed by executing the `install_bundle` commands as shown below. To view use case details for each bundle, click on their image.
-
-*The bundles listed below are sorted by bundle names, and as such the order of bundles may change as new bundles are introduced.*
-
----
-## [1. Jet Cluster: trade](https://github.com/padogrid/bundle-jet-3-cluster-trade)
-
-The `trade` cluster bundle installs a Jet cluster that includes the `build_app` script to clone and build the `realtime-trade-monitor` project maintained at the GitHub URL shown below. [https://github.com/cangencer/realtime-trade-monitor.git](https://github.com/cangencer/realtime-trade-monitor.git)
-
-```console
-install_bundle -download bundle-jet-3-cluster-trade
-```
-
-[![Jet Cluster: trade](https://github.com/padogrid/bundle-jet-3-cluster-trade/blob/master//images/jet-trade.png?raw=true)](https://github.com/padogrid/bundle-jet-3-cluster-trade)
-
----
-## [2. Jet CDC Tutorial](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial)
-
-The `cdc_tutorial` bundle wraps the CDC tutorial available from the Hazelcast site [https://jet-start.sh/docs/tutorials/cdc](https://jet-start.sh/docs/tutorials/cdc).
-
-```console
-install_bundle -download bundle-jet-4-docker-cdc_tutorial
-```
-
-[![Jet CDC Tutorial](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial/blob/master//images/jet-cdc-tutorial.png?raw=true)](https://github.com/padogrid/bundle-jet-4-docker-cdc_tutorial)
 
 ---
 

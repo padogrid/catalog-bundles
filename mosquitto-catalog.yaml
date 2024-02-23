@@ -1,19 +1,19 @@
 catalog:
   - bundle:
-      title: Mosquitto/MQTT Bundle Template
-      name: bundle-mosquitto-template
-      image_label: Mosquitto/MQTT Bundle Template
-      image_url: https://github.com/padogrid/padogrid/wiki/Quick-Start
-      url: https://github.com/padogrid/bundle-mosquitto-template
-      description: This bundle serves as a template for creating a new Mosquitto/MQTT onlne bundle.
-      install: tmp/1-bundle-mosquitto-template
-
-  - bundle:
       title: Mosquitto/MQTT Virtual Cluster Tutorial
       name: bundle-mosquitto-tutorial-virtual-clusters
       image_label: Mosquitto/MQTT Virtual Cluster Tutorial
       image_url: images/mqtt-mosquitto-tutorial.drawio.png
       url: https://github.com/padogrid/bundle-mosquitto-tutorial-virtual-clusters
       description: This bundle provides a hands-on tutorial demonstrating PadoGrid's virtual cluster capabilities.
-      install: tmp/2-bundle-mosquitto-tutorial-virtual-clusters
+      install: tmp/1-bundle-mosquitto-tutorial-virtual-clusters
+
+  - bundle:
+      title: Mosquitto/MQTT Bundle Template
+      name: bundle-mosquitto-template
+      image_label: Mosquitto/MQTT Bundle Template
+      image_url: https://github.com/padogrid/padogrid/wiki/Quick-Start
+      url: https://github.com/padogrid/bundle-mosquitto-template
+      description: This bundle serves as a template for creating a new Mosquitto/MQTT onlne bundle.
+      install: tmp/2-bundle-mosquitto-template
 
