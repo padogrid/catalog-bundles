@@ -90,7 +90,10 @@ function trimDoubleQuotes
 if [ "$PRODUCT_ARG" == "none" ]; then
   PRODUCT="none"
   PRODUCT_NAME="Generic (none)"
-elif [ "$PRODUCT_ARG" == "geode" ] || [ "$PRODUCT_ARG" == "gemfire" ]; then
+elif [ "$PRODUCT_ARG" == "gemfire" ]; then
+  PRODUCT="gemfire"
+  PRODUCT_NAME="GemFire"
+elif [ "$PRODUCT_ARG" == "geode" ]; then
   PRODUCT="geode"
   PRODUCT_NAME="Geode/GemFire"
 elif [ "$PRODUCT_ARG" == "hazelcast" ]; then

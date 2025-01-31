@@ -41,7 +41,7 @@ EOF
    exit
 fi
 
-PRODUCT_LIST="none geode hazelcast kafka confluent mosquitto snappydata coherence"
+PRODUCT_LIST=$BUNDLE_PRODUCT_LIST
 ALL_MD="all-catalog.md"
 
 for PRODUCT in $PRODUCT_LIST; do
@@ -52,6 +52,7 @@ done
 LINK_HEADER="![PadoGrid](https://github.com/padogrid/padogrid/raw/develop/images/padogrid-3d-16x16.png) [*PadoGrid*](https://github.com/padogrid) | [*Catalogs*](https://github.com/padogrid/catalog-bundles/blob/master/all-catalog.md) | [*Manual*](https://github.com/padogrid/padogrid/wiki) | [*FAQ*](https://github.com/padogrid/padogrid/wiki/faq) | [*Releases*](https://github.com/padogrid/padogrid/releases) | [*Templates*](https://github.com/padogrid/padogrid/wiki/Using-Bundle-Templates) | [*Pods*](https://github.com/padogrid/padogrid/wiki/Understanding-Padogrid-Pods) | [*Kubernetes*](https://github.com/padogrid/padogrid/wiki/Kubernetes) | [*Docker*](https://github.com/padogrid/padogrid/wiki/Docker) | [*Apps*](https://github.com/padogrid/padogrid/wiki/Apps) | [*Quick Start*](https://github.com/padogrid/padogrid/wiki/Quick-Start)"
 
 NONE_HEADER="[Generic (none) Catalog](#books-generic-none-bundle-catalog-books)"
+GEMFIRE_HEADER="[GemFire Catalog](#books-gemfire-bundle-catalog-books)"
 GEODE_HEADER="[Geode/GemFire Catalog](#books-geodegemfire-bundle-catalog-books)"
 HAZELCAST_HEADER="[Hazelcast IMDG Catalog](#books-hazelcast-imdg-bundle-catalog-books)"
 KAFKA_HEADER="[Kafka Catalog](#books-kafka-bundle-catalog-books)"
@@ -73,6 +74,7 @@ echo "" >> $ALL_MD
 echo "*Bundles represent fully implemented use cases.* This page lists all of the open source PadoGrid bundles. The bundles in each product are grouped as follows." >> $ALL_MD
 echo "" >> $ALL_MD
 echo "- $NONE_HEADER" >> $ALL_MD
+echo "- $GEMFIRE_HEADER" >> $ALL_MD
 echo "- $GEODE_HEADER" >> $ALL_MD
 echo "- $HAZELCAST_HEADER" >> $ALL_MD
 echo "- $KAFKA_HEADER" >> $ALL_MD

@@ -1,0 +1,19 @@
+catalog:
+  - bundle:
+      title: GemFire Multi-Cluster Grafana Demo
+      name: bundle-gemfire-10-cluster-wan-app-grafana
+      image_label: GemFire Multi-Cluster Grafana Demo
+      image_url: images/multi-clusters.drawio.png
+      url: https://github.com/padogrid/bundle-gemfire-10-cluster-wan-app-grafana
+      description: This bundle demonstrates Grafana capabilities of monitoring five (5) GemFire clusters. It includes three (3) independent clusters and two (2) bi-directional WAN clusters along with a workflow simulator. ✏️ *This workspace bundle automatically installs the `grafana` app included in PadoGrid 1.0.2+ and supplemental scripts for driving the demo.* Please see [Release Notes](RELEASE_NOTES.md) for change logs.
+      install: tmp/1-bundle-gemfire-10-cluster-wan-app-grafana
+
+  - bundle:
+      title: GemFire Bundle Template
+      name: bundle-gemfire-template
+      image_label: GemFire Bundle Template
+      image_url: https://github.com/padogrid/padogrid/wiki/Quick-Start
+      url: https://github.com/padogrid/bundle-gemfire-template
+      description: This bundle serves as a template for creating a new GemFire onlne bundle.
+      install: tmp/2-bundle-gemfire-template
+

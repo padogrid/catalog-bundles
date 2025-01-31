@@ -66,7 +66,7 @@ This bundle is preconfigured to synchronize Geode/GemFire with MySQL running as 
 install_bundle -download bundle-geode-1-docker-dbsync_mysql
 
 # Install in the new bundle default workspace
-install_bundle -download -workspae bundle-geode-1-docker-dbsync_mysql
+install_bundle -download -workspace bundle-geode-1-docker-dbsync_mysql
 
 # Install in the new bundle default workspace with git intact
 install_bundle -checkout bundle-geode-1-docker-dbsync_mysql
@@ -86,15 +86,15 @@ install_bundle -download bundle-geode-1-docker-debezium_hive_kafka
 [![Debezium-Hive-Kafka Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_hive_kafka/blob/master/images/geode-debezium-hive-kafka.jpg?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_hive_kafka)
 
 ---
-## [7. Debezium-Kafka Geode/GemFire Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_kafka)
+## [7. Debezium-Kafka Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_kafka)
 
-This bundle integrates Geode/GemFire with Debezium for ingesting initial data and CDC records from MySQL into a Geode/GemFire cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
+This bundle integrates Geode with Debezium for ingesting initial data and CDC records from MySQL into a Geode cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.
 
 ```bash
 install_bundle -download bundle-geode-1-docker-debezium_kafka
 ```
 
-[![Debezium-Kafka Geode/GemFire Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_kafka/blob/master/images/debezium-kafka.png?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_kafka)
+[![Debezium-Kafka Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_kafka/blob/master/images/debezium-kafka.png?raw=true)](https://github.com/padogrid/bundle-geode-1-docker-debezium_kafka)
 
 ---
 ## [8. Debezium-KSQL-Kafka Geode Connector](https://github.com/padogrid/bundle-geode-1-docker-debezium_ksql_kafka)
