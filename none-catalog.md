@@ -11,7 +11,7 @@ The online bundles can be installed by executing the `install_bundle` commands a
 ---
 ## [1. Data Feed Simulator](https://github.com/padogrid/bundle-none-app-simulator)
 
-This bundle includes a data feed simulator for generating continous numerical data for MQTT and Hazelcast.
+This bundle includes a data feed simulator for generating continous numerical data for MQTT, GemFire/Geode, and Hazelcast.
 
 ```bash
 install_bundle -download bundle-none-app-simulator

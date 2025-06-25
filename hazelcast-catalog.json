@@ -1,84 +1,12 @@
 {
-  "bundle-hazelcast-3n4n5-docker-debezium_hive_kafka":
+  "bundle-hazelcast-5-app-ml_lstm-cluster-ml_jet":
   {
-    "title": "Debezium-Hive-Kafka Hazelcast Connector",
-    "image_label": "Debezium-Hive-Kafka Hazelcast Connector",
-    "image_url": "images/debezium-hive-kafka.jpg",
-    "url": "https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_hive_kafka",
-    "description": "This bundle integrates Hazelcast with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.",
-    "install": "tmp/1-bundle-hazelcast-3n4n5-docker-debezium_hive_kafka"
-  },
-  "bundle-hazelcast-5-k8s-hz_operator":
-  {
-    "title": "Hazelcast Kubernetes Operator",
-    "image_label": "Hazelcast Kubernetes Operator",
-    "image_url": "images/hz-operator-helm.drawio.png",
-    "url": "https://github.com/padogrid/bundle-hazelcast-5-k8s-hz_operator",
-    "description": "This bundle provides step-by-step instructions for deploying and testing Hazelcast Platform Operator, Hazelcast, and PadoGrid. ![Hazelcast Platform Operator](images/hz-operator-helm.drawio.png)",
-    "install": "tmp/2-bundle-hazelcast-5-k8s-hz_operator"
-  },
-  "bundle-hazelcast-3n4n5-docker-debezium_kafka":
-  {
-    "title": "Debezium-Kafka Hazelcast Connector",
-    "image_label": "Debezium-Kafka Hazelcast Connector",
-    "image_url": "images/debezium-kafka.png",
-    "url": "https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_kafka",
-    "description": "This bundle integrates Hazelcast with Debezium for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.",
-    "install": "tmp/3-bundle-hazelcast-3n4n5-docker-debezium_kafka"
-  },
-  "bundle-hazelcast-examples-python":
-  {
-    "title": "Hazelcast JupyterLab Python Examples",
-    "image_label": "Hazelcast JupyterLab Python Examples",
-    "image_url": "images/examples-python.drawio.png",
-    "url": "https://github.com/padogrid/bundle-hazelcast-examples-python",
-    "description": "This bundle provides Hazelcast Python client examples running on JupyterLab in PadoGrid. It demonstrates how PadoGrid workspaces are seamlessly integrated with JupyterLab workspaces.",
-    "install": "tmp/4-bundle-hazelcast-examples-python"
-  },
-  "bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl":
-  {
-    "title": "IMDG Cluster: openssl",
-    "image_label": "IMDG Cluster: openssl",
-    "image_url": "images/openssl-cluster.jpg",
-    "url": "https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl",
-    "description": "As part of the TLS/SSL lab of Hazelcast Operations Training, this bundle includes the `openssl` cluster preconfigured to enable OpenSSL/BoringSSL.",
-    "install": "tmp/5-bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl"
-  },
-  "bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl":
-  {
-    "title": "IMDG Cluster: ssl",
-    "image_label": "IMDG Cluster: ssl",
-    "image_url": "images/ssl-cluster.jpg",
-    "url": "https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl",
-    "description": "As part of the TLS/SSL lab of Hazelcast Operations Training, the `ssl` cluster has been preconfigured to enable SSL. It contains scripts to create both private and trust keystores that contain both member and client keys and certificates.",
-    "install": "tmp/6-bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl"
-  },
-  "bundle-hazelcast-5-tutorial-app-jet_python":
-  {
-    "title": "Hazelcast Job: Executing Remote Python Code ",
-    "image_label": "Hazelcast Job: Executing Remote Python Code ",
-    "image_url": "images/jet_python.drawio.png",
-    "url": "https://github.com/padogrid/bundle-hazelcast-5-tutorial-app-jet_python",
-    "description": "This bundle walks through the Hazelcast Jet job preparation, submission, and deubgging steps in detail and provides troubleshooting tips.",
-    "install": "tmp/7-bundle-hazelcast-5-tutorial-app-jet_python"
-  },
-  "bundle-hazelcast-5-playground-python":
-  {
-    "title": "PadoGrid Hazelcast Playground",
-    "image_label": "PadoGrid Hazelcast Playground",
-    "image_url": "images/playground-screenshot.png",
-    "url": "https://github.com/padogrid/bundle-hazelcast-5-playground-python",
-    "description": "This bundle includes Hazelcast Playground, a web app for browsing and updating Hazelcast data structures.",
-    "install": "tmp/8-bundle-hazelcast-5-playground-python"
-  },
-  "bundle-hazelcast-5-docker-debezium_ksqldb_confluent":
-  {
-    "title": "Debezium-ksqlDB-Confluent Hazelcast Connector",
-    "image_label": "Debezium-ksqlDB-Confluent Hazelcast Connector",
-    "image_url": "images/hazelcast-debezium-confluent.png",
-    "url": "https://github.com/padogrid/bundle-hazelcast-5-docker-debezium_ksqldb_confluent",
-    "description": "This bundle integrates Hazelcast with Debezium and Confluent ksqlDB for ingesting initial data and CDC records from MySQL into Kafka and Hazelcast via a Kafka sink connector included in the `padogrid` distribution.",
-    "install": "tmp/9-bundle-hazelcast-5-docker-debezium_ksqldb_confluent"
+    "title": "Neural Network: LSTM RNN",
+    "image_label": "Neural Network: LSTM RNN",
+    "image_url": "images/ml-lstm-dna.drawio.png",
+    "url": "https://github.com/padogrid/bundle-hazelcast-5-app-ml_lstm-cluster-ml_jet",
+    "description": "This bundle demonstrates forecasting future events in real time using LSTM RNN (Long Short-Term Memory Recurrent Neural Network) via Keras backed by TensorFlow. It constructs a Hazelcast Jet pipeline to apply LSTM RNN models on streamed data.",
+    "install": "tmp/1-bundle-hazelcast-5-app-ml_lstm-cluster-ml_jet"
   },
   "bundle-hazelcast-5-cluster-wan-app-grafana":
   {
@@ -87,16 +15,88 @@
     "image_url": "images/multi-clusters.drawio.png",
     "url": "https://github.com/padogrid/bundle-hazelcast-5-cluster-wan-app-grafana",
     "description": "This bundle demonstrates Grafana capabilities of monitoring five (5) Hazelcast clusters. It includes three (3) independent clusters and two (2) bi-directional WAN clusters along with a workflow simulator.",
-    "install": "tmp/10-bundle-hazelcast-5-cluster-wan-app-grafana"
+    "install": "tmp/2-bundle-hazelcast-5-cluster-wan-app-grafana"
   },
-  "bundle-hazelcast-5-app-ml_lstm-cluster-ml_jet":
+  "bundle-hazelcast-3n4n5-docker-debezium_hive_kafka":
   {
-    "title": "Neural Network: LSTM RNN",
-    "image_label": "Neural Network: LSTM RNN",
-    "image_url": "images/ml-lstm-dna.drawio.png",
-    "url": "https://github.com/padogrid/bundle-hazelcast-5-app-ml_lstm-cluster-ml_jet",
-    "description": "This bundle demonstrates forecasting future events in real time using LSTM RNN (Long Short-Term Memory Recurrent Neural Network) via Keras backed by TensorFlow. It constructs a Hazelcast Jet pipeline to apply LSTM RNN models on streamed data.",
-    "install": "tmp/11-bundle-hazelcast-5-app-ml_lstm-cluster-ml_jet"
+    "title": "Debezium-Hive-Kafka Hazelcast Connector",
+    "image_label": "Debezium-Hive-Kafka Hazelcast Connector",
+    "image_url": "images/debezium-hive-kafka.jpg",
+    "url": "https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_hive_kafka",
+    "description": "This bundle integrates Hazelcast with Debezium and Apache Hive for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.",
+    "install": "tmp/3-bundle-hazelcast-3n4n5-docker-debezium_hive_kafka"
+  },
+  "bundle-hazelcast-5-k8s-hz_operator":
+  {
+    "title": "Hazelcast Kubernetes Operator",
+    "image_label": "Hazelcast Kubernetes Operator",
+    "image_url": "images/hz-operator-helm.drawio.png",
+    "url": "https://github.com/padogrid/bundle-hazelcast-5-k8s-hz_operator",
+    "description": "This bundle provides step-by-step instructions for deploying and testing Hazelcast Platform Operator, Hazelcast, and PadoGrid. ![Hazelcast Platform Operator](images/hz-operator-helm.drawio.png)",
+    "install": "tmp/4-bundle-hazelcast-5-k8s-hz_operator"
+  },
+  "bundle-hazelcast-3n4n5-docker-debezium_kafka":
+  {
+    "title": "Debezium-Kafka Hazelcast Connector",
+    "image_label": "Debezium-Kafka Hazelcast Connector",
+    "image_url": "images/debezium-kafka.png",
+    "url": "https://github.com/padogrid/bundle-hazelcast-3n4n5-docker-debezium_kafka",
+    "description": "This bundle integrates Hazelcast with Debezium for ingesting initial data and CDC records from MySQL into a Hazelcast cluster via a Kafka sink connector included in the `padogrid` distribution. It supports inserts, updates and deletes.",
+    "install": "tmp/5-bundle-hazelcast-3n4n5-docker-debezium_kafka"
+  },
+  "bundle-hazelcast-examples-python":
+  {
+    "title": "Hazelcast JupyterLab Python Examples",
+    "image_label": "Hazelcast JupyterLab Python Examples",
+    "image_url": "images/examples-python.drawio.png",
+    "url": "https://github.com/padogrid/bundle-hazelcast-examples-python",
+    "description": "This bundle provides Hazelcast Python client examples running on JupyterLab in PadoGrid. It demonstrates how PadoGrid workspaces are seamlessly integrated with JupyterLab workspaces.",
+    "install": "tmp/6-bundle-hazelcast-examples-python"
+  },
+  "bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl":
+  {
+    "title": "IMDG Cluster: openssl",
+    "image_label": "IMDG Cluster: openssl",
+    "image_url": "images/openssl-cluster.jpg",
+    "url": "https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl",
+    "description": "As part of the TLS/SSL lab of Hazelcast Operations Training, this bundle includes the `openssl` cluster preconfigured to enable OpenSSL/BoringSSL.",
+    "install": "tmp/7-bundle-hazelcast-training-3n4n5-app-perf_test_openssl-cluster-openssl"
+  },
+  "bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl":
+  {
+    "title": "IMDG Cluster: ssl",
+    "image_label": "IMDG Cluster: ssl",
+    "image_url": "images/ssl-cluster.jpg",
+    "url": "https://github.com/padogrid/bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl",
+    "description": "As part of the TLS/SSL lab of Hazelcast Operations Training, the `ssl` cluster has been preconfigured to enable SSL. It contains scripts to create both private and trust keystores that contain both member and client keys and certificates.",
+    "install": "tmp/8-bundle-hazelcast-training-3n4n5-app-perf_test_ssl-cluster-ssl"
+  },
+  "bundle-hazelcast-5-tutorial-app-jet_python":
+  {
+    "title": "Hazelcast Job: Executing Remote Python Code ",
+    "image_label": "Hazelcast Job: Executing Remote Python Code ",
+    "image_url": "images/jet_python.drawio.png",
+    "url": "https://github.com/padogrid/bundle-hazelcast-5-tutorial-app-jet_python",
+    "description": "This bundle walks through the Hazelcast Jet job preparation, submission, and deubgging steps in detail and provides troubleshooting tips.",
+    "install": "tmp/9-bundle-hazelcast-5-tutorial-app-jet_python"
+  },
+  "bundle-hazelcast-5-playground-python":
+  {
+    "title": "PadoGrid Hazelcast Playground",
+    "image_label": "PadoGrid Hazelcast Playground",
+    "image_url": "images/playground-screenshot.png",
+    "url": "https://github.com/padogrid/bundle-hazelcast-5-playground-python",
+    "description": "This bundle includes Hazelcast Playground, a web app for browsing and updating Hazelcast data structures.",
+    "install": "tmp/10-bundle-hazelcast-5-playground-python"
+  },
+  "bundle-hazelcast-5-docker-debezium_ksqldb_confluent":
+  {
+    "title": "Debezium-ksqlDB-Confluent Hazelcast Connector",
+    "image_label": "Debezium-ksqlDB-Confluent Hazelcast Connector",
+    "image_url": "images/hazelcast-debezium-confluent.png",
+    "url": "https://github.com/padogrid/bundle-hazelcast-5-docker-debezium_ksqldb_confluent",
+    "description": "This bundle integrates Hazelcast with Debezium and Confluent ksqlDB for ingesting initial data and CDC records from MySQL into Kafka and Hazelcast via a Kafka sink connector included in the `padogrid` distribution.",
+    "install": "tmp/11-bundle-hazelcast-5-docker-debezium_ksqldb_confluent"
   },
   "bundle-hazelcast-4n5-cluster-session-wan":
   {

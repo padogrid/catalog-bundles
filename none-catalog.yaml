@@ -5,7 +5,7 @@ catalog:
       image_label: Data Feed Simulator
       image_url: images/igloo.png
       url: https://github.com/padogrid/bundle-none-app-simulator
-      description: This bundle includes a data feed simulator for generating continous numerical data for MQTT and Hazelcast.
+      description: This bundle includes a data feed simulator for generating continous numerical data for MQTT, GemFire/Geode, and Hazelcast.
       install: tmp/1-bundle-none-app-simulator
 
   - bundle:

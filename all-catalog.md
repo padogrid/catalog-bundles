@@ -9,7 +9,7 @@
 - [Generic (none) Catalog](#books-generic-none-bundle-catalog-books)
 - [GemFire Catalog](#books-gemfire-bundle-catalog-books)
 - [Geode/GemFire Catalog](#books-geodegemfire-bundle-catalog-books)
-- [Hazelcast IMDG Catalog](#books-hazelcast-imdg-bundle-catalog-books)
+- [Hazelcast Catalog](#books-hazelcast-bundle-catalog-books)
 - [Kafka Catalog](#books-kafka-bundle-catalog-books)
 - [Kafka Confluent Catalog](#books-kafka-confluent-bundle-catalog-books)
 - [Mosquitto Catalog](#books-mosquitto-bundle-catalog-books)
@@ -27,7 +27,7 @@ The online bundles can be installed by executing the `install_bundle` commands a
 ---
 ## [1. Data Feed Simulator](https://github.com/padogrid/bundle-none-app-simulator)
 
-This bundle includes a data feed simulator for generating continous numerical data for MQTT and Hazelcast.
+This bundle includes a data feed simulator for generating continous numerical data for MQTT, GemFire/Geode, and Hazelcast.
 
 ```bash
 install_bundle -download bundle-none-app-simulator
@@ -240,7 +240,7 @@ install_bundle -download bundle-geode-template
 
 ---
 
-# :books: Hazelcast IMDG Bundle Catalog :books:
+# :books: Hazelcast Bundle Catalog :books:
 
 The online bundles can be installed by executing the `install_bundle` commands as shown below. To view use case details for each bundle, click on their image.
 

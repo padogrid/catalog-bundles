@@ -98,7 +98,7 @@ elif [ "$PRODUCT_ARG" == "geode" ]; then
   PRODUCT_NAME="Geode/GemFire"
 elif [ "$PRODUCT_ARG" == "hazelcast" ]; then
   PRODUCT="hazelcast"
-  PRODUCT_NAME="Hazelcast IMDG"
+  PRODUCT_NAME="Hazelcast"
 elif [ "$PRODUCT_ARG" == "kafka" ]; then
   PRODUCT="kafka"
   PRODUCT_NAME="Kafka"
